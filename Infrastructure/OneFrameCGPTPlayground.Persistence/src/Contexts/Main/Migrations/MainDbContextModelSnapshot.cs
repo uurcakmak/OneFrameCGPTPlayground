@@ -461,67 +461,17 @@ namespace OneFrameCGPTPlayground.Persistence.Migrations
                             IsDeleted = false,
                             LastPasswordChangedDate = new DateTime(2022, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LockoutEnabled = true,
-                            Name = "Scot",
+                            Name = "Admin",
                             NormalizedEmail = "ADMINUSER@KOCSISTEM.COM.TR",
                             NormalizedUserName = "ADMINUSER@KOCSISTEM.COM.TR",
                             PasswordHash = "AQAAAAIAAYagAAAAEJiGxx/WCkz4SZTJQPq3BE3I+38o6kZ2YH5v+qy8dA8+fhSdmB9Gidrz58Gb8zcDSw==",
                             PhoneNumber = "02165561100",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "ce8b16e3-eb01-4263-9418-43103d1a3557",
-                            Surname = "Lawson",
+                            Surname = "User",
                             TimeZone = "Europe/Istanbul",
                             TwoFactorEnabled = false,
                             UserName = "adminuser@kocsistem.com.tr"
-                        },
-                        new
-                        {
-                            Id = new Guid("1c02be39-802f-4e52-ab19-53fa3e611968"),
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "f7c701cc-6e81-48c5-8e81-9a07f0d8f5ff",
-                            Email = "guestuser@kocsistem.com.tr",
-                            EmailConfirmed = true,
-                            InsertedDate = new DateTime(2021, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            InsertedUser = "System",
-                            IsActive = true,
-                            IsDeleted = false,
-                            LastPasswordChangedDate = new DateTime(2022, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LockoutEnabled = true,
-                            Name = "Melinda",
-                            NormalizedEmail = "GUESTUSER@KOCSISTEM.COM.TR",
-                            NormalizedUserName = "GUESTUSER@KOCSISTEM.COM.TR",
-                            PasswordHash = "AFob1POC2Udpvc5fqRLaBDsqrmV1DHHVb4XDaflNl9oVSSNha5Dk5dZZPa2f+ynZbQ==",
-                            PhoneNumber = "02165561100",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "4b354405-b679-43ed-94ec-28e21c0a7967",
-                            Surname = "Miller",
-                            TimeZone = "Europe/Istanbul",
-                            TwoFactorEnabled = false,
-                            UserName = "guestuser@kocsistem.com.tr"
-                        },
-                        new
-                        {
-                            Id = new Guid("5f3bbfc9-881e-4968-8803-a8f1ececacda"),
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "745ff9fa-5f14-4be4-90c3-2c2c50ef4458",
-                            Email = "oneframeuser@kocsistem.com.tr",
-                            EmailConfirmed = true,
-                            InsertedDate = new DateTime(2021, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            InsertedUser = "System",
-                            IsActive = true,
-                            IsDeleted = false,
-                            LastPasswordChangedDate = new DateTime(2022, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LockoutEnabled = true,
-                            Name = "Otto",
-                            NormalizedEmail = "ONEFRAMEUSER@KOCSISTEM.COM.TR",
-                            NormalizedUserName = "ONEFRAMEUSER@KOCSISTEM.COM.TR",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJiGxx/WCkz4SZTJQPq3BE3I+38o6kZ2YH5v+qy8dA8+fhSdmB9Gidrz58Gb8zcDSw==",
-                            PhoneNumber = "02165561100",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "6fa8db9a-20b8-403a-b0b3-86242a5c54b1",
-                            Surname = "Rinaldi",
-                            TimeZone = "Europe/Istanbul",
-                            TwoFactorEnabled = false,
-                            UserName = "oneframeuser@kocsistem.com.tr"
                         });
                 });
 
@@ -1355,16 +1305,6 @@ namespace OneFrameCGPTPlayground.Persistence.Migrations
                         {
                             UserId = new Guid("e0cb33f3-591a-4a25-aaba-bd05f796b5fb"),
                             RoleId = new Guid("00bb2e85-4474-414c-bed4-6d4fef568ec4")
-                        },
-                        new
-                        {
-                            UserId = new Guid("1c02be39-802f-4e52-ab19-53fa3e611968"),
-                            RoleId = new Guid("09c0b51b-f9ac-48a0-8a7c-b5b6b987a4c6")
-                        },
-                        new
-                        {
-                            UserId = new Guid("5f3bbfc9-881e-4968-8803-a8f1ececacda"),
-                            RoleId = new Guid("7255e4e1-bcbf-4c1b-89d4-15f3343dc572")
                         });
                 });
 

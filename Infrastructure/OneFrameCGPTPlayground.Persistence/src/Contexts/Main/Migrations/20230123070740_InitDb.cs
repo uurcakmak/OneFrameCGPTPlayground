@@ -530,9 +530,7 @@ namespace OneFrameCGPTPlayground.Persistence.Migrations
                 table: "User",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "InsertedDate", "InsertedUser", "IsActive", "IsDeleted", "LastPasswordChangedDate", "LockoutEnabled", "LockoutEnd", "Name", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "ProfilePhoto", "SecurityStamp", "Surname", "TimeZone", "TwoFactorEnabled", "UpdatedDate", "UpdatedUser", "UserName" },
                 values: new object[,]
-                {
-                    { new Guid("1c02be39-802f-4e52-ab19-53fa3e611968"), 0, "f7c701cc-6e81-48c5-8e81-9a07f0d8f5ff", "guestuser@kocsistem.com.tr", true, new DateTime(2021, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "System", true, false, new DateTime(2022, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), true, null, "Melinda", "GUESTUSER@KOCSISTEM.COM.TR", "GUESTUSER@KOCSISTEM.COM.TR", "AFob1POC2Udpvc5fqRLaBDsqrmV1DHHVb4XDaflNl9oVSSNha5Dk5dZZPa2f+ynZbQ==", "02165561100", false, null, "4b354405-b679-43ed-94ec-28e21c0a7967", "Miller", "Europe/Istanbul", false, null, null, "guestuser@kocsistem.com.tr" },
-                    { new Guid("5f3bbfc9-881e-4968-8803-a8f1ececacda"), 0, "745ff9fa-5f14-4be4-90c3-2c2c50ef4458", "oneframeuser@kocsistem.com.tr", true, new DateTime(2021, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "System", true, false, new DateTime(2022, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), true, null, "Otto", "ONEFRAMEUSER@KOCSISTEM.COM.TR", "ONEFRAMEUSER@KOCSISTEM.COM.TR", "AQAAAAIAAYagAAAAEJiGxx/WCkz4SZTJQPq3BE3I+38o6kZ2YH5v+qy8dA8+fhSdmB9Gidrz58Gb8zcDSw==", "02165561100", false, null, "6fa8db9a-20b8-403a-b0b3-86242a5c54b1", "Rinaldi", "Europe/Istanbul", false, null, null, "oneframeuser@kocsistem.com.tr" },
+                {   
                     { new Guid("e0cb33f3-591a-4a25-aaba-bd05f796b5fb"), 0, "ab72d39f-7f3a-4bbe-9228-fa2555d8063c", "adminuser@kocsistem.com.tr", true, new DateTime(2021, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "System", true, false, new DateTime(2022, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), true, null, "Scot", "ADMINUSER@KOCSISTEM.COM.TR", "ADMINUSER@KOCSISTEM.COM.TR", "AQAAAAIAAYagAAAAEJiGxx/WCkz4SZTJQPq3BE3I+38o6kZ2YH5v+qy8dA8+fhSdmB9Gidrz58Gb8zcDSw==", "02165561100", false, null, "ce8b16e3-eb01-4263-9418-43103d1a3557", "Lawson", "Europe/Istanbul", false, null, null, "adminuser@kocsistem.com.tr" }
                 });
 
@@ -713,8 +711,6 @@ namespace OneFrameCGPTPlayground.Persistence.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { new Guid("09c0b51b-f9ac-48a0-8a7c-b5b6b987a4c6"), new Guid("1c02be39-802f-4e52-ab19-53fa3e611968") },
-                    { new Guid("7255e4e1-bcbf-4c1b-89d4-15f3343dc572"), new Guid("5f3bbfc9-881e-4968-8803-a8f1ececacda") },
                     { new Guid("00bb2e85-4474-414c-bed4-6d4fef568ec4"), new Guid("e0cb33f3-591a-4a25-aaba-bd05f796b5fb") }
                 });
 
