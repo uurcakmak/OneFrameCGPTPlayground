@@ -1,0 +1,107 @@
+﻿@using OneFrameCGPTPlayground.Mvc.Controllers
+@using KocSistem.OneFrame.I18N
+@using OneFrameCGPTPlayground.Mvc.Helpers
+@inject HtmlMinSuffixHelper _htmlMinSuffixHelper
+@model OneFrameCGPTPlayground.Mvc.Models.Profile.ProfileModel
+@inject IKsStringLocalizer<ProfileController> _localizer
+@{
+    string defaultProfilePhoto = "/metronic/assets/media/avatars/blank.png";
+    int profilePhotoSize = Model.ProfilePhotoSize;
+}
+
+<form id="ProfileEditForm" novalidate="novalidate" class="kt-form" asp-controller="Profile" asp-action="SetProfileInfo" method="POST">
+    <div class="card mb-5 mb-xl-10">
+        <div class="card-header border-0 cursor-pointer" role="button" data-bs-toggle="collapse" data-bs-target="#kt_account_profile_details" aria-expanded="true" aria-controls="kt_account_profile_details">
+            <div class="card-title m-0">
+                <h3 class="fw-bolder m-0">@_localizer["MyProfile"]</h3>
+            </div>
+        </div>
+        <div id="kt_account_settings_profile_details" class="collapse show">
+            <form id="kt_account_profile_details_form" class="form">
+                <div class="card-body border-top p-9">
+                    <div class="row fv-row mb-6">
+                        <label class="col-lg-4 col-form-label fw-bold fs-6">@_localizer["ProfilePhoto"]</label>
+                        <div class="col-lg-8">
+                            <div class="image-input image-input-outline profile_photo">
+                                <div class="image-input-wrapper w-125px h-125px profile_photo" style="background-image: url(@(Model.ProfilePhoto ?? defaultProfilePhoto))"></div>
+                                <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" title="@_localizer["ChangeAvatar"]">
+                                    <em class="bi bi-pencil-fill fs-7"></em>
+                                    <input type="file" asp-for="ProfilePhoto" class="launch-modal" name="profile_avatar" onclick="return false" accept=".png, .jpg, .jpeg" data-bs-toggle="modal" data-bs-target="#kt_modal_oneframe_file_upload">
+                                    <input type="hidden" name="avatar_remove" />
+                                </label>
+                                <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow deleteAvatar" data-kt-image-input-action="remove" data-bs-toggle="tooltip" title="@_localizer["RemoveAvatar"]">
+                                    <em class="bi bi-x fs-2"></em>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row fv-row mb-6">
+                        <label class="col-lg-4 col-form-label required fw-bold fs-6">@_localizer["FullName"]</label>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-lg-6 fv-row">
+                                    <input type="text" asp-for="Name" name="Name" autocomplete="off" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" />
+                                </div>
+                                <div class="col-lg-6 fv-row">
+                                    <input type="text" asp-for="Surname" name="Surname" autocomplete="off" class="form-control form-control-lg form-control-solid" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row fv-row mb-6">
+                        <label class="form-label fw-bold col-lg-4 col-form-label fs-6">
+                            <span>@_localizer["PhoneNumber"]</span>
+                            <em class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip" title="@_localizer["PhoneNumberActivate"]"></em>
+                        </label>
+                        <div class="col-lg-8 fv-row">
+                            <input asp-for="PhoneNumber" name="PhoneNumber" type="tel" class="form-control form-control-lg form-control-solid" />
+                            @{
+                                if (!string.IsNullOrWhiteSpace(Model.PhoneNumberConfirmationUrl))
+                                {
+                                    <div class="input-group">
+                                        <a href="@Model.PhoneNumberConfirmationUrl" target="_self"><span>@_localizer["ConfirmPhoneNumber"]</span></a>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </div>
+                    <div class="row fv-row mb-6">
+                        <label class="col-lg-4 col-form-label fw-bold fs-6" asp-for="Email"></label>
+                        <div class="col-lg-8 fv-row">
+                            <input asp-for="Email" name="Email" type="email" class="form-control form-control-lg form-control-solid" readonly="readonly" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row fv-row mb-6">
+                        <label class="col-lg-4 col-form-label fw-bold fs-6" asp-for="TimeZone">@_localizer["TimeZone"]</label>
+                        <div class="col-lg-8 fv-row">
+                            <select asp-for="TimeZone" name="TimeZone" data-control="select2" class="form-select form-select-solid">
+                                @foreach (var item in Model.TimeZoneList)
+                                {
+                                    <option value="@item.Id">@item.DisplayName</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-lg-7 offset-lg-5">
+                            <button type="reset" class="btn btn-light btn-active-light-primary me-2">@_localizer["Cancel"]</button>
+                            <button type="button" id="kt_profile_edit_submit" class="btn btn-lg btn-primary">
+                                <span class="indicator-label">@_localizer["Submit"]</span>
+                                <span class="indicator-progress">
+                                    @_localizer["PleaseWait"]...
+                                    <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</form>
+
+<script src="~/js/helpers/handlehelper@(_htmlMinSuffixHelper.MinSuffix).js"></script>
+<script src="~/lib/fileuploader/oneframefileuploader@(_htmlMinSuffixHelper.MinSuffix).js"></script>
+<script id="jsProfileInfo" data-size="@profilePhotoSize" data-default="@defaultProfilePhoto" src="~/js/profile/index@(_htmlMinSuffixHelper.MinSuffix).js"></script>

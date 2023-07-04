@@ -1,0 +1,51 @@
+﻿@using OneFrameCGPTPlayground.Mvc.Helpers
+@using KocSistem.OneFrame.I18N
+@using OneFrameCGPTPlayground.Mvc.Controllers
+@model OneFrameCGPTPlayground.Mvc.Models.ApplicationSettingCategory.ApplicationSettingCategoryViewModel
+@inject IKsStringLocalizer<ApplicationSettingCategoryController> _localizer
+@inject HtmlMinSuffixHelper _htmlMinSuffixHelper
+@inject HtmlRtlSuffixHelper _htmlRtlSuffixHelper
+
+<div class="modal fade" id="modalEditApplicationSettingCategory" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered mw-650px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>@_localizer["UpdateSettingCategory"]</h2>
+                <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+                    <span class="svg-icon svg-icon-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+                            <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
+                <form class="form w-100" novalidate="novalidate" id="appSettingCategoryEditForm" asp-controller="ApplicationSettingCategory" asp-action="Put" method="PUT">
+                    <input type="hidden" asp-for="Id"/>
+                     <div class="d-flex flex-column mb-8 fv-row">
+                            <label asp-for="Name" class="d-flex align-items-center fs-6 fw-bold form-label mb-2 required"></label>
+                            <input asp-for="Name" class="form-control form-control-solid" autocomplete="off" />
+                    </div>
+                    <div class="d-flex flex-column mb-8 fv-row">
+                            <label asp-for="Description" class="d-flex align-items-center fs-6 fw-bold form-label mb-2"></label>
+                            <input asp-for="Description" class="form-control form-control-solid" autocomplete="off" />
+                    </div>
+                    <div class="text-center pt-15">
+                        <button type="reset" class="btn btn-light me-3" data-bs-dismiss="modal">@_localizer["Cancel"]</button>
+                        <button type="button" id="appSettingCategoryEditButton" class="btn btn-primary">
+                            <span class="indicator-label">@_localizer["Submit"]</span>
+                            <span class="indicator-progress">
+                                @_localizer["PleaseWait"]...
+                                <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/helpers/handlehelper@(_htmlMinSuffixHelper.MinSuffix).js"></script>
+<script src="~/js/applicationSettingCategory/getappsettinginfo@(_htmlMinSuffixHelper.MinSuffix).js"></script>

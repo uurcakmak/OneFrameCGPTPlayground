@@ -1,0 +1,31 @@
+﻿<script>
+    $(document).ready(function() { 
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+            get: (searchParams, prop) => searchParams.get(prop),
+        });
+        let returnUrlvalue = params.ReturnUrl;
+
+        var googleLinkElement = document.getElementById("googleLogin");
+        var facebookLinkElement = document.getElementById("facebookLogin");
+        var microsoftLinkElement = document.getElementById("microsoftLogin");
+
+        var returnUrl = (returnUrlvalue == null ? "" : returnUrlvalue);
+        var googleHref = "external-login/google?returnViewUrl=" + returnUrl;
+        var facebookHref = "external-login/facebook?returnViewUrl=" + returnUrl;
+        var microsoftHref = "external-login/microsoft?returnViewUrl=" + returnUrl;
+
+        googleLinkElement.setAttribute("href", googleHref);
+        facebookLinkElement.setAttribute("href", facebookHref);
+        microsoftLinkElement.setAttribute("href", microsoftHref);
+    });
+</script>
+
+<a id="googleLogin" href="#" class="btn btn-flex flex-center btn-light btn-lg w-25 mb-5" title="Google">
+    <img alt="Google" src="~/metronic/assets/media/svg/brand-logos/google-icon.svg" class="h-20px" />
+</a>
+<a id="facebookLogin" href="#" class="btn btn-flex flex-center btn-light btn-lg w-25 mb-5" title="Facebook">
+    <img alt="Facebook" src="~/metronic/assets/media/svg/brand-logos/facebook-4.svg" class="h-20px" />
+</a>
+<a id="microsoftLogin" href="#" class="btn btn-flex flex-center btn-light btn-lg w-25 mb-5" title="Microsoft">
+    <img alt="Microsoft" src="~/metronic/assets/media/svg/brand-logos/microsoft-5.svg" class="h-20px" />
+</a>

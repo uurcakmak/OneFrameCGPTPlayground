@@ -1,0 +1,28 @@
+﻿@using KocSistem.OneFrame.I18N
+@using OneFrameCGPTPlayground.Mvc.Controllers
+@using OneFrameCGPTPlayground.Mvc.Helpers
+@inject IKsStringLocalizer<AccountController> _localizer
+@inject HtmlMinSuffixHelper _htmlMinSuffixHelper
+<script type="text/javascript">
+    var logoutUrl = "@Url.Action("Logout","Account")";
+</script>
+<script src="~/js/autologout@(_htmlMinSuffixHelper.MinSuffix).js"></script>
+<div id="auto-logout-dialog" class="modal fade" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@_localizer["Warning"]</h5>
+            </div>
+            <div class="modal-body">
+                <p> @_localizer["AutoLogoutWarningText"] </p>
+                <div class="progress" style="height:25px;">
+                    <div id="auto-logout-dialog-progress" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="logout" type="button" class="btn btn-danger">@_localizer["Logout"]</button>
+                <button id="stayLoggedIn" type="button" class="btn btn-success" data-dismiss="modal">@_localizer["AutoLogoutKeepLoggedIn"]</button>
+            </div>
+        </div>
+    </div>
+</div>

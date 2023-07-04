@@ -1,0 +1,26 @@
+﻿@using OneFrameCGPTPlayground.Mvc.Controllers
+@using KocSistem.OneFrame.I18N
+@using Microsoft.AspNetCore.Http
+@model OneFrameCGPTPlayground.Mvc.Models.Account.ExternalLoginViewModel
+@inject IKsStringLocalizer<AccountController> _localizer
+@inject IHttpContextAccessor _httpContextaccessor
+
+@{
+    Layout = "~/src/Views/Shared/_LoginLayout.cshtml";
+    ViewData["Title"] = _localizer["ExternalLoginTitle"];
+}
+
+@section scripts
+{
+    <script>
+        $(document).ready(function(){
+            window.location.href = "@Model.ReturnUrl";
+        })
+    </script>
+}
+
+<div class="mb-10">
+    <h1 class="text-dark mb-3">@_localizer["Redirecting"]</h1>
+    <p>@_localizer["ExternalLoginInfo", @Model.Provider]</p>
+    <p>@_localizer["PleaseWait"]</p>
+</div>

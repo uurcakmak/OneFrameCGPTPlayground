@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../../Common.Build.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ProjectGuid>{317A6D0B-76BD-4D3A-92C2-35CFF7CA7EE0}</ProjectGuid>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="IdentityModel" Version="6.0.0" />
+    <PackageReference Include="itext7" Version="7.2.5" />
+    <PackageReference Include="KocSistem.OneFrame.Common" Version="7.0.0" />
+    <PackageReference Include="KocSistem.OneFrame.Data.Relational" Version="7.0.0" />
+    <PackageReference Include="KocSistem.OneFrame.DesignObjects" Version="7.0.0" />
+    <PackageReference Include="KocSistem.OneFrame.Helpers.Validation" Version="7.0.0" />
+    <PackageReference Include="KocSistem.OneFrame.I18N" Version="7.0.0" />
+    <PackageReference Include="KocSistem.OneFrame.Notification.Email" Version="7.0.0" />
+    <PackageReference Include="KocSistem.OneFrame.Notification.Sms.JetSms" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\OneFrameCGPTPlayground.Domain\OneFrameCGPTPlayground.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\OneFrameCGPTPlayground.Common\OneFrameCGPTPlayground.Common.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\OneFrameCGPTPlayground.Infrastructure\OneFrameCGPTPlayground.Infrastructure.csproj" />
+    <ProjectReference Include="..\OneFrameCGPTPlayground.Application.Abstractions\OneFrameCGPTPlayground.Application.Abstractions.csproj" />
+  </ItemGroup>
+  
+</Project>

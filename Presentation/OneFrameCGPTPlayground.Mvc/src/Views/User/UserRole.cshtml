@@ -1,0 +1,53 @@
+﻿@using OneFrameCGPTPlayground.Mvc.Controllers
+@using OneFrameCGPTPlayground.Mvc.Helpers
+@using KocSistem.OneFrame.I18N
+@using Newtonsoft.Json
+@using Newtonsoft.Json.Serialization
+@model OneFrameCGPTPlayground.Mvc.Models.User.UserRolePutViewModel
+@inject IKsStringLocalizer<UserController> _localizer
+@inject HtmlMinSuffixHelper _htmlMinSuffixHelper
+@inject HtmlRtlSuffixHelper _htmlRtlSuffixHelper
+
+@{
+var serializerSettings = new JsonSerializerSettings();
+serializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+}
+
+<div class="modal fade" id="modalUserRole" tabindex="-1" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered mw-900px">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2>@_localizer["User_Role_Management"]</h2>
+				<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+					<span class="svg-icon svg-icon-1">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+							<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+						</svg>
+					</span>
+				</div>
+			</div>
+			<div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
+				<form class="form w-100" data-user-name="@Model.Username" novalidate="novalidate" data-options="@(JsonConvert.SerializeObject(Model.Roles,Formatting.Indented,serializerSettings))" id="userRoleForm" method="PUT" action="@Url.Action("user-roles", "users")">
+					<div class="row g-9 mb-8">
+						<div class="col-md-12 fv-row">
+							<select id="kt_dual_listbox_2" class="dual-listbox" multiple></select>
+						</div>
+					</div>
+					<div class="text-center pt-15">
+						<button type="reset" class="btn btn-light me-3" data-bs-dismiss="modal">@_localizer["Cancel"]</button>
+						<button type="button" id="userRoleButton" class="btn btn-primary">
+							<span class="indicator-label">@_localizer["Submit"]</span>
+							<span class="indicator-progress">
+								@_localizer["PleaseWait"]...
+								<span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+							</span>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="~/js/user/userrole@(_htmlMinSuffixHelper.MinSuffix).js"></script>

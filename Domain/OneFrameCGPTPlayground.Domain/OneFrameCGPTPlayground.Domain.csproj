@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../../Common.Build.props" />
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ProjectGuid>{86CFA324-0766-4D6D-B01F-B815527314EF}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Audit.EntityFramework.Core" Version="20.1.3" />
+    <PackageReference Include="EntityFrameworkCore.DataEncryption" Version="3.0.1" />
+    <PackageReference Include="KocSistem.OneFrame.Data.Relational.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="7.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\OneFrameCGPTPlayground.Common\OneFrameCGPTPlayground.Common.csproj" />
+  </ItemGroup>
+
+</Project>

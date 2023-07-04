@@ -1,0 +1,136 @@
+﻿@using OneFrameCGPTPlayground.Mvc.Controllers
+@using OneFrameCGPTPlayground.Mvc.Helpers
+@using OneFrameCGPTPlayground.Mvc.Models.EmailTemplate
+@using KocSistem.OneFrame.I18N
+@using Microsoft.AspNetCore.Builder
+@using Microsoft.Extensions.Options
+@inject HtmlMinSuffixHelper _htmlMinSuffixHelper
+@model OneFrameCGPTPlayground.Mvc.Models.EmailTemplate.EmailTemplateViewModel
+@inject IKsStringLocalizer<EmailTemplateController> _localizer
+@inject IOptions<RequestLocalizationOptions> _locOptions
+
+@{
+    ViewData["Title"] = _localizer["EmailTemplateManagement"];
+    var cultureListWithoutDefault = _locOptions.Value.SupportedUICultures.Where(w => w.Name != System.Globalization.CultureInfo.DefaultThreadCurrentCulture.Name).OrderBy(o => o.NativeName).ToList();
+    var defaultLanguageIsoTwoLetterName = System.Globalization.CultureInfo.DefaultThreadCurrentCulture.TwoLetterISOLanguageName;
+}
+
+@section scripts
+{
+<script src="~/metronic/assets/plugins/custom/tinymce/tinymce.bundle.js"></script>
+<script id="jsEmailTemplateInfo" data-default-language="@defaultLanguageIsoTwoLetterName" src="~/js/emailTemplate/getemailtemplateinfo@(_htmlMinSuffixHelper.MinSuffix).js"></script>
+}
+
+<div class="card">
+    <div class="card-body p-lg-17">
+        <div class="d-flex flex-column flex-lg-row mb-17">
+            <div class="flex-lg-row-fluid">
+                <form class="form mb-15" novalidate="novalidate" id="emailTemplateEditForm" asp-controller="EmailTemplate" asp-action="Put" method="PUT">
+                    <input asp-for="Id" type="hidden" id="emailTemplateIdHidden" />
+                    <div class="d-flex flex-column mb-5 fv-row">
+                        <label class="fs-5 fw-bold mb-2">@_localizer["EmailTemplateName"]</label>
+                        <input class="form-control form-control-solid" asp-for="Name" autocomplete="off" disabled="disabled" />
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-4 fv-row">
+                            <label class="fs-5 fw-bold mb-2">@_localizer["To"]</label>
+                            <input class="form-control form-control-solid multipleEmail" asp-for="To" autocomplete="off" />
+                        </div>
+                        <div class="col-md-4 fv-row">
+                            <label class="fs-5 fw-bold mb-2">@_localizer["Cc"]</label>
+                            <input class="form-control form-control-solid multipleEmail" asp-for="Cc" autocomplete="off" />
+                        </div>
+                        <div class="col-md-4 fv-row">
+                            <label class="fs-5 fw-bold mb-2">@_localizer["Bcc"]</label>
+                            <input class="form-control form-control-solid multipleEmail" asp-for="Bcc" autocomplete="off" />
+                        </div>
+                    </div>
+                    <div class="separator mb-8"></div>
+                    <div class="row  rounded shadow-sm p-lg-10">
+                        <div class="d-flex flex-column mb-5">
+                            <ul class="nav nav-tabs nav-line-tabs mb-5 fs-6">
+                                @{
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-bs-toggle="tab" href="#supportedUICultures_0">
+                                            @(System.Globalization.CultureInfo.DefaultThreadCurrentCulture.NativeName)
+                                        </a>
+                                    </li>
+
+                                    for (var i = 0; i < cultureListWithoutDefault.Count; i++)
+                                    {
+                                        var cultureInfo = cultureListWithoutDefault[i];
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#supportedUICultures_@(i+1)">
+                                                @cultureInfo.NativeName
+                                            </a>
+                                        </li>
+                                    }
+                                }
+                            </ul>
+
+                            <div class="tab-content" id="translationTab">
+                                @{
+                                    var language = Enum.Parse<OneFrameCGPTPlayground.Common.Enums.LanguageType>(System.Globalization.CultureInfo.DefaultThreadCurrentCulture.TwoLetterISOLanguageName);
+                                    var defaultCultureIndex = Model.Translations.FindIndex(f => f.Language == language);
+
+                                    if (defaultCultureIndex == -1)
+                                    {
+                                        Model.Translations.Add(new EmailTemplateTranslationsModel { Language = language });
+                                        defaultCultureIndex = Model.Translations.FindIndex(f => f.Language == language);
+                                    }
+
+                                    <div class="tab-pane fade show active" id="supportedUICultures_0" role="tabpanel">
+                                        <input type="hidden" name="Translations[@defaultCultureIndex].Language" value="@((int)language)" />
+                                        <div class="fv-row mb-5">
+                                            <label asp-for="Translations[defaultCultureIndex].Subject" class="d-flex align-items-center fs-6 fw-bold form-label mb-2 required"></label>
+                                            <input asp-for="Translations[defaultCultureIndex].Subject" class="form-control form-control-solid" autocomplete="off" />
+                                        </div>
+                                        <div class="fv-row mb-5">
+                                            <label asp-for="Translations[defaultCultureIndex].EmailContent" class="d-flex align-items-center fs-6 fw-bold form-label mb-2"></label>
+                                            <textarea asp-for="Translations[defaultCultureIndex].EmailContent" autocomplete="off" rows="5" class="form-control form-control-solid tox-target editor"></textarea>
+                                        </div>
+                                    </div>
+
+                                    for (int i = 0; i < cultureListWithoutDefault.Count; i++)
+                                    {
+                                        language = Enum.Parse<OneFrameCGPTPlayground.Common.Enums.LanguageType>(cultureListWithoutDefault[i].TwoLetterISOLanguageName);
+                                        var index = Model.Translations.FindIndex(f => f.Language == language);
+
+                                        if (index == -1)
+                                        {
+                                            Model.Translations.Add(new EmailTemplateTranslationsModel { Language = language });
+                                            index = Model.Translations.FindIndex(f => f.Language == language);
+                                        }
+
+                                        <div class="tab-pane fade" id="supportedUICultures_@(i+1)" role="tabpanel">
+                                            <input type="hidden" name="Translations[@index].Language" value="@((int)language)" />
+                                            <div class="fv-row mb-5">
+                                                <label asp-for="Translations[index].Subject" class="d-flex align-items-center fs-6 fw-bold form-label mb-2 required"></label>
+                                                <input asp-for="Translations[index].Subject" class="form-control form-control-solid" autocomplete="off" />
+                                            </div>
+                                            <div class="fv-row mb-5">
+                                                <label asp-for="Translations[index].EmailContent" class="d-flex align-items-center fs-6 fw-bold form-label mb-2"></label>
+                                                <textarea asp-for="Translations[index].EmailContent" autocomplete="off" rows="5" class="form-control form-control-solid tox-target editor"></textarea>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center pt-15">
+                        <button type="button" class="btn btn-primary" id="emailTemplateSaveButton">
+                            <span class="indicator-label">@_localizer["Save"]</span>
+                            <span class="indicator-progress">
+                                @_localizer["PleaseWait"]...
+                                <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                            </span>
+                        </button>
+                        <button id="emailTemplateSendEmailButton" class="btn btn-light me-3">@_localizer["SendEmail"]</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

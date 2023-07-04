@@ -1,0 +1,34 @@
+﻿@using OneFrameCGPTPlayground.Mvc.Controllers
+@using KocSistem.OneFrame.I18N
+@model IEnumerable<OneFrameCGPTPlayground.Mvc.Models.Menu.MenuModel>
+@inject IKsStringLocalizer<HomeController> _localizer
+
+@foreach (var menuitem in Model)
+{
+    if (menuitem.Children.Count > 0)
+    {
+        <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+            <span class="menu-link">
+                <span class="menu-icon">
+                    <em class="far fa-@(string.IsNullOrEmpty(menuitem.Icon) ? "circle" : menuitem.Icon)"></em>
+                </span>
+                <span class="menu-title">@(menuitem.DisplayText)</span>
+                <span class="menu-arrow"></span>
+            </span>
+            <div class="menu-sub menu-sub-accordion" style="display: none; overflow: hidden;" kt-hidden-height="97">
+                <partial name="Components/MenuViewComponent/Default" model="@menuitem.Children" />
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="menu-item">
+            <a class="menu-link" href="@menuitem.Url">
+                <span class="menu-icon">
+                    <em class="far fa-@(string.IsNullOrEmpty(menuitem.Icon) ? "circle" : menuitem.Icon)"></em>
+                </span>
+                <span class="menu-title">@(menuitem.DisplayText)</span>
+            </a>
+        </div>
+    }
+}

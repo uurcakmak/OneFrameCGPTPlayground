@@ -1,0 +1,107 @@
+﻿@model OneFrameCGPTPlayground.Mvc.Models.Role.RoleViewModel
+@using OneFrameCGPTPlayground.Mvc.Controllers
+@using OneFrameCGPTPlayground.Mvc.Helpers
+@using KocSistem.OneFrame.I18N
+@using Microsoft.AspNetCore.Builder
+@using Microsoft.Extensions.Options
+@inject HtmlMinSuffixHelper _htmlMinSuffixHelper
+@inject IKsStringLocalizer<RoleController> _localizer
+@inject IOptions<RequestLocalizationOptions> _locOptions
+@{
+    var cultureListWithoutDefault = _locOptions.Value.SupportedUICultures.Where(w => w.Name != System.Globalization.CultureInfo.DefaultThreadCurrentCulture.Name).OrderBy(o => o.NativeName).ToList();
+}
+
+<div class="modal fade" id="modalNewRole" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>@_localizer["NewRoleForm"]</h2>
+                <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+                    <span class="svg-icon svg-icon-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+                            <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
+                <form class="form w-100" novalidate="novalidate" id="roleCreateForm" asp-controller="Role" asp-action="Post" method="POST">
+                    <div class="row g-9 mb-8">
+                        <div class="col-8 col-sm-6 fv-row">
+                            <label asp-for="Name" class="d-flex align-items-center fs-6 fw-bold form-label mb-2 required"></label>
+                            <input asp-for="Name" class="form-control form-control-solid" autocomplete="off" required />
+                        </div>
+                    </div>
+                    <ul class="nav nav-tabs nav-line-tabs mb-5 fs-6">
+                        @{
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#supportedUICultures_0">
+                                    @(System.Globalization.CultureInfo.DefaultThreadCurrentCulture.NativeName)
+                                </a>
+                            </li>
+
+                            for (var i = 0; i < cultureListWithoutDefault.Count; i++)
+                            {
+                                var cultureInfo = cultureListWithoutDefault[i];
+
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#supportedUICultures_@(i+1)">
+                                        @cultureInfo.NativeName
+                                    </a>
+                                </li>
+                            }
+                        }
+                    </ul>
+                    <div class="tab-content" id="translationTab">
+                        @{
+                            <div class="tab-pane fade show active" id="supportedUICultures_0" role="tabpanel">
+                                <input type="hidden" name="Translations[0].Language" value="@(System.Globalization.CultureInfo.DefaultThreadCurrentCulture.TwoLetterISOLanguageName)" />
+                                <div class="fv-row">
+                                    <label asp-for="Translations[0].DisplayText" class="d-flex align-items-center fs-6 fw-bold form-label mb-2 required"></label>
+                                    <input asp-for="Translations[0].DisplayText" class="form-control form-control-solid" autocomplete="off" />
+                                </div>
+
+                                <div class="fv-row">
+                                    <label asp-for="Translations[0].Description" class="d-flex align-items-center fs-6 fw-bold form-label mb-2"></label>
+                                    <textarea asp-for="Translations[0].Description" class="form-control form-control-solid" autocomplete="off" rows="5"></textarea>
+                                </div>
+                            </div>
+
+                            for (var i = 0; i < cultureListWithoutDefault.Count; i++)
+                            {
+                                var cultureInfo = cultureListWithoutDefault[i];
+                                var index = i + 1;
+                                <div class="tab-pane fade" id="supportedUICultures_@index" role="tabpanel">
+                                    <input type="hidden" name="Translations[@index].Language" value="@cultureInfo.TwoLetterISOLanguageName" />
+                                    <div class="fv-row">
+                                        <label asp-for="Translations[index].DisplayText" class="d-flex align-items-center fs-6 fw-bold form-label mb-2 required"></label>
+                                        <input asp-for="Translations[index].DisplayText" class="form-control form-control-solid" autocomplete="off" />
+                                    </div>
+
+                                    <div class="fv-row">
+                                        <label asp-for="Translations[index].Description" class="d-flex align-items-center fs-6 fw-bold form-label mb-2"></label>
+                                        <textarea asp-for="Translations[index].Description" class="form-control form-control-solid" autocomplete="off" rows="5"></textarea>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                    <div class="text-center pt-15">
+                        <button type="reset" class="btn btn-light me-3" data-bs-dismiss="modal">@_localizer["Cancel"]</button>
+                        <button type="button" id="roleCreateButton" class="btn btn-primary">
+                            <span class="indicator-label">@_localizer["Submit"]</span>
+                            <span class="indicator-progress">
+                                @_localizer["PleaseWait"]...
+                                <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/helpers/handlehelper@(_htmlMinSuffixHelper.MinSuffix).js"></script>
+<script src="~/js/role/create@(_htmlMinSuffixHelper.MinSuffix).js"></script>

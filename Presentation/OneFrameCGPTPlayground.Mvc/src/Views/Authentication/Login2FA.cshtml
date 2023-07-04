@@ -1,0 +1,100 @@
+﻿@using OneFrameCGPTPlayground.Mvc.Controllers
+@using OneFrameCGPTPlayground.Mvc.Helpers
+@using KocSistem.OneFrame.I18N
+@using OneFrameCGPTPlayground.Common.Enums
+@inject HtmlMinSuffixHelper _htmlMinSuffixHelper
+@model OneFrameCGPTPlayground.Mvc.Models.Authentication.Login2FaViewModel
+@inject IKsStringLocalizer<AuthenticationController> _localizer
+
+@{
+    Layout = "~/src/Views/Shared/_LoginLayout.cshtml";
+    ViewData["Title"] = _localizer["2FA"];
+}
+<style>
+    #qrcode img {
+        display: initial !important;
+    }
+</style>
+
+@section scripts
+{
+<script src="~/js/authentication/login2FA@(_htmlMinSuffixHelper.MinSuffix).js"></script>
+
+    @if (Model.VerificationType == Login2Fa.Authenticator)
+    {
+<script src="~/lib/qrcode/qrcode.js"></script>
+<script>
+    new QRCode(document.getElementById("qrcode"), {
+    text: '@Model.QrCodeUri',
+    width: 250,
+    height: 250,
+    correctLevel: QRCode.CorrectLevel.H
+    });
+</script>
+    }
+}
+
+<form class="form w-100 mb-10" novalidate="novalidate" id="twoFactorForm" asp-controller="Authentication" asp-action="Login2FA" method="POST">
+    <input type="hidden" asp-for="QrCodeUri" />
+    <input type="hidden" asp-for="SharedKey" />
+    <input type="hidden" asp-for="VerificationType" />
+    <input type="hidden" asp-for="VerificationTime" />
+    <input type="hidden" asp-for="VerificationCode" />
+    <div class="text-center mb-10">
+        <h1 class="text-dark mb-3">@_localizer["2FA"]</h1>
+        <div class="text-muted fw-bold fs-5 mb-5">@_localizer["VerificationType"] : @Model.VerificationType</div>
+        @if (Model.VerificationType == Login2Fa.Sms)
+        {
+            <div class="text-muted fw-bold fs-5 mb-5">@_localizer["VerificationCodeSent"]</div>
+            <div class="fw-bolder text-dark fs-3">@Model.PhoneNumberMasked</div>
+        }
+    </div>
+    @if (Model.VerificationType == Login2Fa.Authenticator)
+    {
+        <div class="text-center mb-10">
+            @if (!Model.IsActivated)
+            {
+                <div class="row">
+                    <div class="col-md-12">
+                    <div class="alert alert-success" role="alert">
+                        <span class="text-muted fw-bold fs-5 mb-5">@_localizer["AuthenticatorInfoMessage"]</span>
+                    </div>
+                </div>
+            </div>
+            }
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div id="qrcode"></div>
+                </div>
+            </div>
+        </div>
+    }
+    <div class="mb-10 px-md-10">
+        <div class="fw-bolder text-start text-dark fs-6 mb-1 ms-1">@_localizer["EnterYourVerificationCode"]</div>
+        <div id="verificationCode" class="d-flex flex-stack">
+            <input type="text" data-inputmask="'mask': '9', 'placeholder': ''" maxlength="1" class="form-control form-control-solid h-60px w-60px fs-2qx text-center border-primary border-hover mx-1 my-2" value="" />
+            <input type="text" data-inputmask="'mask': '9', 'placeholder': ''" maxlength="1" class="form-control form-control-solid h-60px w-60px fs-2qx text-center border-primary border-hover mx-1 my-2" value="" />
+            <input type="text" data-inputmask="'mask': '9', 'placeholder': ''" maxlength="1" class="form-control form-control-solid h-60px w-60px fs-2qx text-center border-primary border-hover mx-1 my-2" value="" />
+            <input type="text" data-inputmask="'mask': '9', 'placeholder': ''" maxlength="1" class="form-control form-control-solid h-60px w-60px fs-2qx text-center border-primary border-hover mx-1 my-2" value="" />
+            <input type="text" data-inputmask="'mask': '9', 'placeholder': ''" maxlength="1" class="form-control form-control-solid h-60px w-60px fs-2qx text-center border-primary border-hover mx-1 my-2" value="" />
+            <input type="text" data-inputmask="'mask': '9', 'placeholder': ''" maxlength="1" class="form-control form-control-solid h-60px w-60px fs-2qx text-center border-primary border-hover mx-1 my-2" value="" />
+        </div>
+    </div>
+    <div id="divTimer" class="text-center mb-10">
+        <span class="text-muted fw-bold fs-5 mb-5">@_localizer["RemainTime"] </span>
+        <span class="badge badge-warning"><strong id="remainTime" class="fw-bolder text-dark fs-3"></strong></span>
+        <strong class="text-muted fw-bold fs-5 mb-5"> @_localizer["Second"]</strong>
+    </div>
+    <div class="d-flex flex-center">
+        <button type="button" id="twoFactorButton" class="btn btn-lg btn-primary fw-bolder">
+            <span class="indicator-label">@_localizer["Submit"]</span>
+            <span class="indicator-progress">
+                @_localizer["PleaseWait"]...
+                <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+            </span>
+        </button>
+    </div>
+    <div class="d-flex flex-center">
+        <button type="button" id="resendButton" class="btn btn-light btn-elevate" style="visibility:hidden">@_localizer["Resend"]</button>
+    </div>
+</form>

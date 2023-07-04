@@ -1,0 +1,68 @@
+﻿@using OneFrameCGPTPlayground.Mvc.Controllers
+@using OneFrameCGPTPlayground.Mvc.Helpers;
+@using OneFrameCGPTPlayground.Mvc.Models.Other;
+@using KocSistem.OneFrame.I18N
+@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json;
+@inject IKsStringLocalizer<HomeController> _localizer
+@inject IHttpContextAccessor _httpContextaccessor
+
+@{
+    var policyCookie = _httpContextaccessor.HttpContext.Request.Cookies[CookieHelper.ApplicationCookiePolicy];
+    string visibility = "visible";
+    ApplicationCookiePolicy cookiePolicyModel = new ApplicationCookiePolicy();
+    if (!string.IsNullOrEmpty(policyCookie))
+    {
+        cookiePolicyModel = JsonConvert.DeserializeObject<ApplicationCookiePolicy>(policyCookie);
+        if (cookiePolicyModel != null && cookiePolicyModel.Required)
+        {
+            visibility = "hidden";
+        }
+    }
+}
+
+<div id="cookie_policy" style="visibility:@visibility">
+    <div class="d-flex flex-center flex-wrap fs-6 p-5 pb-0">
+        <div style="text-align: left;">
+            @Html.Raw(_localizer["PolicyContent1"])
+            <br />
+            <br />
+            @_localizer["PolicyContent2"]
+        </div>
+
+    </div>
+    <div class="d-flex flex-center flex-wrap fs-6 p-5 pb-0">
+        <button type="button" id="btnCookieAccept" class="btn btn-primary cookie_buttons" onclick="accept()">@_localizer["Agreed"]</button>
+        <button type="button" id="btnCookieReject" class="btn btn-primary cookie_buttons" onclick="reject()">@_localizer["Reject"]</button>
+    </div>
+</div>
+
+<script id="jsCookie" data-returnUrl="@(Context.Request.Path)" src="~/js/shared/cookiepolicypartial.js"></script>
+
+<style>
+    #cookie_policy {
+        position: fixed;
+        bottom: 1.25em;
+        right: 1.25em;
+        left: 1.25em;
+        background: #e8eaf1;
+        color: black;
+        padding: 1.05em 2.1em 1.5em 2.1em;
+        border-radius: 10px;
+        transform: scale(1);
+        max-width: 50em;
+        margin: 0 auto;
+        z-index: 1;
+        text-align: left;
+    }
+
+        #cookie_policy .cookie_buttons {
+            margin: 10px;
+            background-color: #2d4156;
+        }
+
+            #cookie_policy .cookie_buttons:hover,
+            #cookie_policy .cookie_buttons:focus {
+                background-color: #40505a !important;
+            }
+</style>

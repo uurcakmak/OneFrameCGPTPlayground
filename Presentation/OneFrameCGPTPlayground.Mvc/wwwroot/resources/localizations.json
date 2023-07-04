@@ -1,0 +1,3457 @@
+[
+  {
+    "Key": "Accept",
+    "Values": {
+      "en-US": "Accept",
+      "tr-TR": "Onayla",
+      "ar-AE": "قبول"
+    }
+  },
+  {
+    "Key": "AccessDenied",
+    "Values": {
+      "en-US": "Access denied",
+      "tr-TR": "Giriş engellendi",
+      "ar-AE": "تم الرٝض"
+    }
+  },
+  {
+    "Key": "AccountDoesNotExist",
+    "Values": {
+      "en-US": "This account does not exist",
+      "tr-TR": "Hesap mevcut değil",
+      "ar-AE": "الحساب غير موجود"
+    }
+  },
+  {
+    "Key": "Actions",
+    "Values": {
+      "en-US": "Actions",
+      "tr-TR": "İşlemler",
+      "ar-AE": "أجراءات"
+    }
+  },
+  {
+    "Key": "ActivateUser",
+    "Values": {
+      "en-US": "Activate User",
+      "tr-TR": "Kullanıcı Aktifleştir",
+      "ar-AE": "تنشيط المستخدم"
+    }
+  },
+  {
+    "Key": "AreYouSure",
+    "Values": {
+      "en-US": "Are you sure?",
+      "tr-TR": "Emin misiniz?",
+      "ar-AE": "هل أنت واثق؟"
+    }
+  },
+  {
+    "Key": "Back",
+    "Values": {
+      "en-US": "Back",
+      "tr-TR": "Geri",
+      "ar-AE": "عودة"
+    }
+  },
+  {
+    "Key": "Next",
+    "Values": {
+      "en-US": "Next",
+      "tr-TR": "İleri",
+      "ar-AE": "التالى"
+    }
+  },
+  {
+    "Key": "Cancel",
+    "Values": {
+      "en-US": "Cancel",
+      "tr-TR": "İptal",
+      "ar-AE": "إلغاء"
+    }
+  },
+  {
+    "Key": "Cancelled",
+    "Values": {
+      "en-US": "Cancelled",
+      "tr-TR": "İptal edildi",
+      "ar-AE": "ألغيت"
+    }
+  },
+  {
+    "Key": "ChangePassword",
+    "Values": {
+      "en-US": "Change password",
+      "tr-TR": "Parola değiştir",
+      "ar-AE": "تغيير كلمة المرور"
+    }
+  },
+  {
+    "Key": "AccountInformation",
+    "Values": {
+      "en-US": "Account Information",
+      "tr-TR": "Hesap Bilgileri",
+      "ar-AE": "معلومات الحساب"
+    }
+  },
+  {
+    "Key": "ChangePasswordSuccess",
+    "Values": {
+      "en-US": "Change password success",
+      "tr-TR": "Parola başarıyla değiştir",
+      "ar-AE": "تغيير نجاح كلمة المرور"
+    }
+  },
+  {
+    "Key": "ClaimNotFound",
+    "Values": {
+      "en-US": "Claim is not found",
+      "tr-TR": "Yetki bulunamadı",
+      "ar-AE": "لم يتم العثور على المطالبة"
+    }
+  },
+  {
+    "Key": "Components",
+    "Values": {
+      "en-US": "Components",
+      "tr-TR": "Bileşenler",
+      "ar-AE": "مكونات"
+    }
+  },
+  {
+    "Key": "CreateRoleSuccess",
+    "Values": {
+      "en-US": "Role created successfully",
+      "tr-TR": "Rol kaydı başarılı",
+      "ar-AE": "تم إنشاء الدور بنجاح"
+    }
+  },
+  {
+    "Key": "CreateUser",
+    "Values": {
+      "en-US": "Create user",
+      "tr-TR": "Kullanıcı oluştur",
+      "ar-AE": "إنشاء مستخدم"
+    }
+  },
+  {
+    "Key": "CreateUserSuccess",
+    "Values": {
+      "en-US": "User created successfully",
+      "tr-TR": "Kullanıcı kaydı başarılı",
+      "ar-AE": "تم إنشاء المستخدم بنجاح"
+    }
+  },
+  {
+    "Key": "Dashboard",
+    "Values": {
+      "en-US": "Dashboard",
+      "tr-TR": "Kontrol paneli",
+      "ar-AE": "لوحة القيادة"
+    }
+  },
+  {
+    "Key": "DataTable_emptyTable",
+    "Values": {
+      "en-US": "No data available in table",
+      "tr-TR": "Tabloda herhangi bir veri mevcut değil",
+      "ar-AE": "لا توجد بيانات متاحة ٝي الجدول"
+    }
+  },
+  {
+    "Key": "DataTable_first",
+    "Values": {
+      "en-US": "First",
+      "tr-TR": "İlk",
+      "ar-AE": "أول"
+    }
+  },
+  {
+    "Key": "DataTable_info",
+    "Values": {
+      "en-US": "Showing _START_ to _END_ of _TOTAL_ entries",
+      "tr-TR": "_TOTAL_ kayıttan _START_ - _END_ arasındaki kayıtlar gösteriliyor",
+      "ar-AE": "عرض _START_ إلى _END_ من _TOTAL_ من الإدخالات"
+    }
+  },
+  {
+    "Key": "DataTable_infoEmpty",
+    "Values": {
+      "en-US": "No entries",
+      "tr-TR": "Kayıt yok",
+      "ar-AE": "لا يوجد تسجيل"
+    }
+  },
+  {
+    "Key": "DataTable_infoFiltered",
+    "Values": {
+      "en-US": "(filtered from _MAX_ total entries)",
+      "tr-TR": "(toplam _MAX_ girişten filtrelendi)",
+      "ar-AE": "(تمت تصٝيتها من إجمالي _MAX_ من الإدخالات)"
+    }
+  },
+  {
+    "Key": "DataTable_infoPostFix",
+    "Values": {
+      "en-US": "",
+      "tr-TR": "",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "DataTable_last",
+    "Values": {
+      "en-US": "Last",
+      "tr-TR": "Son",
+      "ar-AE": "الاخير"
+    }
+  },
+  {
+    "Key": "DataTable_lengthMenu",
+    "Values": {
+      "en-US": "Show _MENU_ entries",
+      "tr-TR": "Sayfada _MENU_ kayıt göster",
+      "ar-AE": "إظهار إدخالات _MENU_"
+    }
+  },
+  {
+    "Key": "Loading",
+    "Values": {
+      "en-US": "Loading...",
+      "tr-TR": "Yükleniyor...",
+      "ar-AE": "جار التحميل..."
+    }
+  },
+  {
+    "Key": "DataTable_next",
+    "Values": {
+      "en-US": "Next",
+      "tr-TR": "Sonraki",
+      "ar-AE": "التالى"
+    }
+  },
+  {
+    "Key": "DataTable_previous",
+    "Values": {
+      "en-US": "Previous",
+      "tr-TR": "Önceki",
+      "ar-AE": "السابق"
+    }
+  },
+  {
+    "Key": "DataTable_processing",
+    "Values": {
+      "en-US": "Processing...",
+      "tr-TR": "İşleniyor...",
+      "ar-AE": "معالجة..."
+    }
+  },
+  {
+    "Key": "DataTable_search",
+    "Values": {
+      "en-US": "Search:",
+      "tr-TR": "Ara:",
+      "ar-AE": "بحث:"
+    }
+  },
+  {
+    "Key": "DataTable_sortAscending",
+    "Values": {
+      "en-US": ": activate to sort column ascending",
+      "tr-TR": ": artan sütun sıralamasını aktifleştir",
+      "ar-AE": ": تنشيط لٝرز العمود التصاعدي"
+    }
+  },
+  {
+    "Key": "DataTable_sortDescending",
+    "Values": {
+      "en-US": ": activate to sort column descending",
+      "tr-TR": ": azalan sütun sıralamasını aktifleştir",
+      "ar-AE": ": تنشيط لٝرز العمود التنازلي"
+    }
+  },
+  {
+    "Key": "DataTable_zeroRecords",
+    "Values": {
+      "en-US": "No matching records found",
+      "tr-TR": "Eşleşen kayıt bulunamadı",
+      "ar-AE": "لم يتم العثور على سجلات مطابقة"
+    }
+  },
+  {
+    "Key": "DefaultError",
+    "Values": {
+      "en-US": "An unknown failure has occured",
+      "tr-TR": "Bilinmeyen bir hata oluştu.",
+      "ar-AE": "حدث ٝشل غير معروٝ"
+    }
+  },
+  {
+    "Key": "Delete",
+    "Values": {
+      "en-US": "Delete",
+      "tr-TR": "Sil",
+      "ar-AE": "حذٝ"
+    }
+  },
+  {
+    "Key": "Deleted",
+    "Values": {
+      "en-US": "Deleted!",
+      "tr-TR": "Silindi!",
+      "ar-AE": "تم الحذٝ"
+    }
+  },
+  {
+    "Key": "DeleteRoleSuccess",
+    "Values": {
+      "en-US": "Role deleted successfully",
+      "tr-TR": "Rol silindi",
+      "ar-AE": "تم حذٝ الدور بنجاح"
+    }
+  },
+  {
+    "Key": "DeleteUserSuccess",
+    "Values": {
+      "en-US": "User deleted successfully",
+      "tr-TR": "Kullanıcı silindi",
+      "ar-AE": "تم حذٝ المستخدم بنجاح"
+    }
+  },
+  {
+    "Key": "Description",
+    "Values": {
+      "en-US": "Description",
+      "tr-TR": "Tanım",
+      "ar-AE": "وصٝ"
+    }
+  },
+  {
+    "Key": "DontHaveAnAccountYet",
+    "Values": {
+      "en-US": "Don't have an account yet?",
+      "tr-TR": "Henüz bir hesabınız yok mu?",
+      "ar-AE": "لا تملك حسابا حتى الآن؟"
+    }
+  },
+  {
+    "Key": "DuplicateEmail",
+    "Values": {
+      "en-US": "Email '{0}' is already taken.",
+      "tr-TR": "'{0}' e-postası zaten alınmış.",
+      "ar-AE": "تم استلام البريد الإلكتروني '{0}' بالٝعل."
+    }
+  },
+  {
+    "Key": "DuplicateName",
+    "Values": {
+      "en-US": "Name '{0}' is already taken.",
+      "tr-TR": "'{0}' adı zaten alınmış.",
+      "ar-AE": "الاسم '{0}' مأخوذ بالٝعل."
+    }
+  },
+  {
+    "Key": "Edit",
+    "Values": {
+      "en-US": "Edit",
+      "tr-TR": "Düzenle",
+      "ar-AE": "تعديل"
+    }
+  },
+  {
+    "Key": "Email",
+    "Values": {
+      "en-US": "E-mail",
+      "tr-TR": "E-posta",
+      "ar-AE": "البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "EmailAddress",
+    "Values": {
+      "en-US": "Email address",
+      "tr-TR": "E-posta adresi",
+      "ar-AE": "عنوان بريد الكتروني"
+    }
+  },
+  {
+    "Key": "EmailAddressRequiredMessage",
+    "Values": {
+      "en-US": "The email address is required",
+      "tr-TR": "E-posta adresi zorunlu",
+      "ar-AE": "عنوان البريد الإلكتروني مطلوب"
+    }
+  },
+  {
+    "Key": "EmailResetLink",
+    "Values": {
+      "en-US": "E-mail reset link",
+      "tr-TR": "E-posta sıfırlama linki",
+      "ar-AE": "رابط إعادة تعيين البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "EmailResetLinkFailed",
+    "Values": {
+      "en-US": "Password reset e-mail could not be sent.",
+      "tr-TR": "Şifre sıfırlama e-mail gönderimi başarısz.",
+      "ar-AE": "تعذر إرسال البريد الإلكتروني لإعادة تعيين كلمة المرور."
+    }
+  },
+  {
+    "Key": "EmailResetLinkSuccess",
+    "Values": {
+      "en-US": "Your reset link has been sent to your e-mail address.",
+      "tr-TR": "Şifre sıfırlama linki e-mail adresinize gönderildi.",
+      "ar-AE": "تم إرسال رابط إعادة الضبط الخاص بك إلى عنوان بريدك الإلكتروني."
+    }
+  },
+  {
+    "Key": "EmailValidationError",
+    "Values": {
+      "en-US": "E-mail is not valid",
+      "tr-TR": "E-posta geçerli değil",
+      "ar-AE": "البريد الإلكتروني غير صالح"
+    }
+  },
+  {
+    "Key": "EnterYourDetailsToCreateYourAccount",
+    "Values": {
+      "en-US": "Enter your details to create your account",
+      "tr-TR": "Hesabınızı oluşturmak için bilgilerinizi girin",
+      "ar-AE": "أدخل التٝاصيل الخاصة بك لإنشاء حسابك"
+    }
+  },
+  {
+    "Key": "EnterYourEmailToResetYourPassword",
+    "Values": {
+      "en-US": "Enter your email to reset your password",
+      "tr-TR": "Şifrenizi sıfırlamak için e-posta adresinizi girin",
+      "ar-AE": "أدخل عنوان بريدك الإلكتروني لإعادة تعيين كلمة المرور الخاصة بك"
+    }
+  },
+  {
+    "Key": "EntitiesNotFound",
+    "Values": {
+      "en-US": "Entities are not found",
+      "tr-TR": "Veriler bulunamadı",
+      "ar-AE": "لم يتم العثور على الكيانات"
+    }
+  },
+  {
+    "Key": "EntityNotFound",
+    "Values": {
+      "en-US": "Entity is not found",
+      "tr-TR": "Veri bulunamadı",
+      "ar-AE": "لم يتم العثور على الكيان"
+    }
+  },
+  {
+    "Key": "Error",
+    "Values": {
+      "en-US": "Error",
+      "tr-TR": "Hata",
+      "ar-AE": "خطأ"
+    }
+  },
+  {
+    "Key": "ErrorCode403",
+    "Values": {
+      "en-US": "The page or resource you were trying to reach is forbidden for some reason",
+      "tr-TR": "Ulaşmaya çalıştığınız sayfa veya kaynak herhangi bir nedenle yasaklandı",
+      "ar-AE": "الصٝحة أو المورد الذي كنت تحاول الوصول إليه ممنوع لسبب ما"
+    }
+  },
+  {
+    "Key": "ExternalLoginExists",
+    "Values": {
+      "en-US": "A user with that external login already exists.",
+      "tr-TR": "Bu harici girişe sahip bir kullanıcı zaten var.",
+      "ar-AE": "يوجد مستخدم لديه تسجيل الدخول الخارجي بالٝعل."
+    }
+  },
+  {
+    "Key": "Forbidden",
+    "Values": {
+      "en-US": "Forbidden",
+      "tr-TR": "Yasak",
+      "ar-AE": "ممنوع"
+    }
+  },
+  {
+    "Key": "RegisterEmailSent",
+    "Values": {
+      "en-US": "Register Email Sent",
+      "tr-TR": "Kayıt E-postası Gönderildi",
+      "ar-AE": "تم إرسال البريد الإلكتروني للتسجيل"
+    }
+  },
+  {
+    "Key": "ForgotPassword",
+    "Values": {
+      "en-US": "Forgot Password",
+      "tr-TR": "Parolanızı mı unuttunuz",
+      "ar-AE": "هل نسيت كلمة المرور"
+    }
+  },
+  {
+    "Key": "ForgotYourPassword",
+    "Values": {
+      "en-US": "Forgot your password?",
+      "tr-TR": "Parolanızı mı unuttunuz?",
+      "ar-AE": "نسيت رقمك السري؟"
+    }
+  },
+  {
+    "Key": "GoBack",
+    "Values": {
+      "en-US": "Go Back",
+      "tr-TR": "Geri Dön",
+      "ar-AE": "عد"
+    }
+  },
+  {
+    "Key": "HomePage",
+    "Values": {
+      "en-US": "Home",
+      "tr-TR": "Anasayfa",
+      "ar-AE": "الصٝحة الرئيسية"
+    }
+  },
+  {
+    "Key": "InvalidEmail",
+    "Values": {
+      "en-US": "Email '{0}' is invalid.",
+      "tr-TR": "'{0}' e-postası geçersiz.",
+      "ar-AE": "البريد الإلكتروني '{0}' غير صالح."
+    }
+  },
+  {
+    "Key": "InvalidLoginCredentials",
+    "Values": {
+      "en-US": "Invalid login credentials",
+      "tr-TR": "Geçersiz giriş bilgileri",
+      "ar-AE": "اعتماد تسجيل الدخول غير صالح"
+    }
+  },
+  {
+    "Key": "InvalidModel",
+    "Values": {
+      "en-US": "Invalid data entry",
+      "tr-TR": "Geçersiz veri girişi",
+      "ar-AE": "إدخال بيانات غير صالح"
+    }
+  },
+  {
+    "Key": "InvalidToken",
+    "Values": {
+      "en-US": "Invalid token.",
+      "tr-TR": "Geçersiz belirteç.",
+      "ar-AE": "الرمز غير صالح."
+    }
+  },
+  {
+    "Key": "InvalidUserName",
+    "Values": {
+      "en-US": "User name '{0}' is invalid, can only contain letters or digits.",
+      "tr-TR": "'{0}' kullanıcı adı geçersiz, sadece harf veya rakam içerebilir.",
+      "ar-AE": "اسم المستخدم '{0}' غير صالح ، لا يمكن أن يحتوي إلا على أحرٝ أو أرقام."
+    }
+  },
+  {
+    "Key": "LearnMore",
+    "Values": {
+      "en-US": "Learn More",
+      "tr-TR": "Daha fazla bilgi edin",
+      "ar-AE": "أعرٝ أكثر"
+    }
+  },
+  {
+    "Key": "LockoutNotEnabled",
+    "Values": {
+      "en-US": "Lockout is not enabled for this user.",
+      "tr-TR": "Kilitleme bu kullanıcı için etkin değil.",
+      "ar-AE": "التأمين غير مٝعّل لهذا المستخدم."
+    }
+  },
+  {
+    "Key": "Login",
+    "Values": {
+      "en-US": "Login",
+      "tr-TR": "Oturum aç",
+      "ar-AE": "تسجيل الدخول"
+    }
+  },
+  {
+    "Key": "LoginSuccess",
+    "Values": {
+      "en-US": "Welcome! You have successfully signed in.",
+      "tr-TR": "Hoşgeldin! Giriş işlemi başarılı.",
+      "ar-AE": "أهلا بك! لقد سجلت بنجاح."
+    }
+  },
+  {
+    "Key": "Logout",
+    "Values": {
+      "en-US": "Logout",
+      "tr-TR": "Çıkış Yap",
+      "ar-AE": "تسجيل خروج"
+    }
+  },
+  {
+    "Key": "Name",
+    "Values": {
+      "en-US": "Name",
+      "tr-TR": "İsim",
+      "ar-AE": "اسم"
+    }
+  },
+  {
+    "Key": "NewPassword",
+    "Values": {
+      "en-US": "New password",
+      "tr-TR": "Yeni parola",
+      "ar-AE": "كلمة السر الجديدة"
+    }
+  },
+  {
+    "Key": "NewPasswordConfirmation",
+    "Values": {
+      "en-US": "New password confirmation",
+      "tr-TR": "Yeni parola doğrula",
+      "ar-AE": "تأكيد كلمة السر الجديدة"
+    }
+  },
+  {
+    "Key": "NewRole",
+    "Values": {
+      "en-US": "New role",
+      "tr-TR": "Yeni rol",
+      "ar-AE": "دور جديد"
+    }
+  },
+  {
+    "Key": "NewRoleForm",
+    "Values": {
+      "en-US": "New role form",
+      "tr-TR": "Yeni rol formu",
+      "ar-AE": "شكل دور جديد"
+    }
+  },
+  {
+    "Key": "NewUser",
+    "Values": {
+      "en-US": "New user",
+      "tr-TR": "Yeni kullanıcı",
+      "ar-AE": "مستخدم جديد"
+    }
+  },
+  {
+    "Key": "NewUserForm",
+    "Values": {
+      "en-US": "New user form",
+      "tr-TR": "Yeni kullanıcı formu",
+      "ar-AE": "نموذج مستخدم جديد"
+    }
+  },
+  {
+    "Key": "NoCancel",
+    "Values": {
+      "en-US": "No, cancel.",
+      "tr-TR": "Hayır, iptal et.",
+      "ar-AE": "No, cancel."
+    }
+  },
+  {
+    "Key": "NoTokenProvider",
+    "Values": {
+      "en-US": "No IUserTokenProvider is registered.",
+      "tr-TR": "IUserTokenProvider kayıtlı değil.",
+      "ar-AE": "لم يتم تسجيل IUserTokenProvider."
+    }
+  },
+  {
+    "Key": "NoTwoFactorProvider",
+    "Values": {
+      "en-US": "No IUserTwoFactorProvider for '{0}' is registered.",
+      "tr-TR": "'{0}' için IUserTwoFactorProvider kayıtlı değil",
+      "ar-AE": "لم يتم تسجيل IUserTwoFactorProvider لـ '{0}'."
+    }
+  },
+  {
+    "Key": "NowYouCanStartBuildingYourAwesomeWebApplicationHappyCoding",
+    "Values": {
+      "en-US": "Now, you can start building your awesome web application. Happy Coding.",
+      "tr-TR": "Şimdi harika web uygulamanızı oluşturmaya başlayabilirsiniz. Mutlu Kodlamalar.",
+      "ar-AE": "مرحبًا بك ٝي قالبالآن ، يمكنك البدء ٝي إنشاء تطبيق ويب رائع. الترميز سعيدة."
+    }
+  },
+  {
+    "Key": "NowYouCanStartBuildingYourAwesomeWebApplication",
+    "Values": {
+      "en-US": "Now, you can start building your awesome web application",
+      "tr-TR": "Şimdi harika web uygulamanızı oluşturmaya başlayabilirsiniz",
+      "ar-AE": "مرحبًا بك ٝي قالبالآن ، يمكنك البدء ٝي إنشاء تطبيق ويب رائع."
+    }
+  },
+  {
+    "Key": "Password",
+    "Values": {
+      "en-US": "Password",
+      "tr-TR": "Parola",
+      "ar-AE": "كلمه السر"
+    }
+  },
+  {
+    "Key": "PasswordConfirm",
+    "Values": {
+      "en-US": "Confirm password",
+      "tr-TR": "Parola doğrula",
+      "ar-AE": "تأكيد كلمة المرور"
+    }
+  },
+  {
+    "Key": "PasswordConfirmValidationError",
+    "Values": {
+      "en-US": "The password and confirmation password do not match.",
+      "tr-TR": "Şifre ve doğrulama şifresi uyuşmuyor",
+      "ar-AE": "كلمة المرور وتأكيد كلمة المرور غير متطابقة."
+    }
+  },
+  {
+    "Key": "PasswordMismatch",
+    "Values": {
+      "en-US": "Incorrect password.",
+      "tr-TR": "Yanlış parola.",
+      "ar-AE": "كلمة سر خاطئة."
+    }
+  },
+  {
+    "Key": "PasswordRequireDigit",
+    "Values": {
+      "en-US": "Passwords must have at least one digit ('0'-'9').",
+      "tr-TR": "Şifreler en az bir rakam içermelidir ('0' - '9').",
+      "ar-AE": "('يجب أن تحتوي كلمات المرور على رقم واحد على الأقل ('0' - '9')."
+    }
+  },
+  {
+    "Key": "PasswordRequireLower",
+    "Values": {
+      "en-US": "Passwords must have at least one lowercase ('a'-'z').",
+      "tr-TR": "Şifreler en az bir küçük harf içermelidir ('a' - 'z').",
+      "ar-AE": "يجب أن تحتوي كلمات المرور على حرٝ صغير واحد على الأقل ('a' - 'z')."
+    }
+  },
+  {
+    "Key": "PasswordRequireNonLetterOrDigit",
+    "Values": {
+      "en-US": "Passwords must have at least one non letter or digit character.",
+      "tr-TR": "Şifreler en az bir harf veya rakam olmayan karakter içermelidir.",
+      "ar-AE": "يجب أن تحتوي كلمات المرور على حرٝ واحد على الأقل لا يتألٝ من حرٝ أو رقم."
+    }
+  },
+  {
+    "Key": "PasswordRequireUpper",
+    "Values": {
+      "en-US": "Passwords must have at least one uppercase ('A'-'Z')",
+      "tr-TR": "Şifreler en az bir büyük harfe sahip olmalıdır ('A' - 'Z').",
+      "ar-AE": "يجب أن تحتوي كلمات المرور على حرٝ كبير واحد على الأقل ('A' - 'Z')"
+    }
+  },
+  {
+    "Key": "PasswordResetSuccessful",
+    "Values": {
+      "en-US": "Password reset successfully",
+      "tr-TR": "Şifre başarıyla sıfırlandı",
+      "ar-AE": "تمت إعادة تعيين كلمة المرور بنجاح"
+    }
+  },
+  {
+    "Key": "PasswordTooShort",
+    "Values": {
+      "en-US": "Passwords must be at least {0} characters.",
+      "tr-TR": "Şifreler en az {0} karakter olmalıdır.",
+      "ar-AE": "يجب أن تتكون كلمات المرور من {0} حرٝ على الأقل."
+    }
+  },
+  {
+    "Key": "PasswordValidationError",
+    "Values": {
+      "en-US": "The {0} must be at least {2} and at max {1} characters long.",
+      "tr-TR": "{0} en az {2} ve en fazla {1} karakter uzunluğunda olmalıdır.",
+      "ar-AE": "يجب ألا يقل عدد أحرٝ {0} عن {2} ولا يزيد عن {1} من الأحرٝ."
+    }
+  },
+  {
+    "Key": "Permissions",
+    "Values": {
+      "en-US": "Permissions",
+      "tr-TR": "İzinler",
+      "ar-AE": "أذونات"
+    }
+  },
+  {
+    "Key": "PhoneNumber",
+    "Values": {
+      "en-US": "Phone Number",
+      "tr-TR": "Telefon numarası",
+      "ar-AE": "رقم الهاتٝ"
+    }
+  },
+  {
+    "Key": "PhoneNumberIsNotValid",
+    "Values": {
+      "en-US": "Phone number is not valid",
+      "tr-TR": "Telefon numarası geçerli değil",
+      "ar-AE": "رقم الهاتٝ غير صالح"
+    }
+  },
+  {
+    "Key": "PleaseWait",
+    "Values": {
+      "en-US": "Please wait",
+      "tr-TR": "Lütfen bekleyiniz",
+      "ar-AE": "ارجوك انتظر"
+    }
+  },
+  {
+    "Key": "ProfileEdit",
+    "Values": {
+      "en-US": "Profile Edit",
+      "tr-TR": "Profil Düzenle",
+      "ar-AE": "ارجوك انتظر"
+    }
+  },
+  {
+    "Key": "PropertyTooShort",
+    "Values": {
+      "en-US": "{0} cannot be null or empty.",
+      "tr-TR": "{0} boş olamaz veya boş olamaz.",
+      "ar-AE": "لا يمكن أن يكون {0} ٝارغًا أو ٝارغًا."
+    }
+  },
+  {
+    "Key": "RegisterAsANewUser",
+    "Values": {
+      "en-US": "Register as a new user",
+      "tr-TR": "Yeni kullanıcı olarak kayıt olun",
+      "ar-AE": "سجل كمستخدم جديد"
+    }
+  },
+  {
+    "Key": "RegisterSuccess",
+    "Values": {
+      "en-US": "Welcome! You have successfully signed up.",
+      "tr-TR": "Hoşgeldin! Kayıt işlemi başarılı.",
+      "ar-AE": "أهلا بك! لقد سجلت بنجاح."
+    }
+  },
+  {
+    "Key": "PasswordsDoesNotMatch",
+    "Values": {
+      "en-US": "Password confirmation is not correct.",
+      "tr-TR": "Şifre doğrulama hatalı."
+    }
+  },
+  {
+    "Key": "RememberMe",
+    "Values": {
+      "en-US": "Remember me",
+      "tr-TR": "Beni Hatırla?",
+      "ar-AE": "تذكرنى"
+    }
+  },
+  {
+    "Key": "Request",
+    "Values": {
+      "en-US": "Request",
+      "tr-TR": "İstek",
+      "ar-AE": "طلب"
+    }
+  },
+  {
+    "Key": "Required",
+    "Values": {
+      "en-US": "This field is required",
+      "tr-TR": "Bu alan boş geçilemez",
+      "ar-AE": "هذه الخانة مطلوبه."
+    }
+  },
+  {
+    "Key": "Required2",
+    "Values": {
+      "en-US": "The '{0}' is required",
+      "tr-TR": "'{0}' gereklidir",
+      "ar-AE": "'{0}' مطلوب"
+    }
+  },
+  {
+    "Key": "Reset",
+    "Values": {
+      "en-US": "Reset",
+      "tr-TR": "Sıfırla",
+      "ar-AE": "إعادة تعيين"
+    }
+  },
+  {
+    "Key": "ResetPassword",
+    "Values": {
+      "en-US": "Reset Password",
+      "tr-TR": "Parola Sıfırla",
+      "ar-AE": "إعادة تعيين كلمة المرور"
+    }
+  },
+  {
+    "Key": "ResetPasswordSuccess",
+    "Values": {
+      "en-US": "Your password has been reset successfully!",
+      "tr-TR": "Şifre başarıyla sıfırlandı.",
+      "ar-AE": "تم إعادة تعيين كلمة المرور الخاصة بك بنجاح!"
+    }
+  },
+  {
+    "Key": "Role List",
+    "Values": {
+      "en-US": "Role List",
+      "tr-TR": "Rol Listesi",
+      "ar-AE": "قائمة الأدوار"
+    }
+  },
+  {
+    "Key": "Role Management",
+    "Values": {
+      "en-US": "Role management",
+      "tr-TR": "Rol yönetimi",
+      "ar-AE": "إدارة الأدوار"
+    }
+  },
+  {
+    "Key": "RoleClaimManagement",
+    "Values": {
+      "en-US": "Role claim management",
+      "tr-TR": "Role yetki yönetimi",
+      "ar-AE": "إدارة مطالبات الأدوار"
+    }
+  },
+  {
+    "Key": "RoleInfoManagement",
+    "Values": {
+      "en-US": "Role info management",
+      "tr-TR": "Rol bilgi yönetimi",
+      "ar-AE": "إدارة معلومات الدور"
+    }
+  },
+  {
+    "Key": "RoleList",
+    "Values": {
+      "en-US": "Role list",
+      "tr-TR": "Rol Listesi",
+      "ar-AE": "قائمة الأدوار"
+    }
+  },
+  {
+    "Key": "Rolename",
+    "Values": {
+      "en-US": "Role name",
+      "tr-TR": "Rol adı",
+      "ar-AE": "اسم الدور"
+    }
+  },
+  {
+    "Key": "RoleNotFound",
+    "Values": {
+      "en-US": "Role {0} does not exist.",
+      "tr-TR": "Rol {0} mevcut değil.",
+      "ar-AE": "الدور {0} غير موجود."
+    }
+  },
+  {
+    "Key": "RoleNotFound",
+    "Values": {
+      "en-US": "Role is not found",
+      "tr-TR": "Rol bulunamadı",
+      "ar-AE": "لم يتم العثور على الدور"
+    }
+  },
+  {
+    "Key": "Roles",
+    "Values": {
+      "en-US": "Roles",
+      "tr-TR": "Roller",
+      "ar-AE": "الأدوار"
+    }
+  },
+  {
+    "Key": "RoleUserManagement",
+    "Values": {
+      "en-US": "Role user management",
+      "tr-TR": "Rol kullanıcı yönetimi",
+      "ar-AE": "إدارة دور المستخدم"
+    }
+  },
+  {
+    "Key": "Save",
+    "Values": {
+      "en-US": "Save",
+      "tr-TR": "Kaydet",
+      "ar-AE": "حٝظ"
+    }
+  },
+  {
+    "Key": "SearchByRolename",
+    "Values": {
+      "en-US": "Search by role name",
+      "tr-TR": "Role adina gore ara",
+      "ar-AE": "البحث عن طريق اسم الدور"
+    }
+  },
+  {
+    "Key": "SearchByUsername",
+    "Values": {
+      "en-US": "Search by username",
+      "tr-TR": "Kullanici adina gore ara",
+      "ar-AE": "البحث باسم المستخدم"
+    }
+  },
+  {
+    "Key": "Section",
+    "Values": {
+      "en-US": "Section",
+      "tr-TR": "Bölüm",
+      "ar-AE": "الجزء"
+    }
+  },
+  {
+    "Key": "Select",
+    "Values": {
+      "en-US": "Select",
+      "tr-TR": "Seçiniz",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "Selected",
+    "Values": {
+      "en-US": "Selected",
+      "tr-TR": "Seçilmiş",
+      "ar-AE": "تحديد"
+    }
+  },
+  {
+    "Key": "Sign In To Admin",
+    "Values": {
+      "en-US": "Sign In To Admin",
+      "tr-TR": "Yönetim Paneline Giriş",
+      "ar-AE": "قم بتسجيل الدخول إلى المسؤول"
+    }
+  },
+  {
+    "Key": "SignIn",
+    "Values": {
+      "en-US": "Sign In",
+      "tr-TR": "Oturum aç",
+      "ar-AE": "تسجيل الدخول"
+    }
+  },
+  {
+    "Key": "SignUp",
+    "Values": {
+      "en-US": "Sign Up",
+      "tr-TR": "Kayıt ol",
+      "ar-AE": "سجل"
+    }
+  },
+  {
+    "Key": "StoreNotIQueryableRoleStore",
+    "Values": {
+      "en-US": "Store does not implement IQueryableRoleStore&amp;amp;lt;TRole&amp;amp;gt;.",
+      "tr-TR": "Mağaza, IQueryableRoleStore &amp; amp; lt; TRole &amp; gt;",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "StoreNotIQueryableUserStore",
+    "Values": {
+      "en-US": "Store does not implement IQueryableUserStore&amp;amp;lt;TUser&amp;amp;gt;.",
+      "tr-TR": "Mağaza IQueryableUserStore &amp; amp; lt; TUser &amp; gt;",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "StoreNotIUserClaimStore",
+    "Values": {
+      "en-US": "Store does not implement IUserClaimStore&amp;amp;lt;TUser&amp;amp;gt;.",
+      "tr-TR": "Mağaza, IUserClaimStore &amp; amp; lt; TUser &amp; gt;",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "StoreNotIUserConfirmationStore",
+    "Values": {
+      "en-US": "Store does not implement IUserConfirmationStore&amp;amp;lt;TUser&amp;amp;gt;.",
+      "tr-TR": "Mağaza, IUserConfirmationStore &amp; amp; lt; TUser &amp; gt;",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "StoreNotIUserEmailStore",
+    "Values": {
+      "en-US": "Store does not implement IUserEmailStore&amp;amp;lt;TUser&amp;amp;gt;.",
+      "tr-TR": "Mağaza, IUserEmailStore &amp; amp; lt; TUser &amp; gt;",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "StoreNotIUserLockoutStore",
+    "Values": {
+      "en-US": "Store does not implement IUserLockoutStore&amp;amp;lt;TUser&amp;amp;gt;.",
+      "tr-TR": "Mağaza, IUserLockoutStore &amp; amp; lt; TUser &amp; gt;",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "StoreNotIUserLoginStore",
+    "Values": {
+      "en-US": "Store does not implement IUserLoginStore&amp;amp;lt;TUser&amp;amp;gt;.",
+      "tr-TR": "Mağaza, IUserLoginStore &amp; amp; lt; TUser &amp; gt;",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "StoreNotIUserPasswordStore",
+    "Values": {
+      "en-US": "Store does not implement IUserPasswordStore&amp;amp;lt;TUser&amp;amp;gt;.",
+      "tr-TR": "Mağaza, IUserPasswordStore &amp; amp; lt; TUser &amp; gt;",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "StoreNotIUserPhoneNumberStore",
+    "Values": {
+      "en-US": "Store does not implement IUserPhoneNumberStore&amp;amp;lt;TUser&amp;amp;gt;.",
+      "tr-TR": "Mağaza, IUserPhoneNumberStore &amp; amp; lt; TUser &amp; gt;",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "StoreNotIUserRoleStore",
+    "Values": {
+      "en-US": "Store does not implement IUserRoleStore&amp;amp;lt;TUser&amp;amp;gt;.",
+      "tr-TR": "Mağaza, IUserRoleStore &amp; amp; lt; TUser &amp; gt;",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "StoreNotIUserSecurityStampStore",
+    "Values": {
+      "en-US": "Store does not implement IUserSecurityStampStore&amp;amp;lt;TUser&amp;amp;gt;.",
+      "tr-TR": "Mağaza, IUserSecurityStampStore &amp; amp; lt; TUser &amp; gt;",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "StoreNotIUserTwoFactorStore",
+    "Values": {
+      "en-US": "Store does not implement IUserTwoFactorStore&amp;amp;lt;TUser&amp;amp;gt;.",
+      "tr-TR": "Mağaza, IUserTwoFactorStore &amp; amp; lt; TUser &amp; gt;",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "Submit",
+    "Values": {
+      "en-US": "Submit",
+      "tr-TR": "Gönder",
+      "ar-AE": "إرسال"
+    }
+  },
+  {
+    "Key": "Surname",
+    "Values": {
+      "en-US": "Surname",
+      "tr-TR": "Soyisim",
+      "ar-AE": "لقب"
+    }
+  },
+  {
+    "Key": "FullName",
+    "Values": {
+      "en-US": "Full Name",
+      "tr-TR": "İsim Soyisim",
+      "ar-AE": "الاسم الكامل"
+    }
+  },
+  {
+    "Key": "Status",
+    "Values": {
+      "en-US": "Is Active",
+      "tr-TR": "Aktif mi",
+      "ar-AE": "الحالة (نشطة / سلبية"
+    }
+  },
+  {
+    "Key": "IsLocked",
+    "Values": {
+      "en-US": "Is Locked",
+      "tr-TR": "Kilitli mi",
+      "ar-AE": "مغلق"
+    }
+  },
+  {
+    "Key": "TestMessage",
+    "Values": {
+      "en-US": "This is a test message",
+      "tr-TR": "Bu bir test mesajıdır",
+      "ar-AE": "هذه رسالة اختبار"
+    }
+  },
+  {
+    "Key": "ToggleCookieConsentBanner",
+    "Values": {
+      "en-US": "Toggle cookie consent banner",
+      "tr-TR": "Çerez izni afişini aç / kapat",
+      "ar-AE": "تبديل بانر المواٝقة على ملٝ تعريٝ الارتباط"
+    }
+  },
+  {
+    "Key": "UnableToCreateUser",
+    "Values": {
+      "en-US": "Unable to create user",
+      "tr-TR": "Kullanıcı oluşturulamıyor",
+      "ar-AE": "غير قادر على إنشاء مستخدم"
+    }
+  },
+  {
+    "Key": "UnableToResetPassword",
+    "Values": {
+      "en-US": "Unable to reset password",
+      "tr-TR": "Parola sıfırlanamıyor",
+      "ar-AE": "غير قادر على إعادة تعيين كلمة المرور"
+    }
+  },
+  {
+    "Key": "Unauthorized",
+    "Values": {
+      "en-US": "Unauthorized",
+      "tr-TR": "Yetkisiz işlem",
+      "ar-AE": "غير مصرح"
+    }
+  },
+  {
+    "Key": "Unselected",
+    "Values": {
+      "en-US": "Unselected",
+      "tr-TR": "Seçilmemiş",
+      "ar-AE": "غير محدد"
+    }
+  },
+  {
+    "Key": "UpdateRoleClaimSuccess",
+    "Values": {
+      "en-US": "Role claim updated successfully",
+      "tr-TR": "Role yetki başarıyla güncellendi",
+      "ar-AE": "تم تحديث مطالبة الدور بنجاح"
+    }
+  },
+  {
+    "Key": "UpdateRoleSuccess",
+    "Values": {
+      "en-US": "Role updated successfully",
+      "tr-TR": "Rol güncellendi",
+      "ar-AE": "تم تحديث الدور بنجاح"
+    }
+  },
+  {
+    "Key": "UpdateUserClaimSuccess",
+    "Values": {
+      "en-US": "User claim updated successfully",
+      "tr-TR": "Kullanıcı yetki başarıyla güncellendi",
+      "ar-AE": "تم تحديث مطالبة المستخدم بنجاح"
+    }
+  },
+  {
+    "Key": "UpdateUserSuccess",
+    "Values": {
+      "en-US": "User updated successfully",
+      "tr-TR": "Kullanıcı güncellendi",
+      "ar-AE": "تم تحديث المستخدم بنجاح"
+    }
+  },
+  {
+    "Key": "User Management",
+    "Values": {
+      "en-US": "User management",
+      "tr-TR": "Kullanıcı yönetimi",
+      "ar-AE": "إدارةالمستخدم"
+    }
+  },
+  {
+    "Key": "UserAlreadyHasPassword",
+    "Values": {
+      "en-US": "User already has a password set.",
+      "tr-TR": "Kullanıcının zaten bir şifre seti var.",
+      "ar-AE": "المستخدم لديه بالٝعل مجموعة كلمة مرور."
+    }
+  },
+  {
+    "Key": "UserAlreadyInRole",
+    "Values": {
+      "en-US": "User already in role.",
+      "tr-TR": "Kullanıcı zaten rolde.",
+      "ar-AE": "المستخدم ٝي الدور بالٝعل."
+    }
+  },
+  {
+    "Key": "UserClaimManagement",
+    "Values": {
+      "en-US": "User claim management",
+      "tr-TR": "Kullanıcı yetki yönetimi",
+      "ar-AE": "إدارة مطالبة المستخدم"
+    }
+  },
+  {
+    "Key": "UserIdNotFound",
+    "Values": {
+      "en-US": "UserId is not found.",
+      "tr-TR": "Kullanıcı kimliği bulunamadı.",
+      "ar-AE": "لم يتم العثور على معرٝ المستخدم."
+    }
+  },
+  {
+    "Key": "UserInfo",
+    "Values": {
+      "en-US": "User info",
+      "tr-TR": "Kullanıcı bilgisi",
+      "ar-AE": "معلومات المستخدم"
+    }
+  },
+  {
+    "Key": "UserInfoManagement",
+    "Values": {
+      "en-US": "User info management",
+      "tr-TR": "Kullanıcı bilgi yönetimi",
+      "ar-AE": "إدارة معلومات المستخدم"
+    }
+  },
+  {
+    "Key": "UserList",
+    "Values": {
+      "en-US": "User list",
+      "tr-TR": "Kullanıcı Listesi",
+      "ar-AE": "قائمة المستخدم"
+    }
+  },
+  {
+    "Key": "Username",
+    "Values": {
+      "en-US": "Username",
+      "tr-TR": "Kullanıcı adı",
+      "ar-AE": "اسم المستخدم"
+    }
+  },
+  {
+    "Key": "UserNameNotFound",
+    "Values": {
+      "en-US": "User '{0}' does not exist.",
+      "tr-TR": "'{0}' kullanıcısı mevcut değil.",
+      "ar-AE": "المستخدم '{0}' غير موجود."
+    }
+  },
+  {
+    "Key": "UserNameValidationError",
+    "Values": {
+      "en-US": "The {0} must be at least {2} and at max {1} characters long.",
+      "tr-TR": "{0} en az {2} ve en fazla {1} karakter uzunluğunda olmalıdır.",
+      "ar-AE": "يجب ألا يقل عدد أحرٝ {0} عن {2} ولا يزيد عن {1} من الأحرٝ."
+    }
+  },
+  {
+    "Key": "UserNotFound",
+    "Values": {
+      "en-US": "User is not found",
+      "tr-TR": "Kullanıcı bulunamadı",
+      "ar-AE": "لم يتم العثور على المستخدم"
+    }
+  },
+  {
+    "Key": "UserNotInRole",
+    "Values": {
+      "en-US": "User is not in role.",
+      "tr-TR": "Kullanıcı rolde değil.",
+      "ar-AE": "المستخدم ليس ٝي دور."
+    }
+  },
+  {
+    "Key": "UserRoleManagement",
+    "Values": {
+      "en-US": "User role management",
+      "tr-TR": "Kullanıcı rol yönetimi",
+      "ar-AE": "إدارة دور المستخدم"
+    }
+  },
+  {
+    "Key": "Users",
+    "Values": {
+      "en-US": "Users",
+      "tr-TR": "Kullanıcılar",
+      "ar-AE": "المستخدمون"
+    }
+  },
+  {
+    "Key": "UserSurnameValidationError",
+    "Values": {
+      "en-US": "The {0} must be at least {2} and at max {1} characters long.",
+      "tr-TR": "{0} en az {2} ve en fazla {1} karakter uzunluğunda olmalıdır.",
+      "ar-AE": "يجب ألا يقل عدد أحرٝ {0} عن {2} ولا يزيد عن {1} من الأحرٝ."
+    }
+  },
+  {
+    "Key": "View",
+    "Values": {
+      "en-US": "View",
+      "tr-TR": "Görüntüle",
+      "ar-AE": "رأي"
+    }
+  },
+  {
+    "Key": "WelcomeToOneFrameMvcTemplate",
+    "Values": {
+      "en-US": "Welcome to OneFrame Template",
+      "tr-TR": "OneFrame Şablonuna Hoş Geldiniz",
+      "ar-AE": "مرحبًا بك ٝي قالب OneFrame"
+    }
+  },
+  {
+    "Key": "YesDoIt",
+    "Values": {
+      "en-US": "Yes, do it!",
+      "tr-TR": "Evet, Yap!",
+      "ar-AE": "نعم ، اٝعلها!"
+    }
+  },
+  {
+    "Key": "YourRecordHasBeenDeleted",
+    "Values": {
+      "en-US": "Your record has been deleted.",
+      "tr-TR": "Kaydınız silinmiştir.",
+      "ar-AE": "تم حذٝ السجل الخاص بك."
+    }
+  },
+  {
+    "Key": "YourRecordIsSafe",
+    "Values": {
+      "en-US": "Your record is safe :)",
+      "tr-TR": "Kaydınız güvende :)",
+      "ar-AE": "سجلك آمن :)"
+    }
+  },
+  {
+    "Key": "YouWontBeAbleToRevertThis",
+    "Values": {
+      "en-US": "You won't be able to revert this!",
+      "tr-TR": "Bu işlemi geri çeviremezsiniz!",
+      "ar-AE": "لن تتمكن من التراجع عن هذا!"
+    }
+  },
+  {
+    "Key": "NewPasswordCanNotBeSameWithTheCurrentOne",
+    "Values": {
+      "en-US": "New password can not be same with the current one!",
+      "tr-TR": "Yeni şifre, güncel şifre ile aynı olamaz.",
+      "ar-AE": "لا يمكن أن تكون كلمة المرور الجديدة مماثلة لكلمة المرور الحالية!"
+    }
+  },
+  {
+    "Key": "DisplayText",
+    "Values": {
+      "en-US": "Display Text",
+      "tr-TR": "Ekran Metni",
+      "ar-AE": "عرض النص"
+    }
+  },
+  {
+    "Key": "Translations",
+    "Values": {
+      "en-US": "Translations",
+      "tr-TR": "Çeviriler",
+      "ar-AE": "الترجمات"
+    }
+  },
+  {
+    "Key": "Language",
+    "Values": {
+      "en-US": "Language",
+      "tr-TR": "Dil",
+      "ar-AE": "لغة"
+    }
+  },
+  {
+    "Key": "DefaultError",
+    "Values": {
+      "en-US": "An unknown failure has occurred.",
+      "tr-TR": "Bilinmeyen bir hata meydana geldi.",
+      "ar-AE": "حدث ٝشل غير معروٝ."
+    }
+  },
+  {
+    "Key": "ConcurrencyFailure",
+    "Values": {
+      "en-US": "Optimistic concurrency failure, object has been modified.",
+      "tr-TR": "Bir eşzamanlılık hatası meydana geldi lütfen tekrar deneyin.",
+      "ar-AE": "ٝشل التزامن المتٝائل ، تم تعديل الكائن."
+    }
+  },
+  {
+    "Key": "PasswordMismatch",
+    "Values": {
+      "en-US": "Incorrect password.",
+      "tr-TR": "Şifreler eşleşmiyor.",
+      "ar-AE": "كلمة سر خاطئة."
+    }
+  },
+  {
+    "Key": "LoginAlreadyAssociated",
+    "Values": {
+      "en-US": "A user with this login already exists.",
+      "tr-TR": "Bu bilgilere sahip bir kullanıcı sistemde zaten var.",
+      "ar-AE": "يوجد بالٝعل مستخدم مع تسجيل الدخول هذا."
+    }
+  },
+  {
+    "Key": "InvalidUserName",
+    "Values": {
+      "en-US": "User name '{0}' is invalid, can only contain letters or digits.",
+      "tr-TR": "'{0}', bu kullanıcı adı geçersiz; sadece harf ve sayı kullanın.",
+      "ar-AE": "اسم المستخدم '{0}' غير صالح ، يمكن أن يحتوي ٝقط على أحرٝ أو أرقام."
+    }
+  },
+  {
+    "Key": "InvalidEmail",
+    "Values": {
+      "en-US": "Email '{0}' is invalid.",
+      "tr-TR": "E-posta '{0}' geçersiz.",
+      "ar-AE": "البريد الإلكتروني '{0}' غير صالح."
+    }
+  },
+  {
+    "Key": "DuplicateEmail",
+    "Values": {
+      "en-US": "Email '{0}' is already taken.",
+      "tr-TR": "'{0}', bu e-posta adresi zaten kullanımda.",
+      "ar-AE": "البريد الإلكتروني '{0}' مستخدم بالٝعل."
+    }
+  },
+  {
+    "Key": "InvalidRoleName",
+    "Values": {
+      "en-US": "Role name '{0}' is invalid.",
+      "tr-TR": "Rol adı '{0}' geçersiz.",
+      "ar-AE": "اسم الدور '{0}' غير صالح."
+    }
+  },
+  {
+    "Key": "DuplicateRoleName",
+    "Values": {
+      "en-US": "Role name '{0}' is already taken.",
+      "tr-TR": "Rol adı '{0}' zaten alınmış.",
+      "ar-AE": "تم استخدام اسم الدور '{0}' بالٝعل."
+    }
+  },
+  {
+    "Key": "UserAlreadyHasPassword",
+    "Values": {
+      "en-US": "User already has a password set.",
+      "tr-TR": "Kullanıcının zaten bir şifresi var.",
+      "ar-AE": "تم تعيين كلمة مرور للمستخدم بالٝعل."
+    }
+  },
+  {
+    "Key": "UserLockoutNotEnabled",
+    "Values": {
+      "en-US": "Lockout is not enabled for this user.",
+      "tr-TR": "Bu kullanıcı için kilitleme etkinleştirilmedi.",
+      "ar-AE": "لم يتم تمكين القٝل لهذا المستخدم."
+    }
+  },
+  {
+    "Key": "UserAlreadyInRole",
+    "Values": {
+      "en-US": "User already in role '{0}'.",
+      "tr-TR": "Kullanıcı zaten '{0}' rolünde.",
+      "ar-AE": "المستخدم بالٝعل ٝي دور '{0}'."
+    }
+  },
+  {
+    "Key": "UserNotInRole",
+    "Values": {
+      "en-US": "User is not in role '{0}'.",
+      "tr-TR": "Kullanıcı '{0}' rolünde değil.",
+      "ar-AE": "المستخدم ليس ٝي الدور '{0}'."
+    }
+  },
+  {
+    "Key": "PasswordTooShort",
+    "Values": {
+      "en-US": "Passwords must be at least {0} characters.",
+      "tr-TR": "Şifreler en az {0} karakter olmalıdır.",
+      "ar-AE": "يجب ألا تقل كلمات المرور عن {0} حرًٝا."
+    }
+  },
+  {
+    "Key": "PasswordRequiresNonAlphanumeric",
+    "Values": {
+      "en-US": "Passwords must have at least one non alphanumeric character.",
+      "tr-TR": "Parolaların en az bir alfasayısal olmayan karakter içermesi gerekir.",
+      "ar-AE": "يجب أن تحتوي كلمات المرور على حرٝ واحد غير أبجدي رقمي على الأقل."
+    }
+  },
+  {
+    "Key": "PasswordRequiresDigit",
+    "Values": {
+      "en-US": "Passwords must have at least one digit ('0'-'9').",
+      "tr-TR": "",
+      "ar-AE": "يجب أن تحتوي كلمات المرور على رقم واحد على الأقل ('0' - '9')."
+    }
+  },
+  {
+    "Key": "PasswordRequiresLower",
+    "Values": {
+      "en-US": "Passwords must have at least one lowercase ('a'-'z').",
+      "tr-TR": "Parolalarda en az bir küçük harf ('a' - 'z') olmalıdır.",
+      "ar-AE": "يجب أن تحتوي كلمات المرور على حرٝ صغير واحد على الأقل ('a' - 'z')."
+    }
+  },
+  {
+    "Key": "PasswordRequiresUpper",
+    "Values": {
+      "en-US": "Passwords must have at least one uppercase ('A'-'Z').",
+      "tr-TR": "Parolalarda en az bir büyük harf ('A' - 'Z') olmalıdır.",
+      "ar-AE": "يجب أن تحتوي كلمات المرور على حرٝ كبير واحد على الأقل ('A' - 'Z')."
+    }
+  },
+  {
+    "Key": "PasswordExpired",
+    "Values": {
+      "en-US": "Password expired.",
+      "tr-TR": "Şifrenin zamanı doldu.",
+      "ar-AE": "انتهت كلمة المرور."
+    }
+  },
+  {
+    "Key": "AppSettingList",
+    "Values": {
+      "en-US": "Application Settings",
+      "tr-TR": "Uygulama Ayarları",
+      "ar-AE": "إعدادات التطبيق"
+    }
+  },
+  {
+    "Key": "NewAppSetting",
+    "Values": {
+      "en-US": "New Application Setting",
+      "tr-TR": "Yeni Uygulama Ayarı",
+      "ar-AE": "إعداد التطبيق الجديد"
+    }
+  },
+  {
+    "Key": "Key",
+    "Values": {
+      "en-US": "Key",
+      "tr-TR": "Anahtar Kelime",
+      "ar-AE": "مفتاح"
+    }
+  },
+  {
+    "Key": "Value",
+    "Values": {
+      "en-US": "Value",
+      "tr-TR": "Değer",
+      "ar-AE": "القيمة"
+    }
+  },
+  {
+    "Key": "ValueType",
+    "Values": {
+      "en-US": "Value Type",
+      "tr-TR": "Değer Tipi",
+      "ar-AE": "نوع القيمة"
+    }
+  },
+  {
+    "Key": "Category",
+    "Values": {
+      "en-US": "Category",
+      "tr-TR": "Kategori",
+      "ar-AE": "الفئة"
+    }
+  },
+  {
+    "Key": "CategoryName",
+    "Values": {
+      "en-US": "Category Name",
+      "tr-TR": "Kategori Adı",
+      "ar-AE": "اسم التصنيف"
+    }
+  },
+  {
+    "Key": "AppSettingCategoryList",
+    "Values": {
+      "en-US": "Application Setting Categories List",
+      "tr-TR": "Uygulama Ayarı Kategorileri Listesi",
+      "ar-AE": "قائمة فئات إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "NewAppSettingCategory",
+    "Values": {
+      "en-US": "New Application Setting Category",
+      "tr-TR": "Yeni Uygulama Ayarı Kategorisi",
+      "ar-AE": "فئة إعداد التطبيق الجديد"
+    }
+  },
+  {
+    "Key": "UpdateSettingCategory",
+    "Values": {
+      "en-US": "Update Application Setting Category",
+      "tr-TR": "Uygulama Ayarı Kategorisini Güncelle",
+      "ar-AE": "تحديث فئة إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "UpdateApplicationSetting",
+    "Values": {
+      "en-US": "Update Application Setting",
+      "tr-TR": "Uygulama Ayarını Güncelle",
+      "ar-AE": "تحديث إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "CreateApplicationSettingSuccess",
+    "Values": {
+      "en-US": "Create Application Setting Success",
+      "tr-TR": "Uygulama Ayarı Başarıyla Eklendi",
+      "ar-AE": "نجاح إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "UpdateApplicationSettingSuccess",
+    "Values": {
+      "en-US": "Update Application Setting Success",
+      "tr-TR": "Uygulama Ayarı Başarıyla Güncellendi",
+      "ar-AE": "نجاح إعداد التطبيق التحديث"
+    }
+  },
+  {
+    "Key": "DeleteApplicationSettingSuccess",
+    "Values": {
+      "en-US": "Delete Application Setting Success",
+      "tr-TR": "Uygulama Ayarı Başarıyla Silindi",
+      "ar-AE": "حذف إعدادات التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "UpdateApplicationSettingCategorySuccess",
+    "Values": {
+      "en-US": "Update Application Setting Category Success",
+      "tr-TR": "Uygulama Ayar Kategorisi Başarıyla Güncellendi",
+      "ar-AE": "تحديث فئة إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "CreateApplicationSettingCategorySuccess",
+    "Values": {
+      "en-US": "Create Application Setting Category Success",
+      "tr-TR": "Uygulama Ayar Kategorisi Başarıyla Eklendi",
+      "ar-AE": "نجاح إنشاء فئة إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "DeleteApplicationSettingCategorySuccess",
+    "Values": {
+      "en-US": "Delete Application Setting Category Success",
+      "tr-TR": "Uygulama Ayar Kategorisi Başarıyla Silindi",
+      "ar-AE": "حذف فئة إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "Status",
+    "Values": {
+      "en-US": "Status",
+      "tr-TR": "Statü",
+      "ar-AE": "الحالة"
+    }
+  },
+  {
+    "Key": "Static",
+    "Values": {
+      "en-US": "Static",
+      "tr-TR": "Statik",
+      "ar-AE": "ثابتة"
+    }
+  },
+  {
+    "Key": "NotStatic",
+    "Values": {
+      "en-US": "Not Static",
+      "tr-TR": "Statik Değil",
+      "ar-AE": "ليس ثابتا"
+    }
+  },
+  {
+    "Key": "IsStatic",
+    "Values": {
+      "en-US": "Is Static?",
+      "tr-TR": "Statik mi?",
+      "ar-AE": "?ثابت"
+    }
+  },
+  {
+    "Key": "CaptchaValidation",
+    "Values": {
+      "en-US": "Captcha validation failed. Please refresh page and try again",
+      "tr-TR": "Captcha doğrulaması başarısız oldu. Sayfayı yenileyip tekrar deneyiniz.",
+      "ar-AE": "ٝشل التحقق من صحة كلمة التحققيرجى تحديث الصفحة وحاول مرة أخرى"
+    }
+  },
+  {
+    "Key": "ChangeProfilePhoto",
+    "Values": {
+      "en-US": "Change profile photo",
+      "tr-TR": "Profil fotoğrafını değiştir",
+      "ar-AE": "تغيير صورة الملٝ الشخصي"
+    }
+  },
+  {
+    "Key": "ProfilePhoto",
+    "Values": {
+      "en-US": "Profile photo",
+      "tr-TR": "Profil fotoğrafı",
+      "ar-AE": "صورة الملف الشخصي"
+    }
+  },
+  {
+    "Key": "CancelProfilePhoto",
+    "Values": {
+      "en-US": "Cancel profile photo",
+      "tr-TR": "Profil fotoğrafını iptal et",
+      "ar-AE": "إلغاء صورة الملٝ الشخصي"
+    }
+  },
+  {
+    "Key": "FileDoesNotExist",
+    "Values": {
+      "en-US": "File does not exist.",
+      "tr-TR": "Herhangi bir dosya mevcut değil.",
+      "ar-AE": "لا يوجد ملٝ"
+    }
+  },
+  {
+    "Key": "InvalidProfilePhotoSize",
+    "Values": {
+      "en-US": "Please check your profile photo size.",
+      "tr-TR": "Profil resmi boyutunu kontrol ediniz.",
+      "ar-AE": "يرجى التحقق من حجم صورة ملفك الشخصي."
+    }
+  },
+  {
+    "Key": "ProfilePhotoInfoMessage",
+    "Values": {
+      "en-US": "You can upload files with a maximum size of 160 kb!",
+      "tr-TR": "Maksimum 160 kb boyutunda dosya yükleyebilirsiniz!",
+      "ar-AE": "يمكنك تحميل ملفات بحد أقصى 160 كيلو بايت"
+    }
+  },
+  {
+    "Key": "DropFilesHereOrClickToUpload",
+    "Values": {
+      "en-US": "Drop files here or click to upload.",
+      "tr-TR": "Dosyaları buraya bırakın veya yüklemek için tıklayın.",
+      "ar-AE": "قم بإسقاط الملٝات هنا أو انقر للتحميل."
+    }
+  },
+  {
+    "Key": "Close",
+    "Values": {
+      "en-US": "Close",
+      "tr-TR": "Kapat",
+      "ar-AE": "أغلق"
+    }
+  },
+  {
+    "Key": "YourBrowserDoesNotSupportDragDropFileUploads",
+    "Values": {
+      "en-US": "Your browser does not support drag'n'drop file uploads.",
+      "tr-TR": "Tarayıcınız drag'n'drop dosya yüklemelerini desteklemiyor.",
+      "ar-AE": "لا يدعم متصٝحك تحميلات السحب والإٝلات"
+    }
+  },
+  {
+    "Key": "PleaseUseTheFallbackFormBelowToUploadYourFilesLikeInTheOldenDays",
+    "Values": {
+      "en-US": "Please use the fallback form below to upload your files like in the olden days.",
+      "tr-TR": "Dosyalarınızı eski günlerdeki gibi yüklemek için lütfen aşağıdaki geri dönüş formunu kullanın",
+      "ar-AE": "يرجى استخدام النموذج الاحتياطي أدناه لتحميل ملٝاتك كما ٝي الأيام الخوالي"
+    }
+  },
+  {
+    "Key": "FileIsTooBig",
+    "Values": {
+      "en-US": "File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB.",
+      "tr-TR": "Dosya çok büyük ({{filesize}} MiB). Maks dosya boyutu: {{maxFilesize}} MiB.",
+      "ar-AE": "الملٝ كبير جدًا ({{maxFilesize}} ميغا بايت). الحد الأقصى لحجم الملٝ: {{filesize}} ميغا بايت"
+    }
+  },
+  {
+    "Key": "YouCantUploadFilesOfThisType",
+    "Values": {
+      "en-US": "You can't upload files of this type.",
+      "tr-TR": "Bu türdeki dosyaları yükleyemezsiniz.",
+      "ar-AE": "لا يمكنك تحميل ملٝات من هذا النوع"
+    }
+  },
+  {
+    "Key": "ServerrRespondedWithCode",
+    "Values": {
+      "en-US": "Server responded with {{statusCode}} code.",
+      "tr-TR": "Sunucu, {{statusCode}} koduyla yanıt verdi.",
+      "ar-AE": "استجاب الخادم برمز {{statusCode}}"
+    }
+  },
+  {
+    "Key": "CancelUpload",
+    "Values": {
+      "en-US": "Cancel upload",
+      "tr-TR": "Yüklemeyi iptal et",
+      "ar-AE": "إلغاء الرٝع"
+    }
+  },
+  {
+    "Key": "UploadCanceled",
+    "Values": {
+      "en-US": "Upload canceled.",
+      "tr-TR": "Yükleme iptal edildi",
+      "ar-AE": "تم إلغاء التحميل"
+    }
+  },
+  {
+    "Key": "AreYouSureYouWantToCancelThisUpload",
+    "Values": {
+      "en-US": "Are you sure you want to cancel this upload?",
+      "tr-TR": "Bu yüklemeyi iptal etmek istediğinizden emin misiniz?",
+      "ar-AE": "هل أنت متأكد أنك تريد إلغاء هذا التحميل؟"
+    }
+  },
+  {
+    "Key": "RemoveFile",
+    "Values": {
+      "en-US": "Remove file",
+      "tr-TR": "Dosyayı Kaldır",
+      "ar-AE": "إزالة الملٝ"
+    }
+  },
+  {
+    "Key": "YouCanNotUploadAnyMoreFiles",
+    "Values": {
+      "en-US": "You can not upload any more files.",
+      "tr-TR": "Daha fazla dosya yükleyemezsiniz.",
+      "ar-AE": "لا يمكنك تحميل المزيد من الملٝات"
+    }
+  },
+  {
+    "Key": "UnknownResizeMethod",
+    "Values": {
+      "en-US": "Unknown resize method {{resizeMethod}}.",
+      "tr-TR": "Bilinmeyen yeniden boyutlandırma yöntemi {{resizeMethod}}.",
+      "ar-AE": "{{resizeMethod}} طريقة غير معروٝة لتغيير الحجم"
+    }
+  },
+  {
+    "Key": "LoginAuditLogList",
+    "Values": {
+      "en-US": "Login Audit Log List",
+      "tr-TR": "Giriş Denetim Günlüğü Listesi",
+      "ar-AE": "قائمة سجل تدقيق تسجيل الدخول"
+    }
+  },
+  {
+    "Key": "IP",
+    "Values": {
+      "en-US": "IP",
+      "tr-TR": "IP",
+      "ar-AE": "حبل"
+    }
+  },
+  {
+    "Key": "Hostname",
+    "Values": {
+      "en-US": "Hostname",
+      "tr-TR": "Hostname",
+      "ar-AE": "اسم المضيف"
+    }
+  },
+  {
+    "Key": "MacAddress",
+    "Values": {
+      "en-US": "MacAddress",
+      "tr-TR": "MacAddress",
+      "ar-AE": "عنوان ماك"
+    }
+  },
+  {
+    "Key": "BrowserDetail",
+    "Values": {
+      "en-US": "Browser Detail",
+      "tr-TR": "Tarayıcı Detayı",
+      "ar-AE": "تفاصيل المتصفح"
+    }
+  },
+  {
+    "Key": "BrowserGuid",
+    "Values": {
+      "en-US": "Browser Guid",
+      "tr-TR": "Tarayıcı Guid",
+      "ar-AE": "دليل المتصفح"
+    }
+  },
+  {
+    "Key": "RequestHeaderInfo",
+    "Values": {
+      "en-US": "Request Header Info",
+      "tr-TR": "İstek Başlık Bilgisi",
+      "ar-AE": "طلب معلومات رأس"
+    }
+  },
+  {
+    "Key": "Message",
+    "Values": {
+      "en-US": "Message",
+      "tr-TR": "Mesaj",
+      "ar-AE": "رسالة"
+    }
+  },
+  {
+    "Key": "Success",
+    "Values": {
+      "en-US": "Status",
+      "tr-TR": "Durum",
+      "ar-AE": "حالة"
+    }
+  },
+  {
+    "Key": "ApplicationUserName",
+    "Values": {
+      "en-US": "Application User Name",
+      "tr-TR": "Uygulama Kullanıcısı Adı",
+      "ar-AE": "اسم مستخدم التطبيق"
+    }
+  },
+  {
+    "Key": "RequestUserName",
+    "Values": {
+      "en-US": "Request User Name",
+      "tr-TR": "İstek Kullanıcısı Adı",
+      "ar-AE": "طلب اسم المستخدم"
+    }
+  },
+  {
+    "Key": "OSName",
+    "Values": {
+      "en-US": "OS Name",
+      "tr-TR": "İşletim Sistemi Adı",
+      "ar-AE": "اسم نظام التشغيل"
+    }
+  },
+  {
+    "Key": "CreationDate",
+    "Values": {
+      "en-US": "Creation Date",
+      "tr-TR": "İşlem Tarihi",
+      "ar-AE": "تاريخ الصفقة"
+    }
+  },
+  {
+    "Key": "LoginAuditLogFilterButton",
+    "Values": {
+      "en-US": "Filter",
+      "tr-TR": "Filtrele",
+      "ar-AE": "منقي"
+    }
+  },
+  {
+    "Key": "LoginAuditLogExcelButton",
+    "Values": {
+      "en-US": "Excel export",
+      "tr-TR": "Excel indir",
+      "ar-AE": "تصدير Excel"
+    }
+  },
+  {
+    "Key": "StartDate",
+    "Values": {
+      "en-US": "Start Date",
+      "tr-TR": "Başlangıç Tarihi",
+      "ar-AE": "تاريخ البدء"
+    }
+  },
+  {
+    "Key": "FinishDate",
+    "Values": {
+      "en-US": "Finish Date",
+      "tr-TR": "Bitiş Tarihi",
+      "ar-AE": "تاريخ الانتهاء"
+    }
+  },
+  {
+    "Key": "DateFormat",
+    "Values": {
+      "en-US": "mm/dd/yyyy",
+      "tr-TR": "dd/mm/yyyy",
+      "ar-AE": "dd/mm/yyyy"
+    }
+  },
+  {
+    "Key": "DateLanguage",
+    "Values": {
+      "en-US": "en-US",
+      "tr-TR": "tr-TR",
+      "ar-AE": "ar-AE"
+    }
+  },
+  {
+    "Key": "LoginAuditLogSuccess",
+    "Values": {
+      "en-US": "Login succesfully.",
+      "tr-TR": "İşlem başarılı.",
+      "ar-AE": "عملية ناجحة"
+    }
+  },
+  {
+    "Key": "LoginAuditLogNotSuccess",
+    "Values": {
+      "en-US": "Login unsuccesfully.",
+      "tr-TR": "İşlem başarısız.",
+      "ar-AE": "فشلت العملية"
+    }
+  },
+  {
+    "Key": "NothingSelected",
+    "Values": {
+      "en-US": "Nothing selected",
+      "tr-TR": "Seçiniz",
+      "ar-AE": "لا شيء محدد"
+    }
+  },
+  {
+    "Key": "NoResutMatched",
+    "Values": {
+      "en-US": "No results matched {0}",
+      "tr-TR": "{0} ile eşleşen kayıt bulunumadı ",
+      "ar-AE": "{لا توجد نتائج مطابقة {0"
+    }
+  },
+  {
+    "Key": "ItemSelected",
+    "Values": {
+      "en-US": "{0} item selected",
+      "tr-TR": "{0} kayıt seçildi",
+      "ar-AE": "تم تحديد {0} من السجلات"
+    }
+  },
+  {
+    "Key": "ItemsSelected",
+    "Values": {
+      "en-US": "{0} items selected",
+      "tr-TR": "{0} kayıt seçildi",
+      "ar-AE": "تم تحديد {0} من السجلات"
+    }
+  },
+  {
+    "Key": "EmailTemplateManagement",
+    "Values": {
+      "en-US": "Email template management",
+      "tr-TR": "E-posta şablon yönetimi",
+      "ar-AE": "إدارة معلومات الدور"
+    }
+  },
+  {
+    "Key": "EmailTemplate",
+    "Values": {
+      "en-US": "Email Template",
+      "tr-TR": "E-posta Şablonu",
+      "ar-AE": "نموذج البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "EmailTemplateList",
+    "Values": {
+      "en-US": "Email Template List",
+      "tr-TR": "E-posta Şablon Listesi",
+      "ar-AE": "قائمة قوالب البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "UpdateEmailTemplate",
+    "Values": {
+      "en-US": "Update Email Template",
+      "tr-TR": "E-posta Şablonu Güncelle",
+      "ar-AE": "تحديث قالب البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "UpdateEmailTemplateSuccess",
+    "Values": {
+      "en-US": "Update Email Template Success",
+      "tr-TR": "E-posta Şablonu Başarıyla Güncellendi",
+      "ar-AE": "تم تحديث نموذج البريد الإلكتروني بنجاح"
+    }
+  },
+  {
+    "Key": "DeleteEmailTemplateSuccess",
+    "Values": {
+      "en-US": "Delete Email Template Success",
+      "tr-TR": "E-posta Şablonu Başarıyla Silindi",
+      "ar-AE": "تم حذف نموذج البريد الإلكتروني بنجاح"
+    }
+  },
+  {
+    "Key": "EmailTemplateType",
+    "Values": {
+      "en-US": "Type",
+      "tr-TR": "Tipi",
+      "ar-AE": "يكتب"
+    }
+  },
+  {
+    "Key": "EmailTemplateName",
+    "Values": {
+      "en-US": "Template Name",
+      "tr-TR": "Şablon Adı",
+      "ar-AE": "يكتب"
+    }
+  },
+  {
+    "Key": "Type",
+    "Values": {
+      "en-US": "Type",
+      "tr-TR": "Tipi",
+      "ar-AE": "يكتب"
+    }
+  },
+  {
+    "Key": "Subject",
+    "Values": {
+      "en-US": "Subject",
+      "tr-TR": "Konu",
+      "ar-AE": "عنوان"
+    }
+  },
+  {
+    "Key": "EmailContent",
+    "Values": {
+      "en-US": "Content",
+      "tr-TR": "Şablon",
+      "ar-AE": "الحالة"
+    }
+  },
+  {
+    "Key": "DisplayName",
+    "Values": {
+      "en-US": "Display Text",
+      "tr-TR": "Ekran Metni",
+      "ar-AE": "عرض النص"
+    }
+  },
+  {
+    "Key": "InsertedDate",
+    "Values": {
+      "en-US": "Inserted Date",
+      "tr-TR": "Oluşturulma Tarihi",
+      "ar-AE": "تاريخ الإنشاء"
+    }
+  },
+  {
+    "Key": "InsertedUser",
+    "Values": {
+      "en-US": "Inserted User",
+      "tr-TR": "Ekleyen Kullanıcı",
+      "ar-AE": "تاريخ الإنشاء"
+    }
+  },
+  {
+    "Key": "UpdatedDate",
+    "Values": {
+      "en-US": "Updated Date",
+      "tr-TR": "Güncellenme Tarihi",
+      "ar-AE": "تاريخ التحديث"
+    }
+  },
+  {
+    "Key": "UpdatedUser",
+    "Values": {
+      "en-US": "Updated User",
+      "tr-TR": "Güncelleyen Kullanıcı",
+      "ar-AE": "التحديث الاخير"
+    }
+  },
+  {
+    "Key": "SupportedLanguages",
+    "Values": {
+      "en-US": "Supported Languages",
+      "tr-TR": "Desteklenen Diller",
+      "ar-AE": "التحديث الاخير"
+    }
+  },
+  {
+    "Key": "SendEmail",
+    "Values": {
+      "en-US": "Send try e-mail",
+      "tr-TR": "Deneme e-postası gönder",
+      "ar-AE": "التحديث الاخير"
+    }
+  },
+  {
+    "Key": "MailContentInformation",
+    "Values": {
+      "en-US": "Send Other Mail Addresses",
+      "tr-TR": "Ek Olarak Gönderim Yapılacak Mail Adresleri",
+      "ar-AE": "التحديث الاخير"
+    }
+  },
+  {
+    "Key": "AboutUs",
+    "Values": {
+      "en-US": "About us",
+      "tr-TR": "Hakkımızda",
+      "ar-AE": "معلومات عنا"
+    }
+  },
+  {
+    "Key": "Contact",
+    "Values": {
+      "en-US": "Contact",
+      "tr-TR": "İletişim",
+      "ar-AE": "اتصل"
+    }
+  },
+  {
+    "Key": "Warning",
+    "Values": {
+      "en-US": "Warning",
+      "tr-TR": "Uyarı",
+      "ar-AE": "تحذير"
+    }
+  },
+  {
+    "Key": "AutoLogoutWarningText",
+    "Values": {
+      "en-US": "Your session is about to expire. Please 'Stay Logged In' button to continue.",
+      "tr-TR": "Oturumunuz sonlanacak. Devam etmek için 'Oturumu Sürdür' butonuna basınız",
+      "ar-AE": "ستنتهي جلستك. انقر فوق زر استئناف الجلسة للمتابعة."
+    }
+  },
+  {
+    "Key": "AutoLogoutKeepLoggedIn",
+    "Values": {
+      "en-US": "Stay Logged In",
+      "tr-TR": "Oturumu Sürdür",
+      "ar-AE": "استئناف الجلسة"
+    }
+  },
+  {
+    "Key": "AutoLogoutDocumentTitle",
+    "Values": {
+      "en-US": "Warning, Session Will Expire",
+      "tr-TR": "Dikkat, Oturumunuz Sonlanacak",
+      "ar-AE": "انتباه ، ستنتهي جلستك"
+    }
+  },
+  {
+    "Key": "2FA",
+    "Values": {
+      "en-US": "Two Step Verification",
+      "tr-TR": "İki Adımlı Doğrulama",
+      "ar-AE": "التحقق بخطوتين"
+    }
+  },
+  {
+    "Key": "AuthenticatorInfoMessage",
+    "Values": {
+      "en-US": "Read the barcode below with the Google or Microsoft authenticator application on your phone",
+      "tr-TR": "Aşağıdaki barkodu telefonunuzdaki Google ya da Microsoft authenticator uygulaması ile okutunuz",
+      "ar-AE": "اقرأ الرمز الشريطي أدناه باستخدام تطبيق Google أو Microsoft Authentator على هاتفك."
+    }
+  },
+  {
+    "Key": "EnterYourVerificationCode",
+    "Values": {
+      "en-US": "Type your 6 digit security code",
+      "tr-TR": "6 haneli güvenlik kodunuzu yazınız",
+      "ar-AE": "اكتب رمز الحماية المكون من 6 أرقام"
+    }
+  },
+  {
+    "Key": "VerificationCodeSent",
+    "Values": {
+      "en-US": "Enter the verification code we sent to",
+      "tr-TR": "Gönderdiğimiz doğrulama kodunu giriniz",
+      "ar-AE": "أدخل رمز التحقق الذي أرسلناه إلى"
+    }
+  },
+  {
+    "Key": "VerificationType",
+    "Values": {
+      "en-US": "Verification Type",
+      "tr-TR": "Doğrulama Şekli",
+      "ar-AE": "نوع التحقق"
+    }
+  },
+  {
+    "Key": "ValidationCode",
+    "Values": {
+      "en-US": "Validation Code",
+      "tr-TR": "Doğrulama Kodu",
+      "ar-AE": "شيفرة التأكيد"
+    }
+  },
+  {
+    "Key": "RemainTime",
+    "Values": {
+      "en-US": "Remain Time",
+      "tr-TR": "Kalan Süre",
+      "ar-AE": "الوقت المتبقي"
+    }
+  },
+  {
+    "Key": "Second",
+    "Values": {
+      "en-US": "sec",
+      "tr-TR": "sn",
+      "ar-AE": "ثانية"
+    }
+  },
+  {
+    "Key": "Validate",
+    "Values": {
+      "en-US": "Validate",
+      "tr-TR": "Doğrula",
+      "ar-AE": "تحقق"
+    }
+  },
+  {
+    "Key": "Resend",
+    "Values": {
+      "en-US": "Resend",
+      "tr-TR": "Tekrar Gönder",
+      "ar-AE": "أعد الإرسال"
+    }
+  },
+  {
+    "Key": "ValidationCodeRequiredMessage",
+    "Values": {
+      "en-US": "Validation code is required",
+      "tr-TR": "Doğrulama kodu zorunlu",
+      "ar-AE": "رمز التحقق مطلوب"
+    }
+  },
+  {
+    "Key": "ValidationSuccess",
+    "Values": {
+      "en-US": "Validation Success",
+      "tr-TR": "Doğrulama Başarılı",
+      "ar-AE": "تم التحقق بنجاح"
+    }
+  },
+  {
+    "Key": "ValidationError",
+    "Values": {
+      "en-US": "Validation Error",
+      "tr-TR": "Doğrulama Hatalı",
+      "ar-AE": "المصادقة غير صحيحة"
+    }
+  },
+  {
+    "Key": "Redirecting",
+    "Values": {
+      "en-US": "Redirecting...",
+      "tr-TR": "Yönlendiriliyorsunuz...",
+      "ar-AE": "إعادة توجيه..."
+    }
+  },
+  {
+    "Key": "PdfExport",
+    "Values": {
+      "en-US": "PDF export",
+      "tr-TR": "PDF indir",
+      "ar-AE": "تصديربي دي إف"
+    }
+  },
+  {
+    "Key": "DownloadStarted",
+    "Values": {
+      "en-US": "Download started",
+      "tr-TR": "İndirme başlatıldı",
+      "ar-AE": "بدأ التنزيل"
+    }
+  },
+  {
+    "Key": "EmailConfirmationFailed",
+    "Values": {
+      "en-US": "Email confirmation failed",
+      "tr-TR": "E-Posta doğrulama sırasında hata meydana geldi",
+      "ar-AE": "فشل تأكيد البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "EmailConfirmationSucceeded",
+    "Values": {
+      "en-US": "Email confirmation succeeded",
+      "tr-TR": "E-Posta başarıyla doğrulandı",
+      "ar-AE": "نجح تأكيد البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "EmailAlreadyConfirmed",
+    "Values": {
+      "en-US": "Email already confirmed",
+      "tr-TR": "E-Posta zaten doğrulanmış",
+      "ar-AE": "تم تأكيد البريد الإلكتروني بالفعل"
+    }
+  },
+  {
+    "Key": "EmailConfirmed",
+    "Values": {
+      "en-US": "Email Confirmed",
+      "tr-TR": "E-Posta Doğrulandı",
+      "ar-AE": "تم تأكيد البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "ConfirmPhoneNumber",
+    "Values": {
+      "en-US": "Confirm phone number",
+      "tr-TR": "Telefon numarası doğrula",
+      "ar-AE": "قم بتأكيد رقم الهاتف"
+    }
+  },
+  {
+    "Key": "PhoneNumberConfirmationError",
+    "Values": {
+      "en-US": "A confirmation error occured",
+      "tr-TR": "Telefon numarası doğrulama hatası",
+      "ar-AE": "حدث خطأ في التأكيد"
+    }
+  },
+  {
+    "Key": "PhoneNumberConfirmation",
+    "Values": {
+      "en-US": "Phone number confirmation",
+      "tr-TR": "Telefon numarası doğrulama",
+      "ar-AE": "تأكيد رقم الهاتف"
+    }
+  },
+  {
+    "Key": "PhoneNumberConfirmation",
+    "Values": {
+      "en-US": "Phone number confirmation",
+      "tr-TR": "Telefon numarası doğrulama",
+      "ar-AE": "تأكيد رقم الهاتف"
+    }
+  },
+  {
+    "Key": "ConfirmationCodeExpired",
+    "Values": {
+      "en-US": "Confirmation code expired!..",
+      "tr-TR": "Doğrulama kodunun süresi doldu!..",
+      "ar-AE": "انتهت صلاحية رمز التأكيد"
+    }
+  },
+  {
+    "Key": "TakeNewCode",
+    "Values": {
+      "en-US": "Take a new code",
+      "tr-TR": "Yeni kod al",
+      "ar-AE": "خذ رمزًا جديدًا"
+    }
+  },
+  {
+    "Key": "ConfirmationCode",
+    "Values": {
+      "en-US": "Confirmation Code",
+      "tr-TR": "Doğrulama Kodu",
+      "ar-AE": "تأكيد الكود"
+    }
+  },
+  {
+    "Key": "EmailNotificationList",
+    "Values": {
+      "en-US": "Email Notification List",
+      "tr-TR": "E-posta Bildirim Listesi",
+      "ar-AE": "قائمة إخطارات البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "EmailNotificationSendSuccess",
+    "Values": {
+      "en-US": "Email notification send succesfully.",
+      "tr-TR": "Gönderim başarılı.",
+      "ar-AE": "تم الإرسال بنجاح"
+    }
+  },
+  {
+    "Key": "EmailNotificationSendNotSuccess",
+    "Values": {
+      "en-US": "Email notification send unsuccesfully.",
+      "tr-TR": "Gönderim başarısız.",
+      "ar-AE": "فشل إرسال"
+    }
+  },
+  {
+    "Key": "Subject",
+    "Values": {
+      "en-US": "Subject",
+      "tr-TR": "Konu",
+      "ar-AE": "سمة"
+    }
+  },
+  {
+    "Key": "From",
+    "Values": {
+      "en-US": "From",
+      "tr-TR": "Kimden",
+      "ar-AE": "من من"
+    }
+  },
+  {
+    "Key": "To",
+    "Values": {
+      "en-US": "To",
+      "tr-TR": "Kime",
+      "ar-AE": "لمن"
+    }
+  },
+  {
+    "Key": "Cc",
+    "Values": {
+      "en-US": "Cc",
+      "tr-TR": "Bilgi",
+      "ar-AE": "بيلجي"
+    }
+  },
+  {
+    "Key": "Bcc",
+    "Values": {
+      "en-US": "Bcc",
+      "tr-TR": "Gizli",
+      "ar-AE": "جيزلي"
+    }
+  },
+  {
+    "Key": "CreatedDate",
+    "Values": {
+      "en-US": "Creation Date",
+      "tr-TR": "Oluşturulma Tarihi",
+      "ar-AE": "تاريخ الإنشاء"
+    }
+  },
+  {
+    "Key": "IsSent",
+    "Values": {
+      "en-US": "Sending Status",
+      "tr-TR": "Gönderim Durumu",
+      "ar-AE": "حالة الشحن"
+    }
+  },
+  {
+    "Key": "SentDate",
+    "Values": {
+      "en-US": "Sent Date",
+      "tr-TR": "Gönderim Tarihi",
+      "ar-AE": "تاريخ إرسال"
+    }
+  },
+  {
+    "Key": "Body",
+    "Values": {
+      "en-US": "Body",
+      "tr-TR": "İçerik",
+      "ar-AE": "محتويات"
+    }
+  },
+  {
+    "Key": "Send",
+    "Values": {
+      "en-US": "Send",
+      "tr-TR": "Gönder",
+      "ar-AE": "إرسال"
+    }
+  },
+  {
+    "Key": "ConfirmCodeShouldBeFilled",
+    "Values": {
+      "en-US": "Confirmation code should be filled!",
+      "tr-TR": "Doğrulama kodu girilmelidir!",
+      "ar-AE": "يجب ملء رمز التأكيد"
+    }
+  },
+  {
+    "Key": "PhoneNumberConfirmationCodeError",
+    "Values": {
+      "en-US": "Confirmation code format is not valid!",
+      "tr-TR": "Doğrulama kodu formatı yanlış!",
+      "ar-AE": "تنسيق رمز التأكيد غير صالح"
+    }
+  },
+  {
+    "Key": "SendTryEmailTitle",
+    "Values": {
+      "en-US": "Trial Email Sending",
+      "tr-TR": "Deneme E-posta Gönderimi",
+      "ar-AE": "إرسال البريد الإلكتروني التجريبي"
+    }
+  },
+  {
+    "Key": "EmailPlaceHolder",
+    "Values": {
+      "en-US": "Enter the e-mail address.",
+      "tr-TR": "E-posta adresi giriniz.",
+      "ar-AE": "أدخل عنوان البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "Ok",
+    "Values": {
+      "en-US": "Ok",
+      "tr-TR": "Tamam",
+      "ar-AE": "موافق"
+    }
+  },
+  {
+    "Key": "MultipleEmailCheck",
+    "Values": {
+      "en-US": "Email is incorrect! Check the correctness of the e-mail format. For multiple emails, use commas without spaces.",
+      "tr-TR": "E-posta hatalı! E-posta formatının doğruluğunu kontrol ediniz. Birden fazla e-posta için aralarında boşluk bırakmadan virgül kullanınız.",
+      "ar-AE": "البريد الإلكتروني غير صحيح! تحقق من صحة تنسيق البريد الإلكتروني. بالنسبة إلى رسائل البريد الإلكتروني المتعددة ، استخدم الفواصل بدون مسافات"
+    }
+  },
+  {
+    "Key": "EmailValidationMessage",
+    "Values": {
+      "en-US": "Invalid email",
+      "tr-TR": "Geçersiz e-posta",
+      "ar-AE": "بريد إلكتروني خاطئ"
+    }
+  },
+  {
+    "Key": "DarkMode",
+    "Values": {
+      "en-US": "Dark mode",
+      "tr-TR": "Karanlık mod",
+      "ar-AE": "الوضع المظلم"
+    }
+  },
+  {
+    "Key": "MyProfile",
+    "Values": {
+      "en-US": "My profile",
+      "tr-TR": "Profilim",
+      "ar-AE": "ملفي"
+    }
+  },
+  {
+    "Key": "DocsAndComponents",
+    "Values": {
+      "en-US": "Docs & Components",
+      "tr-TR": "Dokümanlar & Bileşenler",
+      "ar-AE": "المستندات & أمبير ؛ عناصر"
+    }
+  },
+  {
+    "Key": "AlreadyHaveAnAccount",
+    "Values": {
+      "en-US": "Already have an account?",
+      "tr-TR": "Zaten hesabınız var mı?",
+      "ar-AE": "هل لديك حساب؟"
+    }
+  },
+  {
+    "Key": "SignInHere",
+    "Values": {
+      "en-US": "Sign in here",
+      "tr-TR": "Oturum açın",
+      "ar-AE": "تسجيل الدخول هنا"
+    }
+  },
+  {
+    "Key": "CreateAnAccount",
+    "Values": {
+      "en-US": "Create an account",
+      "tr-TR": "Bir hesap oluşturun",
+      "ar-AE": "انشئ حساب"
+    }
+  },
+  {
+    "Key": "PleaseEnterValidPassword",
+    "Values": {
+      "en-US": "Please enter valid password",
+      "tr-TR": "Lütfen geçerli bir şifre girin",
+      "ar-AE": "الرجاء إدخال كلمة مرور صالحة"
+    }
+  },
+  {
+    "Key": "ApplicationDevelopmentPlatform",
+    "Values": {
+      "en-US": "Application Development Platform",
+      "tr-TR": "Uygulama Geliştirme Platformu",
+      "ar-AE": "منصة تطوير التطبيقات"
+    }
+  },
+  {
+    "Key": "TheGhostBustersTeam",
+    "Values": {
+      "en-US": "GhostBusters",
+      "tr-TR": "GhostBusters",
+      "ar-AE": "GhostBusters"
+    }
+  },
+  {
+    "Key": "EditUserForm",
+    "Values": {
+      "en-US": "Edit user form",
+      "tr-TR": "Kullanıcı düzenleme formu",
+      "ar-AE": "تحرير نموذج المستخدم"
+    }
+  },
+  {
+    "Key": "PhoneNumberValidationMessage",
+    "Values": {
+      "en-US": "Invalid phone number",
+      "tr-TR": "Geçersiz telefon numarası",
+      "ar-AE": "رقم الهاتف غير صحيح"
+    }
+  },
+  {
+    "Key": "RoleSelection",
+    "Values": {
+      "en-US": "Role Selection",
+      "tr-TR": "Rol Seçimi",
+      "ar-AE": "اختيار الدور"
+    }
+  },
+  {
+    "Key": "ChooseRole",
+    "Values": {
+      "en-US": "Choose a role",
+      "tr-TR": "Rol seçiniz",
+      "ar-AE": "اختر دورًا"
+    }
+  },
+  {
+    "Key": "RoleSelectionDescription",
+    "Values": {
+      "en-US": "Select the role you want to assign authority to",
+      "tr-TR": "Yetki ataması yapmak istediğiniz rolü seçiniz",
+      "ar-AE": "حدد الدور الذي تريد تعيين سلطة له"
+    }
+  },
+  {
+    "Key": "AssigningAuthority",
+    "Values": {
+      "en-US": "Assigning Authority",
+      "tr-TR": "Yetki Atama",
+      "ar-AE": "السلطة المعينة"
+    }
+  },
+  {
+    "Key": "AssigningAuthorityDescription",
+    "Values": {
+      "en-US": "Select the privileges you want to assign to the selected role",
+      "tr-TR": "Seçili role atamak istediğiniz yetkileri seçiniz",
+      "ar-AE": "حدد الامتيازات التي تريد تعيينها للدور المحدد"
+    }
+  },
+  {
+    "Key": "Continue",
+    "Values": {
+      "en-US": "Continue",
+      "tr-TR": "Devam",
+      "ar-AE": "يكمل"
+    }
+  },
+  {
+    "Key": "SelectedRole",
+    "Values": {
+      "en-US": "Selected Role",
+      "tr-TR": "Seçili Rol",
+      "ar-AE": "الدور المحدد"
+    }
+  },
+  {
+    "Key": "PhoneNumberActivate",
+    "Values": {
+      "en-US": "Phone number must be active",
+      "tr-TR": "Telefon numarası doğrulanmalı",
+      "ar-AE": "يجب أن يكون رقم الهاتف نشطًا"
+    }
+  },
+  {
+    "Key": "MinLengthValidationMessage",
+    "Values": {
+      "en-US": "The field must be more characters long min {0}",
+      "tr-TR": "Bu alan {0} karakterden uzun olmalıdır",
+      "ar-AE": "يجب أن يزيد الحقل عن {0} من الأحرف"
+    }
+  },
+  {
+    "Key": "WizardValidationMultipleError",
+    "Values": {
+      "en-US": "Sorry, looks like there are some errors detected, please try again",
+      "tr-TR": "Maalesef bazı hatalar algılandı, lütfen tekrar deneyin",
+      "ar-AE": "معذرة ، يبدو أنه تم اكتشاف بعض الأخطاء ، يرجى المحاولة مرة أخرى"
+    }
+  },
+  {
+    "Key": "RoleRequired",
+    "Values": {
+      "en-US": "The role is required",
+      "tr-TR": "Rol zorunludur.",
+      "ar-AE": "الدور مطلوب."
+    }
+  },
+  {
+    "Key": "UserSelection",
+    "Values": {
+      "en-US": "User Selection",
+      "tr-TR": "Kullanıcı Seçimi",
+      "ar-AE": "اختيار المستخدم"
+    }
+  },
+  {
+    "Key": "UserRequired",
+    "Values": {
+      "en-US": "The user is required",
+      "tr-TR": "Kullanıcı zorunludur",
+      "ar-AE": "المستخدم مطلوب"
+    }
+  },
+  {
+    "Key": "ChooseUser",
+    "Values": {
+      "en-US": "Choose a user",
+      "tr-TR": "Kullanıcı seçiniz",
+      "ar-AE": "اختر مستخدمًا"
+    }
+  },
+  {
+    "Key": "UserSelectionDescription",
+    "Values": {
+      "en-US": "Select the user you want to assign authority to",
+      "tr-TR": "Yetki ataması yapmak istediğiniz kullanıcıyı seçiniz",
+      "ar-AE": "حدد المستخدم الذي تريد تعيين سلطة له"
+    }
+  },
+  {
+    "Key": "UserAssigningAuthorityDescription",
+    "Values": {
+      "en-US": "Select the privileges you want to assign to the selected user",
+      "tr-TR": "Seçili kullanıcıya atamak istediğiniz yetkileri seçiniz",
+      "ar-AE": "حدد الامتيازات التي تريد تعيينها للمستخدم المحدد"
+    }
+  },
+  {
+    "Key": "SelectedUser",
+    "Values": {
+      "en-US": "Selected User",
+      "tr-TR": "Seçili Kullanıcı",
+      "ar-AE": "المستخدم المحدد"
+    }
+  },
+  {
+    "Key": "RoleList",
+    "Values": {
+      "en-US": "Role List",
+      "tr-TR": "Rol Listesi",
+      "ar-AE": "قائمة الأدوار"
+    }
+  },
+  {
+    "Key": "User_Role_Management",
+    "Values": {
+      "en-US": "User role management",
+      "tr-TR": "Kullanıcı rol yönetimi",
+      "ar-AE": "إدارة دور المستخدم"
+    }
+  },
+  {
+    "Key": "Export",
+    "Values": {
+      "en-US": "Export",
+      "tr-TR": "Dışa aktar",
+      "ar-AE": "إكسل تصدير"
+    }
+  },
+  {
+    "Key": "ExportOptions",
+    "Values": {
+      "en-US": "Export Options",
+      "tr-TR": "Seçenekler",
+      "ar-AE": "خيارات التصدير"
+    }
+  },
+  {
+    "Key": "Apply",
+    "Values": {
+      "en-US": "Apply",
+      "tr-TR": "Uygula",
+      "ar-AE": "تطبيق"
+    }
+  },
+  {
+    "Key": "FilterOptions",
+    "Values": {
+      "en-US": "Filter Options",
+      "tr-TR": "Filtre Seçenekleri",
+      "ar-AE": "خيارات التصفية"
+    }
+  },
+  {
+    "Key": "Choose",
+    "Values": {
+      "en-US": "Choose",
+      "tr-TR": "Seçiniz",
+      "ar-AE": "اختر مستخدمًا"
+    }
+  },
+  {
+    "Key": "SetupNewPassword",
+    "Values": {
+      "en-US": "Setup New Password",
+      "tr-TR": "Yeni Şifre Belirle",
+      "ar-AE": "إعداد كلمة مرور جديدة"
+    }
+  },
+  {
+    "Key": "AlreadyHaveResetYourPassword",
+    "Values": {
+      "en-US": "Already have reset your password",
+      "tr-TR": "Parolanızı daha önce sıfırladız mı",
+      "ar-AE": "بالفعل قمت بإعادة تعيين كلمة المرور الخاصة بك"
+    }
+  },
+  {
+    "Key": "SignInHere",
+    "Values": {
+      "en-US": "Sign in here",
+      "tr-TR": "Oturum açın",
+      "ar-AE": "تسجيل الدخول هنا"
+    }
+  },
+  {
+    "Key": "PasswordChanged",
+    "Values": {
+      "en-US": "Password Changed",
+      "tr-TR": "Şifre Değişti",
+      "ar-AE": "تم تغيير كلمة السر"
+    }
+  },
+  {
+    "Key": "PasswordChangedSuccessfully",
+    "Values": {
+      "en-US": "Your password is changed successfully",
+      "tr-TR": "Şifreniz başarıyla değiştirildi",
+      "ar-AE": "تم تغيير كلمة المرور الخاصة بك بنجاح"
+    }
+  },
+  {
+    "Key": "YouCanLogin",
+    "Values": {
+      "en-US": "You can login right now",
+      "tr-TR": "Hemen giriş yapabilirsiniz",
+      "ar-AE": "يمكنك تسجيل الدخول الآن"
+    }
+  },
+  {
+    "Key": "EmailSent",
+    "Values": {
+      "en-US": "E-mail Sent",
+      "tr-TR": "E-posta Gönderildi",
+      "ar-AE": "أرسل البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "EmailSentSuccessfully",
+    "Values": {
+      "en-US": "E-mail containing password change steps has been sent successfully",
+      "tr-TR": "Şifre değiştirme adımlarını içeren e-posta başarıyla gönderildi",
+      "ar-AE": "تم إرسال البريد الإلكتروني الذي يحتوي على خطوات تغيير كلمة المرور بنجاح"
+    }
+  },
+  {
+    "Key": "CheckYourEmailBox",
+    "Values": {
+      "en-US": "Please check your e-mail box and follow the steps",
+      "tr-TR": "Lütfen e-posta kutunuzu kontrol edin ve adımları izleyin",
+      "ar-AE": "يرجى التحقق من صندوق البريد الإلكتروني الخاص بك واتباع الخطوات"
+    }
+  },
+  {
+    "Key": "DidntReceiveEmail",
+    "Values": {
+      "en-US": "Did’t receive an email",
+      "tr-TR": "E-posta ulaşmadı mı",
+      "ar-AE": "لم أتلق بريدًا إلكترونيًا"
+    }
+  },
+  {
+    "Key": "TryAgain",
+    "Values": {
+      "en-US": "Try Again",
+      "tr-TR": "Yeniden Deneyin",
+      "ar-AE": "حاول مجددا"
+    }
+  },
+  {
+    "Key": "PasswordEmailSent",
+    "Values": {
+      "en-US": "Password Email Sent",
+      "tr-TR": "Şifre E-posta Gönderildi",
+      "ar-AE": "تم إرسال كلمة المرور"
+    }
+  },
+  {
+    "Key": "Or",
+    "Values": {
+      "en-US": "or",
+      "tr-TR": "ya da",
+      "ar-AE": "أو"
+    }
+  },
+  {
+    "Key": "RegisterEmailSentSuccessfully",
+    "Values": {
+      "en-US": "Your registration has been successfully completed. We have sent you an email to activate your account",
+      "tr-TR": "Kaydınız başarıyla tamamlandı. Hesabınızı aktif etmek için size bir e-posta gönderdik",
+      "ar-AE": "تم تسجيلك بنجاح. لقد أرسلنا لك بريدًا إلكترونيًا لتفعيل حسابك"
+    }
+  },
+  {
+    "Key": "SendEmailSuccess",
+    "Values": {
+      "en-US": "Email is sent successfully",
+      "tr-TR": "E-posta başarıyla gönderildi",
+      "ar-AE": "تم إرسال البريد الإلكتروني بنجاح"
+    }
+  },
+  {
+    "Key": "ReturnHome",
+    "Values": {
+      "en-US": "Return Home Page",
+      "tr-TR": "Ana Sayfaya Dön",
+      "ar-AE": "العودة الصفحة الرئيسية"
+    }
+  },
+  {
+    "Key": "Error404Message",
+    "Values": {
+      "en-US": "Seems there is nothing here",
+      "tr-TR": "Burada bir şey yok gibi",
+      "ar-AE": "يبدو أنه لا يوجد شيء هنا"
+    }
+  },
+  {
+    "Key": "SystemError",
+    "Values": {
+      "en-US": "System Error",
+      "tr-TR": "Sistem Hatası",
+      "ar-AE": "خطأ في النظام"
+    }
+  },
+  {
+    "Key": "SomethingWentWrong",
+    "Values": {
+      "en-US": "Something went wrong",
+      "tr-TR": "Bir şeyler yanlış gitti",
+      "ar-AE": "هناك خطأ ما"
+    }
+  },
+  {
+    "Key": "TryAgainLater",
+    "Values": {
+      "en-US": "Please try again later",
+      "tr-TR": "Lütfen daha sonra tekrar deneyiniz",
+      "ar-AE": "الرجاء معاودة المحاولة في وقت لاحق"
+    }
+  },
+  {
+    "Key": "RequestId",
+    "Values": {
+      "en-US": "Request Id",
+      "tr-TR": "İstek Kimliği",
+      "ar-AE": "طلب معرف"
+    }
+  },
+  {
+    "Key": "CreateNewPassword",
+    "Values": {
+      "en-US": "Please create your new password",
+      "tr-TR": "Lütfen yeni şifrenizi oluşturun",
+      "ar-AE": "الرجاء إنشاء كلمة المرور الجديدة الخاصة بك"
+    }
+  },
+  {
+    "Key": "CurrentPassword",
+    "Values": {
+      "ar-AE": "كلمة المرور الحالي",
+      "en-US": "Current Password",
+      "tr-TR": "Mevcut Şifre"
+    }
+  },
+  {
+    "Key": "EmailTemplateNotFound",
+    "Values": {
+      "en-US": "Email template is not found",
+      "tr-TR": "E-posta şablonu bulunamadı",
+      "ar-AE": "لم يتم العثور على قالب البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "EmailTemplateTranslationNotFound",
+    "Values": {
+      "en-US": "Email template translation is not found",
+      "tr-TR": "E-posta şablonu çevirisi bulunamadı",
+      "ar-AE": "لم يتم العثور على ترجمة قالب البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "LanguageList",
+    "Values": {
+      "en-US": "Language List",
+      "tr-TR": "Dil Listesi",
+      "ar-AE": "قائمة اللغة"
+    }
+  },
+  {
+    "Key": "NewLanguage",
+    "Values": {
+      "en-US": "New Language",
+      "tr-TR": "Yeni Dil",
+      "ar-AE": "لغة جديدة"
+    }
+  },
+  {
+    "Key": "Active",
+    "Values": {
+      "en-US": "Active",
+      "tr-TR": "Aktif",
+      "ar-AE": "نشيط"
+    }
+  },
+  {
+    "Key": "Default",
+    "Values": {
+      "en-US": "Default",
+      "tr-TR": "Varsayılan",
+      "ar-AE": "تقصير"
+    }
+  },
+  {
+    "Key": "Code",
+    "Values": {
+      "en-US": "Code",
+      "tr-TR": "Kod",
+      "ar-AE": "رمز"
+    }
+  },
+  {
+    "Key": "Image",
+    "Values": {
+      "en-US": "Image",
+      "tr-TR": "Resim",
+      "ar-AE": "صورة"
+    }
+  },
+  {
+    "Key": "Yes",
+    "Values": {
+      "en-US": "Yes",
+      "tr-TR": "Evet",
+      "ar-AE": "نعم"
+    }
+  },
+  {
+    "Key": "No",
+    "Values": {
+      "en-US": "No",
+      "tr-TR": "Hayır",
+      "ar-AE": "رقم"
+    }
+  },
+  {
+    "Key": "CreateLanguageSuccess",
+    "Values": {
+      "en-US": "Create Language Success",
+      "tr-TR": "Dil Başarıyla Eklendi",
+      "ar-AE": "خلق نجاح اللغة"
+    }
+  },
+  {
+    "Key": "EditLanguageSuccess",
+    "Values": {
+      "en-US": "Edit Language Success",
+      "tr-TR": "Dil Başarıyla Güncellendi",
+      "ar-AE": "نجاح تحرير اللغة"
+    }
+  },
+  {
+    "Key": "DeleteLanguageSuccess",
+    "Values": {
+      "en-US": "Delete Language Success",
+      "tr-TR": "Dil Başarıyla Silindi",
+      "ar-AE": "حذف نجاح اللغة"
+    }
+  },
+  {
+    "Key": "Flag",
+    "Values": {
+      "en-US": "Flag",
+      "tr-TR": "Bayrak",
+      "ar-AE": "علم"
+    }
+  },
+  {
+    "Key": "ChangeFlag",
+    "Values": {
+      "en-US": "Change Flag",
+      "tr-TR": "Bayrak Değiştir",
+      "ar-AE": "تغيير العلم"
+    }
+  },
+  {
+    "Key": "RemoveFlag",
+    "Values": {
+      "en-US": "Remove Flag",
+      "tr-TR": "Bayrağı Kaldır",
+      "ar-AE": "إزالة العلم"
+    }
+  },
+  {
+    "Key": "Language",
+    "Values": {
+      "en-US": "Language Management",
+      "tr-TR": "Uygulama Dil Yönetimi",
+      "ar-AE": "إدارة اللغة"
+    }
+  },
+  {
+    "Key": "UpdateLanguage",
+    "Values": {
+      "en-US": "Update Language",
+      "tr-TR": "Dil Düzenleme",
+      "ar-AE": "تحديث اللغة"
+    }
+  },
+  {
+    "Key": "UpdateLanguageSuccess",
+    "Values": {
+      "en-US": "Language Update Successfully",
+      "tr-TR": "Dil başarıyla güncellendi",
+      "ar-AE": "تم تحديث اللغة بنجاح"
+    }
+  },
+  {
+    "Key": "Languages",
+    "Values": {
+      "en-US": "Languages",
+      "tr-TR": "Diller",
+      "ar-AE": "تحديث اللغة"
+    }
+  },
+  {
+    "Key": "ChangeAvatar",
+    "Values": {
+      "en-US": "Change avatar",
+      "tr-TR": "Avatarı değiştir",
+      "ar-AE": "تغيير الصورة الرمزية"
+    }
+  },
+  {
+    "Key": "RemoveAvatar",
+    "Values": {
+      "en-US": "Remove avatar",
+      "tr-TR": "Avatarı kaldır",
+      "ar-AE": "إزالة الصورة الرمزية"
+    }
+  },
+  {
+    "Key": "UpdateMenuOrderSuccess",
+    "Values": {
+      "en-US": "Menu order updated successfully",
+      "tr-TR": "Menü sıralaması başarıyla güncellendi",
+      "ar-AE": "تم تحديث ترتيب القائمة بنجاح"
+    }
+  },
+  {
+    "Key": "MenuOrderManagement",
+    "Values": {
+      "en-US": "Menu order management",
+      "tr-TR": "Menü sıralama yönetimi",
+      "ar-AE": "إدارة فرز القائمة"
+    }
+  },
+  {
+    "Key": "ExternalLoginTitle",
+    "Values": {
+      "en-US": "External Login Information",
+      "tr-TR": "Harici Oturum Açma Bilgileri",
+      "ar-AE": "معلومات تسجيل الدخول الخارجية"
+    }
+  },
+  {
+    "Key": "ExternalLoginInfo",
+    "Values": {
+      "en-US": "Your login with {0} has been completed successfully.",
+      "tr-TR": "{0} ile giriş işleminiz başarıyla tamamlanmıştır. ",
+      "ar-AE": "تم إكمال تسجيل الدخول الخاص بك مع {0} بنجاح "
+    }
+  },
+  {
+    "Key": "PolicyContent1",
+    "Values": {
+      "en-US": "Cookies are used on our platform, which are necessary to provide the content to you, to optimize the performance of the Platform and to understand the visitor profile. For detailed information about the cookies used on the platform, please review the <a href='https://kocsistem.com.tr/assets/docs/cerez_aydinlatma_metni.pdf' target='_blank'>Cookie Policy</a>.",
+      "tr-TR": "Platformumuzda, içeriğin tarafınıza sağlanması, Platform’un performansının optimize edilmesi ve ziyaretçi profilinin anlaşılması için gerekli olan çerezler kullanılmaktadır. Platform üzerinde kullanılan çerezler hakkında detaylı bilgi almak için <a href='https://kocsistem.com.tr/assets/docs/cerez_aydinlatma_metni.pdf' target='_blank'>Çerez Politikası</a> nı incelemenizi rica ederiz.",
+      "ar-AE": "تُستخدم ملفات تعريف الارتباط على نظامنا الأساسي ، وهي ضرورية لتوفير المحتوى لك ، ولتحسين أداء المنصة وفهم ملف تعريف الزائر. للحصول على معلومات مفصلة حول ملفات تعريف الارتباط المستخدمة على النظام الأساسي ، يرجى مراجعة."
+    }
+  },
+  {
+    "Key": "PolicyContent2",
+    "Values": {
+      "en-US": "Your information regarding your movements and preferences on the platform, transaction security and social media data are processed for the purpose of personalization, targeting and advertising, and to YouTube , Fortinet Google Inc., Pixel & Tonic Inc. located abroad. Select 'Agreed' if you accept the data transfer abroad for the purpose of using the mandatory, functional, preference, performance and analysis cookies provided by (Craft CMS), or 'Reject' if you do not.",
+      "tr-TR": "Platform üzerindeki hareketleriniz ve tercihlerinize yönelik bilgileriniz, işlem güvenliği ve sosyal medya verilerinizin kişiselleştirme, hedefleme ve reklamcılık faaliyeti gerçekleştirilmesi amacıyla işlenmesini ve yurt dışında bulunan YouTube , Fortinet Google Inc., Pixel & Tonic Inc. (Craft CMS) tarafından sağlanan zorunlu, işlevsel, tercih, performans ve analiz çerezlerinin kullanım amacıyla yurt dışına veri aktarımını kabul ediyorsanız 'Kabul Et'i, etmiyorsanız 'Reddet'i seçiniz.",
+      "ar-AE": "تتم معالجة معلوماتك المتعلقة بحركاتك وتفضيلاتك على المنصة وأمن المعاملات وبيانات الوسائط الاجتماعية لغرض التخصيص والاستهداف والإعلان ، وإلى YouTube و Fortinet Google Inc. و Pixel & Tonic Inc. الموجودة في الخارج. حدد قبول إذا كنت تقبل نقل البيانات إلى الخارج لغرض استخدام ملفات تعريف الارتباط الإلزامية والوظيفية والتفضيلية والأداء والتحليل المقدمة من (Craft CMS) ، أو رفض إذا لم تفعل ذلك."
+    }
+  },
+  {
+    "Key": "Agreed",
+    "Values": {
+      "en-US": "Agreed",
+      "tr-TR": "Kabul Et",
+      "ar-AE": "متفق"
+    }
+  },
+  {
+    "Key": "Reject",
+    "Values": {
+      "en-US": "Reject",
+      "tr-TR": "Reddet",
+      "ar-AE": "رفض"
+    }
+  },
+  {
+    "Key": "TimeZone",
+    "Values": {
+      "en-US": "Time Zone",
+      "tr-TR": "Saat Dilimi",
+      "ar-AE": "وحدة الوقت"
+    }
+  }
+]

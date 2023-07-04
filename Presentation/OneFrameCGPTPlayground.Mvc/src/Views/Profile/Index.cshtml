@@ -1,0 +1,124 @@
+﻿@using OneFrameCGPTPlayground.Mvc.Controllers
+@using OneFrameCGPTPlayground.Mvc.Models.Profile
+@using KocSistem.OneFrame.I18N
+@using OneFrameCGPTPlayground.Mvc.Helpers
+@inject HtmlMinSuffixHelper _htmlMinSuffixHelper
+@model OneFrameCGPTPlayground.Mvc.Models.Profile.ProfileModel
+@inject IKsStringLocalizer<ProfileController> _localizer
+
+@{
+
+	ViewData["Title"] = _localizer["ProfileEdit"];
+	int profilePhotoSize = Model.ProfilePhotoSize;
+	string defaultProfilePhoto = "/metronic/assets/media/avatars/blank.png";
+	string confirmedUserClass = "text-danger";
+	if (Model.EmailConfirmed && Model.PhoneNumberConfirmed)
+		confirmedUserClass = "text-primary";
+	else if (Model.EmailConfirmed || Model.PhoneNumberConfirmed)
+		confirmedUserClass = "text-warning";
+}
+
+<div class="card mb-5 mb-xl-10">
+	<div class="card-body pt-9 pb-0">
+		<div class="d-flex flex-wrap flex-sm-nowrap mb-3">
+			<div class="me-7 mb-4">
+				<div class="symbol symbol-100px symbol-lg-160px symbol-fixed position-relative ">
+					<img id="profile_photo" src="@(Model.ProfilePhoto ?? defaultProfilePhoto)" alt="image" />
+					<div class="position-absolute translate-middle bottom-0 start-100 mb-6 bg-success rounded-circle border border-4 border-white h-20px w-20px"></div>
+				</div>
+			</div>
+			<div class="flex-grow-1">
+				<div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
+					<div class="d-flex flex-column">
+						<div class="d-flex align-items-center mb-2">
+							<a href="#" class="text-gray-900 text-hover-primary fs-2 fw-bolder me-1">@Model.Name @Model.Surname</a>
+							<a href="#">
+								<em class="far fa-check-circle @confirmedUserClass"></em>
+							</a>
+						</div>
+						<div class="d-flex flex-wrap fw-bold fs-6">
+							<a href="#" class="d-flex align-items-center text-gray-400 text-hover-primary me-5 mb-2">
+								<span class="svg-icon svg-icon-4 me-1">
+									<em class="far fa-user"></em>
+								</span>
+								@Model.Roles
+							</a>
+						</div>
+						<div class="d-flex flex-wrap fw-bold fs-6">
+							<a href="#" class="d-flex align-items-center text-gray-400 text-hover-primary me-5 mb-2">
+								<span class="svg-icon svg-icon-4 me-1">
+									<em class="la la-phone" aria-hidden="true"></em>
+								</span>
+								@Model.PhoneNumber
+							</a>
+						</div>
+						<div class="d-flex flex-wrap fw-bold fs-6">
+							<a href="#" class="d-flex align-items-center text-gray-400 text-hover-primary mb-2">
+								<em class="la la-at" aria-hidden="true"></em>
+								@Model.Email
+							</a>
+						</div>
+						<div class="d-flex flex-wrap fw-bold fs-6">
+							<a href="#" class="d-flex align-items-center text-gray-400 text-hover-primary mb-2">
+								<em class="la la-business-time" aria-hidden="true"></em>
+								@Model.TimeZone
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="nav nav-stretch nav-line-tabs nav-line-tabs-2x border-transparent fs-5 fw-bolder">
+			<li class="nav-item mt-2">
+				<a class="nav-link text-active-primary ms-0 me-10 py-5 active" data-bs-toggle="tab" href="#kt_tab_pane_overview">@_localizer["AccountInformation"]</a>
+			</li>
+			<li class="nav-item mt-2">
+				<a class="nav-link text-active-primary ms-0 me-10 py-5" data-bs-toggle="tab" href="#kt_tab_pane_change_password">@_localizer["ChangePassword"]</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="tab-content" id="myTabContent">
+	<div class="tab-pane fade show active" id="kt_tab_pane_overview" role="tabpanel">
+		@await Html.PartialAsync("Detail",Model)
+	</div>
+	<div class="tab-pane fade" id="kt_tab_pane_change_password" role="tabpanel">
+		@await Html.PartialAsync("ChangePassword", new ChangePasswordModel())
+	</div>
+</div>
+
+
+
+
+<div class="modal fade" tabindex="-1" id="kt_modal_oneframe_file_upload">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">@_localizer["ChangeProfilePhoto"]</h5>
+				<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+					<span><em class="bi bi-x fs-2"></em></span>
+
+				</div>
+			</div>
+			<div class="modal-body">
+				<div class="dropzone" id="oneframe_file_upload">
+					<div class="dz-message needsclick">
+						<em class="bi bi-file-earmark-arrow-up text-primary fs-3x"></em>
+						<div class="ms-4">
+							<h3 class="fs-5 fw-bolder text-gray-900 mb-1">@_localizer["DropFilesHereOrClickToUpload"]</h3>
+							<span class="fs-7 fw-bold text-gray-400">@_localizer["ProfilePhotoInfoMessage"]</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<p class="ml-3">@_localizer["ProfilePhotoInfoMessage"]</p>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-light" data-bs-dismiss="modal">@_localizer["Close"]</button>
+				<button id="fileUploadButton" class="btn btn-primary">@_localizer["Submit"]</button>
+			</div>
+		</div>
+	</div>
+</div>

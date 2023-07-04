@@ -1,0 +1,15 @@
+﻿@using OneFrameCGPTPlayground.Mvc.Controllers
+@using KocSistem.OneFrame.I18N
+@inject IKsStringLocalizer<AccountController> _localizer
+
+@{
+    Layout = "~/src/Views/Shared/_NoticeLayout.cshtml";
+    ViewData["Title"] = _localizer["EmailConfirmed"];
+}
+
+<div class="fw-bold fs-3 text-muted mb-15">
+    @_localizer["EmailConfirmed"].
+</div>
+<div class="text-center">
+    <a href="/accounts/login" class="btn btn-primary btn-lg fw-bolder">@_localizer["SignIn"]</a>
+</div>

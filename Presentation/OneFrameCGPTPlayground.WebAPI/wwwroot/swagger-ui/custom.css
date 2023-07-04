@@ -1,0 +1,27 @@
+﻿.swagger-ui .topbar {
+    background: #0D072D;
+    /* Old browsers */
+    background: #0D072D;
+    /* Old browsers  */
+    background: -moz-linear-gradient(left, #0D072D 0%, #24222D 41%);
+    /* FF3.6+ */
+    background: -webkit-linear-gradient(left, #0D072D 0%, #24222D 41%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #0D072D 0%, #24222D 41%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #0D072D 0%, #24222D 41%);
+    /* IE10+ */
+    background: linear-gradient(to right, #0D072D 0%, #24222D 41%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$left', endColorstr='$right',GradientType=0 );
+    /* IE6-9 */
+}
+#swagger-ui > section > div.topbar > div > div > a > span {
+    display: none;
+}
+#swagger-ui > section > div.topbar > div > div > a > img {
+    width: 250px;
+}
+#swagger-ui > section > div.topbar > div > div > form > label > span {
+    color: whitesmoke;
+}

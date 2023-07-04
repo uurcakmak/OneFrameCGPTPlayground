@@ -1,0 +1,64 @@
+﻿@using OneFrameCGPTPlayground.Mvc.Controllers
+@using OneFrameCGPTPlayground.Mvc.Helpers
+@using KocSistem.OneFrame.I18N
+@model OneFrameCGPTPlayground.Mvc.Models.User.UserViewModel
+@inject HtmlMinSuffixHelper _htmlMinSuffixHelper
+@inject IKsStringLocalizer<UserController> _localizer
+
+<div class="modal fade" id="modalNewUser" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered mw-650px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>@_localizer["NewUserForm"]</h2>
+                <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+                    <span class="svg-icon svg-icon-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+                            <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
+                <form class="form w-100" novalidate="novalidate" id="userCreateForm" asp-controller="User" asp-action="Post" method="POST">
+                    <div class="row g-9 mb-8">
+                        <div class="col-md-6 fv-row">
+                            <label asp-for="Name" class="d-flex align-items-center fs-6 fw-bold form-label mb-2"></label>
+                            <input asp-for="Name" class="form-control form-control-solid" autocomplete="off" />
+                        </div>
+                        <div class="col-md-6 fv-row">
+                            <label asp-for="Surname" class="d-flex align-items-center fs-6 fw-bold form-label mb-2"></label>
+                            <input asp-for="Surname" class="form-control form-control-solid" autocomplete="off" />
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column mb-8 fv-row">
+                        <label asp-for="Email" class="d-flex align-items-center fs-6 fw-bold form-label mb-2 required"></label>
+                        <input asp-for="Email" class="form-control form-control-solid" autocomplete="off"/>
+                    </div>
+                    <div class="d-flex flex-column mb-8 fv-row">
+                        <label asp-for="PhoneNumber" class="d-flex align-items-center fs-6 fw-bold form-label mb-2"></label>
+                        <input asp-for="PhoneNumber" type="tel" class="form-control form-control-solid"/>
+                    </div>
+                    <div class="row fv-row mb-6">
+                        <label class="col-lg-4 col-form-label fw-bold fs-6" asp-for="TimeZone">@_localizer["TimeZone"]</label>
+                        <select asp-for="TimeZone" id="createTimeZoneSelect" data-control="select2" class="form-select form-select-solid">
+                        </select>
+                    </div>
+                    <div class="text-center pt-15">
+                        <button type="reset" class="btn btn-light me-3" data-bs-dismiss="modal">@_localizer["Cancel"]</button>
+                        <button type="button" id="userCreateButton" class="btn btn-primary">
+                            <span class="indicator-label">@_localizer["Submit"]</span>
+                            <span class="indicator-progress">
+                                @_localizer["PleaseWait"]...
+                                <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/helpers/handlehelper@(_htmlMinSuffixHelper.MinSuffix).js"></script>
+<script src="~/js/user/create@(_htmlMinSuffixHelper.MinSuffix).js"></script>

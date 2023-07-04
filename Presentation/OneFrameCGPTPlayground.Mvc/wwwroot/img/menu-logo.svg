@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #fd690d;
+        font-size: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+      }
+    </style>
+  </defs>
+  <g id="Group_3936" data-name="Group 3936" transform="translate(-52 -5)">
+    <rect id="Rectangle_1988" data-name="Rectangle 1988" class="cls-1" width="200" height="60" transform="translate(52 5)"/>
+    <text id="Logo" class="cls-2" transform="translate(52 43)"><tspan x="0" y="0">ONEFRAME</tspan></text>
+  </g>
+</svg>

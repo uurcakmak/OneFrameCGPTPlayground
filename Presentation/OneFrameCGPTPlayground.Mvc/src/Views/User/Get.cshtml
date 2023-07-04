@@ -1,0 +1,66 @@
+﻿@using OneFrameCGPTPlayground.Mvc.Controllers
+@using KocSistem.OneFrame.I18N
+@using OneFrameCGPTPlayground.Mvc.Helpers
+@inject IKsStringLocalizer<UserController> _localizer
+@inject HtmlRtlSuffixHelper _htmlRtlSuffixHelper
+@inject HtmlMinSuffixHelper _htmlMinSuffixHelper
+@{
+    ViewData["Title"] = _localizer["UserList"];
+}
+
+@section scripts
+{
+<script src="~/metronic/assets/plugins/custom/datatables/datatables.bundle.js" type="text/javascript"></script>
+<script src="~/js/helpers/datatablehelper@(_htmlMinSuffixHelper.MinSuffix).js" type="text/javascript"></script>
+<script src="~/js/user/get@(_htmlMinSuffixHelper.MinSuffix).js" type="text/javascript"></script>
+<script src="~/metronic/assets/plugins/custom/dual-listbox/dual-listbox@(_htmlMinSuffixHelper.MinSuffix).js" type="text/javascript"></script>
+<script src="~/js/helpers/duallisthelper.js" type="text/javascript"></script>
+}
+
+@section headerBegin
+{
+<link href="~/metronic/assets/plugins/custom/datatables/datatables.bundle@(_htmlRtlSuffixHelper.RtlFileSuffix).css" rel="stylesheet" type="text/css" />
+}
+
+@section headerEnd
+{
+<link href="~/metronic/assets/plugins/custom/dual-listbox/dual-listbox@(_htmlRtlSuffixHelper.RtlFileSuffix).css" rel="stylesheet" type="text/css" />
+}
+
+<div class="row">
+    <div class="card">
+        <div class="card-header border-0 pt-6">
+            <div class="card-title">
+                <div class="d-flex align-items-center position-relative my-1">
+                    <span class="svg-icon svg-icon-1 position-absolute ms-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1" transform="rotate(45 17.0365 15.1223)" fill="black" />
+                            <path d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z" fill="black" />
+                        </svg>
+                    </span>
+                    <input type="text" class="form-control form-control-solid w-250px ps-15 datatable-search" placeholder='@_localizer["DataTable_search"]' />
+                </div>
+            </div>
+            <div class="card-toolbar">
+                <div class="d-flex justify-content-end" data-kt-customer-table-toolbar="base">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalNewUser"><em class="fa fa-plus"></em> @_localizer["NewUser"]</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-body pt-0">
+            <table class="table align-middle table-row-dashed fs-6 gy-5" id="table_user">
+                <thead>
+                    <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
+                        <th class="min-w-125px">@_localizer["Username"]</th>
+                        <th></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+
+<partial name="Create.cshtml" />
+
+<div id="editUser"></div>
+<div id="userRole"></div>

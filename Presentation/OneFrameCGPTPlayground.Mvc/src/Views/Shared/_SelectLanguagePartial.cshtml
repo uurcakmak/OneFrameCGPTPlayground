@@ -1,0 +1,87 @@
+﻿@using Microsoft.AspNetCore.Builder
+@using Microsoft.Extensions.Options
+@using System.Globalization
+@using OneFrameCGPTPlayground.Mvc.Controllers
+@using KocSistem.OneFrame.I18N
+@using Microsoft.AspNetCore.Http
+@inject IOptions<RequestLocalizationOptions> _locOptions
+@inject IHttpContextAccessor _httpContextaccessor
+@inject IKsStringLocalizer<HomeController> _localizer
+
+@{
+    var cultureItems = _locOptions.Value.SupportedUICultures.Select(c => new SelectListItem { Value = c.Name, Text = c.NativeName, Selected = CultureInfo.DefaultThreadCurrentCulture.ToString() == c.Name }).ToList().OrderBy(o => o.Text);
+}
+
+<div class="menu-item px-5" data-kt-menu-trigger="hover" data-kt-menu-placement="left-start">
+    @{
+        var selectedCulture = cultureItems.First(f => f.Selected);
+
+        var selectedFlag = string.Empty;
+
+        switch (selectedCulture.Value.ToLower())
+        {
+            case "tr-tr":
+                selectedFlag = "turkey";
+                break;
+
+            case "en-us":
+                selectedFlag = "united-states";
+                break;
+
+            case "ar-ae":
+                selectedFlag = "saudi-arabia";
+                break;
+        }
+
+        <a href="#" class="menu-link px-5">
+            <span class="menu-title position-relative">
+                @_localizer["Language"]
+                <span class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">
+                    @(CultureInfo.DefaultThreadCurrentCulture.Parent.NativeName)
+                    @if (!string.IsNullOrEmpty(selectedFlag))
+                    {
+                        <img class="w-15px h-15px rounded-1 ms-2" src="~/metronic/assets/media/flags/@(selectedFlag).svg" alt="@(selectedCulture.Text)" />
+                    }
+                </span>
+            </span>
+        </a>
+    }
+    <div class="menu-sub menu-sub-dropdown w-300px py-4">
+        @{
+            foreach (var culture in cultureItems)
+            {
+                <div class="menu-item px-3">
+                    <a href="/set-language?culture=@(culture.Value)&returnUrl=@(_httpContextaccessor.HttpContext.Request.Path)" class="menu-link d-flex px-5 @(culture.Selected ? "active" : string.Empty)">
+                        <span class="symbol symbol-20px me-4">
+                            @{
+                                var flag = string.Empty;
+
+                                switch (culture.Value.ToLower())
+                                {
+                                    case "tr-tr":
+                                        flag = "turkey";
+                                        break;
+
+                                    case "en-us":
+                                        flag = "united-states";
+                                        break;
+
+                                    case "ar-ae":
+                                        flag = "saudi-arabia";
+                                        break;
+                                }
+
+
+                                if (!string.IsNullOrEmpty(flag))
+                                {
+                                    <img class="rounded-1" src="~/metronic/assets/media/flags/@(flag).svg" alt="@(culture.Text)" />
+
+                                }
+                            }
+                        </span>@(culture.Text)
+                    </a>
+                </div>
+            }
+        }
+    </div>
+</div>

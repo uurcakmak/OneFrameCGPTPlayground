@@ -1,0 +1,22 @@
+﻿@using OneFrameCGPTPlayground.Mvc.Controllers
+@using OneFrameCGPTPlayground.Mvc.Helpers
+@using KocSistem.OneFrame.I18N
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor _httpContextaccessor
+@inject IKsStringLocalizer<AccountController> _localizer
+
+@{
+    Layout = "~/src/Views/Shared/_ErrorLayout.cshtml";
+    ViewData["Title"] = "404";
+}
+
+@{
+    var theme = HomeController.CheckThemeName(_httpContextaccessor.HttpContext.Request.Cookies["theme"]);
+    var themeName = theme != Themes.Dark ? string.Empty : $".{theme}";
+}
+
+<div class="d-flex flex-column flex-center flex-column-fluid p-10">
+    <img src="~/metronic/assets/media/illustrations/sketchy-1/18@(themeName).png" alt="" class="mw-100 mb-10 h-lg-450px" />
+    <h1 class="fw-bold mb-10" style="color: #A3A3C7">@_localizer["Error404Message"]</h1>
+    <a href="/" class="btn btn-primary"><em class="fa fa-home"></em> @_localizer["ReturnHome"]</a>
+</div>

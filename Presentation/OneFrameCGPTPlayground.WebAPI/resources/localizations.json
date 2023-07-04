@@ -1,0 +1,1523 @@
+[
+  {
+    "Key": "DefaultError",
+    "Values": {
+      "en-US": "An unknown failure has occurred.",
+      "tr-TR": "Bilinmeyen bir hata meydana geldi.",
+      "ar-AE": "حدث فشل غير معروف."
+    }
+  },
+  {
+    "Key": "ConcurrencyFailure",
+    "Values": {
+      "en-US": "Optimistic concurrency failure, object has been modified.",
+      "tr-TR": "Bir eşzamanlılık hatası meydana geldi lütfen tekrar deneyin.",
+      "ar-AE": "فشل التزامن المتفائل ، تم تعديل الكائن."
+    }
+  },
+  {
+    "Key": "PasswordMismatch",
+    "Values": {
+      "en-US": "Incorrect password.",
+      "tr-TR": "Şifreler eşleşmiyor.",
+      "ar-AE": "كلمة سر خاطئة."
+    }
+  },
+  {
+    "Key": "LastPasswordUsingError",
+    "Values": {
+      "en-US": "You cannot use your last {0} passwords.",
+      "tr-TR": "Son {0} şifrenizi kullanamazsınız.",
+      "ar-AE": "لا يمكنك استخدام آخر كلمة مرور لـ {0}."
+    }
+  },
+  {
+    "Key": "LoginAlreadyAssociated",
+    "Values": {
+      "en-US": "A user with this login already exists.",
+      "tr-TR": "Bu bilgilere sahip bir kullanıcı sistemde zaten var.",
+      "ar-AE": "يوجد بالفعل مستخدم مع تسجيل الدخول هذا."
+    }
+  },
+  {
+    "Key": "InvalidUserName",
+    "Values": {
+      "en-US": "User name '{0}' is invalid, can only contain letters or digits.",
+      "tr-TR": "'{0}', bu kullanıcı adı geçersiz; sadece harf ve sayı kullanın.",
+      "ar-AE": "اسم المستخدم '{0}' غير صالح ، يمكن أن يحتوي فقط على أحرف أو أرقام."
+    }
+  },
+  {
+    "Key": "InvalidEmail",
+    "Values": {
+      "en-US": "Email '{0}' is invalid.",
+      "tr-TR": "E-posta '{0}' geçersiz.",
+      "ar-AE": "البريد الإلكتروني '{0}' غير صالح."
+    }
+  },
+  {
+    "Key": "DuplicateEmail",
+    "Values": {
+      "en-US": "Email '{0}' is already taken.",
+      "tr-TR": "'{0}', bu e-posta adresi zaten kullanımda.",
+      "ar-AE": "البريد الإلكتروني '{0}' مستخدم بالفعل."
+    }
+  },
+  {
+    "Key": "InvalidRoleName",
+    "Values": {
+      "en-US": "Role name '{0}' is invalid.",
+      "tr-TR": "Rol adı '{0}' geçersiz.",
+      "ar-AE": "اسم الدور '{0}' غير صالح."
+    }
+  },
+  {
+    "Key": "DuplicateRoleName",
+    "Values": {
+      "en-US": "Role name '{0}' is already taken.",
+      "tr-TR": "Rol adı '{0}' zaten alınmış.",
+      "ar-AE": "تم استخدام اسم الدور '{0}' بالفعل."
+    }
+  },
+  {
+    "Key": "UserAlreadyHasPassword",
+    "Values": {
+      "en-US": "User already has a password set.",
+      "tr-TR": "Kullanıcının zaten bir şifresi var.",
+      "ar-AE": "تم تعيين كلمة مرور للمستخدم بالفعل."
+    }
+  },
+  {
+    "Key": "UserLockoutNotEnabled",
+    "Values": {
+      "en-US": "Lockout is not enabled for this user.",
+      "tr-TR": "Bu kullanıcı için kilitleme etkinleştirilmedi.",
+      "ar-AE": "لم يتم تمكين القفل لهذا المستخدم."
+    }
+  },
+  {
+    "Key": "UserAlreadyInRole",
+    "Values": {
+      "en-US": "User already in role '{0}'.",
+      "tr-TR": "Kullanıcı zaten '{0}' rolünde.",
+      "ar-AE": "المستخدم بالفعل في دور '{0}'."
+    }
+  },
+  {
+    "Key": "UserNotInRole",
+    "Values": {
+      "en-US": "User is not in role '{0}'.",
+      "tr-TR": "Kullanıcı '{0}' rolünde değil.",
+      "ar-AE": "المستخدم ليس في الدور '{0}'."
+    }
+  },
+  {
+    "Key": "PasswordTooShort",
+    "Values": {
+      "en-US": "Passwords must be at least {0} characters.",
+      "tr-TR": "Şifreler en az {0} karakter olmalıdır.",
+      "ar-AE": "يجب ألا تقل كلمات المرور عن {0} حرفًا."
+    }
+  },
+  {
+    "Key": "PasswordRequiresNonAlphanumeric",
+    "Values": {
+      "en-US": "Passwords must have at least one non alphanumeric character.",
+      "tr-TR": "Parolaların en az bir alfasayısal olmayan karakter içermesi gerekir.",
+      "ar-AE": "يجب أن تحتوي كلمات المرور على حرف واحد غير أبجدي رقمي على الأقل."
+    }
+  },
+  {
+    "Key": "PasswordRequiresDigit",
+    "Values": {
+      "en-US": "Passwords must have at least one digit ('0'-'9').",
+      "tr-TR": "Şifreler en az bir rakam ('0' - '9') içermelidir.",
+      "ar-AE": "يجب أن تحتوي كلمات المرور على رقم واحد على الأقل ('0' - '9')."
+    }
+  },
+  {
+    "Key": "PasswordExpired",
+    "Values": {
+      "en-US": "Your password has expired. You have to reset.",
+      "tr-TR": "Şifrenizin süresi doldu. Sıfırlamalısın.",
+      "ar-AE": "لقد انتهت صلاحية كلمة المرور الخاصة بك. يجب عليك إعادة تعيين."
+    }
+  },
+  {
+    "Key": "PasswordRequiresLower",
+    "Values": {
+      "en-US": "Passwords must have at least one lowercase ('a'-'z').",
+      "tr-TR": "Parolalarda en az bir küçük harf ('a' - 'z') olmalıdır.",
+      "ar-AE": "يجب أن تحتوي كلمات المرور على حرف صغير واحد على الأقل ('a' - 'z')."
+    }
+  },
+  {
+    "Key": "PasswordRequiresUpper",
+    "Values": {
+      "en-US": "Passwords must have at least one uppercase ('A'-'Z').",
+      "tr-TR": "Parolalarda en az bir büyük harf ('A' - 'Z') olmalıdır.",
+      "ar-AE": "يجب أن تحتوي كلمات المرور على حرف كبير واحد على الأقل ('A' - 'Z')."
+    }
+  },
+  {
+    "Key": "PasswordContainsPassword",
+    "Values": {
+      "en-US": "The word password is not allowed for the Password.",
+      "tr-TR": "Şifre için girdiğiniz kelimeye izin verilmiyor.",
+      "ar-AE": "كلمة المرور غير مسموح بها لكلمة المرور."
+    }
+  },
+  {
+    "Key": "SameUserPass",
+    "Values": {
+      "en-US": "Username and Password can't be the same.",
+      "tr-TR": "Kullanıcı adı ve Parola aynı olamaz.",
+      "ar-AE": "لا يمكن أن يكون اسم المستخدم وكلمة المرور متماثلين."
+    }
+  },
+  {
+    "Key": "IsLockedOut",
+    "Values": {
+      "en-US": "Account is lockout.",
+      "tr-TR": "Hesap kilitlendi.",
+      "ar-AE": "الحساب مغلق."
+    }
+  },
+  {
+    "Key": "InvalidModel",
+    "Values": {
+      "en-US": "Invalid data entry",
+      "tr-TR": "Geçersiz veri girişi"
+    }
+  },
+  {
+    "Key": "UnableToCreateUser",
+    "Values": {
+      "en-US": "Unable to create user",
+      "tr-TR": "Kullanıcı Oluşturulamadı"
+    }
+  },
+  {
+    "Key": "InvalidLoginCredentials",
+    "Values": {
+      "en-US": "Invalid login credentials.",
+      "tr-TR": "Geçersiz giriş bilgileri."
+    }
+  },
+  {
+    "Key": "InvalidRefreshToken",
+    "Values": {
+      "en-US": "Invalid refresh token.",
+      "tr-TR": "Geçersiz refresh token."
+    }
+  },
+  {
+    "Key": "EmailResetLink",
+    "Values": {
+      "en-US": "email reset link",
+      "tr-TR": "e-posta sıfırlama linki"
+    }
+  },
+  {
+    "Key": "NoAccount",
+    "Values": {
+      "en-US": "no account",
+      "tr-TR": "hesap yok"
+    }
+  },
+  {
+    "Key": "AccountDoesNotExist",
+    "Values": {
+      "en-US": "{0} : Account does not exist in the system.",
+      "tr-TR": "{0} : Hesap sistemde mevcut değil"
+    }
+  },
+  {
+    "Key": "RoleNotFound",
+    "Values": {
+      "en-US": "Role {0} does not exist.",
+      "tr-TR": "Rol {0} mevcut değil."
+    }
+  },
+  {
+    "Key": "UserNotFound",
+    "Values": {
+      "en-US": "User is not found",
+      "tr-TR": "Kullanıcı bulunamadı"
+    }
+  },
+  {
+    "Key": "UnableToResetPassword",
+    "Values": {
+      "en-US": "Unable to reset password",
+      "tr-TR": "Şifre sıfırlanamadı"
+    }
+  },
+  {
+    "Key": "PasswordResetSuccessful",
+    "Values": {
+      "en-US": "Password has been reset successfully.",
+      "tr-TR": "Şifre başarıyla sıfırlandı."
+    }
+  },
+  {
+    "Key": "PasswordResetLink",
+    "Values": {
+      "en-US": "Password reset link",
+      "tr-TR": "Şifre sıfırlama linki",
+      "ar-AE": "رابط إعادة تعيين كلمة المرور"
+    }
+  },
+  {
+    "Key": "UserActivationLink",
+    "Values": {
+      "en-US": "User Activation Link",
+      "tr-TR": "Kullanıcı Aktivasyon Linki"
+    }
+  },
+  {
+    "Key": "ActivateEmailToLogin",
+    "Values": {
+      "en-US": "Activate your e-mail to login.",
+      "tr-TR": "Giriş yapmak için önce e-mail adresinize gönderilen link üzerinden hesabınızı aktifleştirin."
+    }
+  },
+  {
+    "Key": "ClaimNotFound",
+    "Values": {
+      "en-US": "Claim is not found.",
+      "tr-TR": "Izin bulunamadı."
+    }
+  },
+  {
+    "Key": "UnableToCreateResetLink",
+    "Values": {
+      "en-US": "Unable to create reset password link.",
+      "tr-TR": "Şifre sıfırlama linki oluşturulamadı."
+    }
+  },
+  {
+    "Key": "DuplicateUserName",
+    "Values": {
+      "en-US": "Name is already taken.",
+      "tr-TR": "'{0}', bu kullanıcı adı zaten kullanımda.",
+      "ar-AE": "رمز غير صالح."
+    }
+  },
+  {
+    "Key": "InvalidToken",
+    "Values": {
+      "en-US": "User Name '{0}' is already taken.",
+      "tr-TR": "Kullanıcı Adı '{0}' zaten alınmış.",
+      "ar-AE": "اسم المستخدم '{0}' مستخدم بالفعل."
+    }
+  },
+  {
+    "Key": "PasswordRequiresUniqueChars",
+    "Values": {
+      "en-US": "Password requires unique characters.",
+      "tr-TR": "Şifre benzersiz karakterler gerektirir."
+    }
+  },
+  {
+    "Key": "ParameterMustBeRole",
+    "Values": {
+      "en-US": "Parameter must be Role",
+      "tr-TR": "Parametre rol olmalıdır"
+    }
+  },
+  {
+    "Key": "InvalidRefreshTokenExpiration",
+    "Values": {
+      "en-US": "Invalid RefreshTokenExpiration in web.config",
+      "tr-TR": "Geçersiz refresh token süresi"
+    }
+  },
+  {
+    "Key": "InvalidTokenExpiration",
+    "Values": {
+      "en-US": "Invalid TokenExpiration in web.config",
+      "tr-TR": "Geçersiz  token süresi"
+    }
+  },
+  {
+    "Key": "UnableToAddRolesToUser",
+    "Values": {
+      "en-US": "Unable to add roles to user.",
+      "tr-TR": "Kullanıcıya roller eklenemedi."
+    }
+  },
+  {
+    "Key": "UnableToRemoveRolesFromUser",
+    "Values": {
+      "en-US": "Unable to remove roles from user.",
+      "tr-TR": "Kullanıcıdan roller alınamadı."
+    }
+  },
+  {
+    "Key": "MenuNotFound",
+    "Values": {
+      "en-US": "Menu is not found",
+      "tr-TR": "Menü bulunamadı"
+    }
+  },
+  {
+    "Key": "StringLengthValidationError",
+    "Values": {
+      "en-US": "The {0} must be at least {2} and at max {1} characters long.",
+      "tr-TR": "{0} en az {2} ve en fazla {1} karakter uzunluğunda olmalıdır.",
+      "ar-AE": "يجب ألا يقل عدد أحرف {0} عن {2} ولا يزيد عن {1} من الأحرف."
+    }
+  },
+  {
+    "Key": "PhoneNumberIsNotValid",
+    "Values": {
+      "en-US": "Phone number is not valid",
+      "tr-TR": "Telefon numarası geçerli değil",
+      "ar-AE": "رقم الهاتف غير صالح"
+    }
+  },
+  {
+    "Key": "EmailIsNotValid",
+    "Values": {
+      "en-US": "E-mail is not valid",
+      "tr-TR": "E-posta geçerli değil",
+      "ar-AE": "البريد الإلكتروني غير صالح"
+    }
+  },
+  {
+    "Key": "PassiveUser",
+    "Values": {
+      "en-US": "User is passive",
+      "tr-TR": "Kullanıcı pasif",
+      "ar-AE": "المستخدم غير فعال"
+    }
+  },
+  {
+    "Key": "ApplicationSettingUpdateModelNotFound",
+    "Values": {
+      "en-US": "Application setting update model not found!",
+      "tr-TR": "Uygulama ayarı güncelleme modeli bulunamadı!"
+    }
+  },
+  {
+    "Key": "ApplicationSettingAlreadyExists",
+    "Values": {
+      "en-US": "Application setting already exists!",
+      "tr-TR": "Uygulama ayarı mevcut!"
+    }
+  },
+  {
+    "Key": "ApplicationSettingNotFound",
+    "Values": {
+      "en-US": "Application setting not found!",
+      "tr-TR": "Uygulama ayarı bulunamadı!"
+    }
+  },
+  {
+    "Key": "ApplicationSettingCategoryUpdateModelNotFound",
+    "Values": {
+      "en-US": "Application setting category update model not found!",
+      "tr-TR": "Uygulama ayar kategorisi güncelleme modeli bulunamadı!"
+    }
+  },
+  {
+    "Key": "ApplicationSettingCategoryAlreadyExists",
+    "Values": {
+      "en-US": "Application setting category already exists!",
+      "tr-TR": "Uygulama ayar kategorisi mevcut!"
+    }
+  },
+  {
+    "Key": "ApplicationSettingCategoryNotFound",
+    "Values": {
+      "en-US": "Application setting category not found!",
+      "tr-TR": "Uygulama ayar kategorisi bulunamadı!"
+    }
+  },
+  {
+    "Key": "ApplicationSettingCategoryContainsActiveSettings",
+    "Values": {
+      "en-US": "Application Setting Category Contains Active Settings",
+      "tr-TR": "Uygulama Ayarları Kategorisine bağlı tanımlı uygulama ayarları var"
+    }
+  },
+  {
+    "Key": "Key",
+    "Values": {
+      "en-US": "Key",
+      "tr-TR": "Key",
+      "ar-AE": "مفتاح"
+    }
+  },
+  {
+    "Key": "Value",
+    "Values": {
+      "en-US": "Value",
+      "tr-TR": "Value",
+      "ar-AE": "القيمة"
+    }
+  },
+  {
+    "Key": "ValueType",
+    "Values": {
+      "en-US": "Value Type",
+      "tr-TR": "Value Type",
+      "ar-AE": "نوع القيمة"
+    }
+  },
+  {
+    "Key": "Category",
+    "Values": {
+      "en-US": "Category",
+      "tr-TR": "Kategori",
+      "ar-AE": "الفئة"
+    }
+  },
+  {
+    "Key": "AppSettingList",
+    "Values": {
+      "en-US": "Application Setting List",
+      "tr-TR": "Uygulama Ayarı Listesi",
+      "ar-AE": "قائمة إعدادات التطبيق"
+    }
+  },
+  {
+    "Key": "NewAppSetting",
+    "Values": {
+      "en-US": "Add Application Setting",
+      "tr-TR": "Uygulama Ayarı ekle",
+      "ar-AE": "إضافة إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "CategoryName",
+    "Values": {
+      "en-US": "Category Name",
+      "tr-TR": "Kategori Adı",
+      "ar-AE": "الفئة"
+    }
+  },
+  {
+    "Key": "UpdateApplicationSettingSuccess",
+    "Values": {
+      "en-US": "Application Setting updated successfully",
+      "tr-TR": "Uygulama Ayarları güncellendi",
+      "ar-AE": "تم تحديث إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "CreateApplicationSettingSuccess",
+    "Values": {
+      "en-US": "Application Setting created successfully",
+      "tr-TR": "Uygulama Ayarları kaydı başarılı",
+      "ar-AE": "تم إنشاء إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "NewApplicationSettingForm",
+    "Values": {
+      "en-US": "New Application Setting",
+      "tr-TR": "Yeni Uygulama Ayarı",
+      "ar-AE": "إعداد التطبيق الجديد"
+    }
+  },
+  {
+    "Key": "DeleteApplicationSettingSuccess",
+    "Values": {
+      "en-US": "Application Setting deleted successfully",
+      "tr-TR": "Uygulama ayarı başarıyla silindi",
+      "ar-AE": "تم حذف إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "ApplicationSettingCategoryInfoManagement",
+    "Values": {
+      "en-US": "Application Setting Category Info Management",
+      "tr-TR": "Uygulama Ayarı Kategori Bilgi Yönetimi",
+      "ar-AE": "إدارة معلومات فئة إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "AppSettingCategoryManagement",
+    "Values": {
+      "en-US": "Application Setting Category Management",
+      "tr-TR": "Uygulama Ayarı Kategori Yönetimi",
+      "ar-AE": "إدارة فئة إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "UpdateApplicationSettingCategorySuccess",
+    "Values": {
+      "en-US": "Application setting category updated successfully",
+      "tr-TR": "Uygulama Ayarları Kategorisi başarıyla güncellendi",
+      "ar-AE": "تم تحديث فئة إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "CreateApplicationSettingCategorySuccess",
+    "Values": {
+      "en-US": "Application Setting Category created successfully",
+      "tr-TR": "Uygulama Ayarları Kategorisi kaydı başarılı",
+      "ar-AE": "تم إنشاء فئة إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "DeleteApplicationSettingCategorySuccess",
+    "Values": {
+      "en-US": "Application Setting Category deleted successfully",
+      "tr-TR": "Uygulama ayarı kategorisi başarıyla silindi",
+      "ar-AE": "تم حذف فئة إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "Key",
+    "Values": {
+      "en-US": "Key",
+      "tr-TR": "Key",
+      "ar-AE": "مفتاح"
+    }
+  },
+  {
+    "Key": "Value",
+    "Values": {
+      "en-US": "Value",
+      "tr-TR": "Value",
+      "ar-AE": "القيمة"
+    }
+  },
+  {
+    "Key": "ValueType",
+    "Values": {
+      "en-US": "Value Type",
+      "tr-TR": "Value Type",
+      "ar-AE": "نوع القيمة"
+    }
+  },
+  {
+    "Key": "Category",
+    "Values": {
+      "en-US": "Category",
+      "tr-TR": "Kategori",
+      "ar-AE": "الفئة"
+    }
+  },
+  {
+    "Key": "AppSettingList",
+    "Values": {
+      "en-US": "Application Setting List",
+      "tr-TR": "Uygulama Ayarı Listesi",
+      "ar-AE": "قائمة إعدادات التطبيق"
+    }
+  },
+  {
+    "Key": "NewAppSetting",
+    "Values": {
+      "en-US": "Add Application Setting",
+      "tr-TR": "Uygulama Ayarı Ekle",
+      "ar-AE": "إضافة إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "CategoryName",
+    "Values": {
+      "en-US": "Category Name",
+      "tr-TR": "Kategori Adı",
+      "ar-AE": "الفئة"
+    }
+  },
+  {
+    "Key": "UpdateApplicationSettingSuccess",
+    "Values": {
+      "en-US": "Application Setting updated successfully",
+      "tr-TR": "Uygulama Ayarları güncellendi",
+      "ar-AE": "تم تحديث إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "CreateApplicationSettingSuccess",
+    "Values": {
+      "en-US": "Application Setting created successfully",
+      "tr-TR": "Uygulama Ayarları kaydı başarılı",
+      "ar-AE": "تم إنشاء إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "NewApplicationSettingForm",
+    "Values": {
+      "en-US": "New Application Setting",
+      "tr-TR": "Yeni Uygulama Ayarı",
+      "ar-AE": "إعداد التطبيق الجديد"
+    }
+  },
+  {
+    "Key": "DeleteApplicationSettingSuccess",
+    "Values": {
+      "en-US": "Application Setting deleted successfully",
+      "tr-TR": "Uygulama ayarı başarıyla silindi",
+      "ar-AE": "تم حذف إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "ApplicationSettingCategoryInfoManagement",
+    "Values": {
+      "en-US": "Application Setting Category Info Management",
+      "tr-TR": "Uygulama Ayarı Kategori Bilgi Yönetimi",
+      "ar-AE": "إدارة معلومات فئة إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "AppSettingCategoryManagement",
+    "Values": {
+      "en-US": "Application Setting Category Management",
+      "tr-TR": "Uygulama Ayarı Kategori Yönetimi",
+      "ar-AE": "إدارة فئة إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "UpdateApplicationSettingCategorySuccess",
+    "Values": {
+      "en-US": "Application setting category updated successfully",
+      "tr-TR": "Uygulama Ayarları Kategorisi başarıyla güncellendi",
+      "ar-AE": "تم تحديث فئة إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "CreateApplicationSettingCategorySuccess",
+    "Values": {
+      "en-US": "Application Setting Category created successfully",
+      "tr-TR": "Uygulama Ayarları Kategorisi kaydı başarılı",
+      "ar-AE": "تم إنشاء فئة إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "DeleteApplicationSettingCategorySuccess",
+    "Values": {
+      "en-US": "Application Setting Category deleted successfully",
+      "tr-TR": "Uygulama ayarı kategorisi başarıyla silindi",
+      "ar-AE": "تم حذف فئة إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "Key",
+    "Values": {
+      "en-US": "Key",
+      "tr-TR": "Key",
+      "ar-AE": "مفتاح"
+    }
+  },
+  {
+    "Key": "Value",
+    "Values": {
+      "en-US": "Value",
+      "tr-TR": "Value",
+      "ar-AE": "القيمة"
+    }
+  },
+  {
+    "Key": "ValueType",
+    "Values": {
+      "en-US": "Value Type",
+      "tr-TR": "Value Type",
+      "ar-AE": "نوع القيمة"
+    }
+  },
+  {
+    "Key": "Category",
+    "Values": {
+      "en-US": "Category",
+      "tr-TR": "Kategori",
+      "ar-AE": "الفئة"
+    }
+  },
+  {
+    "Key": "AppSettingList",
+    "Values": {
+      "en-US": "Application Setting List",
+      "tr-TR": "Uygulama Ayarı Listesi",
+      "ar-AE": "قائمة إعدادات التطبيق"
+    }
+  },
+  {
+    "Key": "NewAppSetting",
+    "Values": {
+      "en-US": "Add Application Setting",
+      "tr-TR": "Uygulama Ayarı ekle",
+      "ar-AE": "إضافة إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "CategoryName",
+    "Values": {
+      "en-US": "Category Name",
+      "tr-TR": "Kategori Adı",
+      "ar-AE": "الفئة"
+    }
+  },
+  {
+    "Key": "UpdateApplicationSettingSuccess",
+    "Values": {
+      "en-US": "Application Setting updated successfully",
+      "tr-TR": "Uygulama Ayarları güncellendi",
+      "ar-AE": "تم تحديث إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "CreateApplicationSettingSuccess",
+    "Values": {
+      "en-US": "Application Setting created successfully",
+      "tr-TR": "Uygulama Ayarları kaydı başarılı",
+      "ar-AE": "تم إنشاء إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "NewApplicationSettingForm",
+    "Values": {
+      "en-US": "New Application Setting",
+      "tr-TR": "Yeni Uygulama Ayarı",
+      "ar-AE": "إعداد التطبيق الجديد"
+    }
+  },
+  {
+    "Key": "DeleteApplicationSettingSuccess",
+    "Values": {
+      "en-US": "Application Setting deleted successfully",
+      "tr-TR": "Uygulama ayarı başarıyla silindi",
+      "ar-AE": "تم حذف إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "ApplicationSettingCategoryInfoManagement",
+    "Values": {
+      "en-US": "Application Setting Category Info Management",
+      "tr-TR": "Uygulama Ayarı Kategori Bilgi Yönetimi",
+      "ar-AE": "إدارة معلومات فئة إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "AppSettingCategoryManagement",
+    "Values": {
+      "en-US": "Application Setting Category Management",
+      "tr-TR": "Uygulama Ayarı Kategori Yönetimi",
+      "ar-AE": "إدارة فئة إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "UpdateApplicationSettingCategorySuccess",
+    "Values": {
+      "en-US": "Application setting category updated successfully",
+      "tr-TR": "Uygulama Ayarları Kategori başarıyla güncellendi",
+      "ar-AE": "تم تحديث فئة إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "CreateApplicationSettingCategorySuccess",
+    "Values": {
+      "en-US": "Application Setting Category created successfully",
+      "tr-TR": "Uygulama Ayarları Kategori kaydı başarılı",
+      "ar-AE": "تم إنشاء فئة إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "DeleteApplicationSettingCategorySuccess",
+    "Values": {
+      "en-US": "Application Setting Category deleted successfully",
+      "tr-TR": "Uygulama ayarı kategori başarıyla silindi",
+      "ar-AE": "تم حذف فئة إعداد التطبيق بنجاح"
+    }
+  },
+  {
+    "Key": "Static",
+    "Values": {
+      "en-US": "Static",
+      "tr-TR": "Statik",
+      "ar-AE": "ثابتة"
+    }
+  },
+  {
+    "Key": "NotStatic",
+    "Values": {
+      "en-US": "Not Static",
+      "tr-TR": "Statik Değil",
+      "ar-AE": "ليس ثابتا"
+    }
+  },
+  {
+    "Key": "YouCannotDeleteTheStaticSetting",
+    "Values": {
+      "en-US": "You cannot delete the static setting!",
+      "tr-TR": "Statik ayarı silemezsiniz",
+      "ar-AE": "لا يمكنك حذف الإعداد الثابت"
+    }
+  },
+  {
+    "Key": "YouCannotUpdateTheKeyOrStatusValueOfTheStaticSetting",
+    "Values": {
+      "en-US": "You cannot update the key or status value of the static setting!",
+      "tr-TR": "Statik ayarın anahtar veya statü değerini güncelleyemezsiniz",
+      "ar-AE": "لا يمكنك تحديث المفتاح أو قيمة الحالة للإعداد الثابت"
+    }
+  },
+  {
+    "Key": "ApplicationSettingNotFound",
+    "Values": {
+      "en-US": "Application Setting {0} does not exist.",
+      "tr-TR": "Uygulama Ayarı {0} mevcut değil."
+    }
+  },
+  {
+    "Key": "ApplicationSettingCategoryNotFound",
+    "Values": {
+      "en-US": "Application Setting Category {0} does not exist.",
+      "tr-TR": "Uygulama Ayarı Kategorisi {0} mevcut değil."
+    }
+  },
+  {
+    "Key": "LoginAuditLogModelNotFound",
+    "Values": {
+      "en-US": "Login audit log model not found!",
+      "tr-TR": "Login audit log modeli bulunamadı!",
+      "ar-AE": "نموذج سجل تدقيق تسجيل الدخول غير موجود"
+    }
+  },
+  {
+    "Key": "LoginSuccess",
+    "Values": {
+      "en-US": "Login successfully",
+      "tr-TR": "Giriş başarılı",
+      "ar-AE": "تم تسجيل الدخول بنجاح"
+    }
+  },
+  {
+    "Key": "LoginAuditLogNotFound",
+    "Values": {
+      "en-US": "Login audit log not found!",
+      "tr-TR": "Login audit log bulunamadı!",
+      "ar-AE": "سجل تدقيق تسجيل الدخول غير موجود"
+    }
+  },
+  {
+    "Key": "LoginAuditLogList",
+    "Values": {
+      "en-US": "Login Audit Log List",
+      "tr-TR": "Giriş Denetim Günlüğü Listesi",
+      "ar-AE": "قائمة سجل تدقيق تسجيل الدخول"
+    }
+  },
+  {
+    "Key": "IP",
+    "Values": {
+      "en-US": "IP",
+      "tr-TR": "IP",
+      "ar-AE": "حبل"
+    }
+  },
+  {
+    "Key": "Hostname",
+    "Values": {
+      "en-US": "Hostname",
+      "tr-TR": "Hostname",
+      "ar-AE": "اسم المضيف"
+    }
+  },
+  {
+    "Key": "MacAddress",
+    "Values": {
+      "en-US": "MacAddress",
+      "tr-TR": "MacAddress",
+      "ar-AE": "عنوان ماك"
+    }
+  },
+  {
+    "Key": "BrowserDetail",
+    "Values": {
+      "en-US": "Browser Detail",
+      "tr-TR": "Tarayıcı Detayı",
+      "ar-AE": "تفاصيل المتصفح"
+    }
+  },
+  {
+    "Key": "BrowserGuid",
+    "Values": {
+      "en-US": "Browser Guid",
+      "tr-TR": "Tarayıcı Guid",
+      "ar-AE": "دليل المتصفح"
+    }
+  },
+  {
+    "Key": "RequestHeaderInfo",
+    "Values": {
+      "en-US": "Request Header Info",
+      "tr-TR": "İstek Başlık Bilgisi",
+      "ar-AE": "طلب معلومات رأس"
+    }
+  },
+  {
+    "Key": "Message",
+    "Values": {
+      "en-US": "Message",
+      "tr-TR": "Mesaj",
+      "ar-AE": "رسالة"
+    }
+  },
+  {
+    "Key": "Success",
+    "Values": {
+      "en-US": "Status",
+      "tr-TR": "Durum",
+      "ar-AE": "حالة"
+    }
+  },
+  {
+    "Key": "CreationDate",
+    "Values": {
+      "en-US": "Creation Date",
+      "tr-TR": "İşlem Tarihi",
+      "ar-AE": "تاريخ الصفقة"
+    }
+  },
+  {
+    "Key": "VerificationTypeNotDefined",
+    "Values": {
+      "en-US": "Verification type is not defined",
+      "tr-TR": "Doğrulama tipi tanımlanmadı",
+      "ar-AE": "نوع التحقق غير محدد"
+    }
+  },
+  {
+    "Key": "VerificationCode",
+    "Values": {
+      "en-US": "Verification code",
+      "tr-TR": "Doğrulama kodu",
+      "ar-AE": "شيفرة التأكيد"
+    }
+  },
+  {
+    "Key": "VerificationCodeNotRetrieved",
+    "Values": {
+      "en-US": "Verification code is not retrieved",
+      "tr-TR": "Doğrulama kodu alınamadı",
+      "ar-AE": "فشل في الحصول على رمز التحقق"
+    }
+  },
+  {
+    "Key": "InvalidVerificationCode",
+    "Values": {
+      "en-US": "Invalid verification code",
+      "tr-TR": "Doğrulama kodu hatalı",
+      "ar-AE": "رمز التحقق غير صحيح"
+    }
+  },
+  {
+    "Key": "SMSVerificationCodeMessage",
+    "Values": {
+      "en-US": "Your verification code is: ",
+      "tr-TR": "Doğrulama kodunuz: ",
+      "ar-AE": "رمز التحقق:"
+    }
+  },
+  {
+    "Key": "ApplicationUserName",
+    "Values": {
+      "en-US": "Application User Name",
+      "tr-TR": "Uygulama Kullanıcısı Adı",
+      "ar-AE": "اسم مستخدم التطبيق"
+    }
+  },
+  {
+    "Key": "RequestUserName",
+    "Values": {
+      "en-US": "Request User Name",
+      "tr-TR": "İstek Kullanıcısı Adı",
+      "ar-AE": "طلب اسم المستخدم"
+    }
+  },
+  {
+    "Key": "OSName",
+    "Values": {
+      "en-US": "OS Name",
+      "tr-TR": "İşletim Sistemi Adı",
+      "ar-AE": "اسم نظام التشغيل"
+    }
+  },
+  {
+    "Key": "ModelOrDataCannotBeNull",
+    "Values": {
+      "en-US": "Model or data can't be null",
+      "tr-TR": "Model veya veri boş geçilemez",
+      "ar-AE": "لا يمكن أن يكون النموذج أو البيانات فارغًا"
+    }
+  },
+  {
+    "Key": "EmailTemplateNotFound",
+    "Values": {
+      "en-US": "Email template not found",
+      "tr-TR": "E-Posta taslağı bulunmadı",
+      "ar-AE": "قالب البريد الإلكتروني غير موجود"
+    }
+  },
+  {
+    "Key": "EmailCouldNotBeConfirmed",
+    "Values": {
+      "en-US": "Email could not be confirmed",
+      "tr-TR": "E-Posta doğrulanamadı",
+      "ar-AE": "لا يمكن تأكيد البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "EmailAlreadyConfirmed",
+    "Values": {
+      "en-US": "Email already confirmed",
+      "tr-TR": "E-Posta zaten doğrulanmış",
+      "ar-AE": "تم تأكيد البريد الإلكتروني بالفعل"
+    }
+  },
+  {
+    "Key": "PhoneNumberAlreadyConfirmed",
+    "Values": {
+      "en-US": "Phone number already confirmed",
+      "tr-TR": "Telefon numarası zaten doğrulanmış",
+      "ar-AE": "رقم الهاتف مؤكد بالفعل"
+    }
+  },
+  {
+    "Key": "ConfirmationCodeAlreadySent",
+    "Values": {
+      "en-US": "Confirmation code already sent",
+      "tr-TR": "Doğrulama kodu zaten gönderilmiş",
+      "ar-AE": "تم إرسال رمز تأكيد رقم الهاتف بالفعل"
+    }
+  },
+  {
+    "Key": "ConfirmationCodeIsUsedOrExpired",
+    "Values": {
+      "en-US": "Confirmation code is used or expired",
+      "tr-TR": "Doğrulama kodu kullanılmış veya son kullanma tarihi sona ermiş",
+      "ar-AE": "رمز التأكيد مستخدم أو منتهي الصلاحية"
+    }
+  },
+  {
+    "Key": "ConfirmationCode",
+    "Values": {
+      "en-US": "Confirmation code is",
+      "tr-TR": "Doğrulama kodunuz",
+      "ar-AE": "رمز تأكيد رقم الهاتف هو"
+    }
+  },
+  {
+    "Key": "ConfirmationCodeNotFound",
+    "Values": {
+      "en-US": "Confirmation code not found",
+      "tr-TR": "Doğrulama kodu bulunamadı",
+      "ar-AE": "لم يتم العثور على رمز التأكيد"
+    }
+  },
+  {
+    "Key": "InvalidConfirmationCode",
+    "Values": {
+      "en-US": "Confirmation code is invalid",
+      "tr-TR": "Doğrulama kodu geçersiz",
+      "ar-AE": "رمز التأكيد غير صالح"
+    }
+  },
+  {
+    "Key": "PhoneNumberConfirmationCode",
+    "Values": {
+      "en-US": "The phone number confirmation code is",
+      "tr-TR": "Telefon numarası doğrulama kodunuz",
+      "ar-AE": "رمز تأكيد رقم الهاتف هو"
+    }
+  },
+  {
+    "Key": "Management_Role_AddClaim",
+    "Values": {
+      "en-US": "Add Claim",
+      "tr-TR": "Talep Ekle",
+      "ar-AE": "إضافة مطالبة"
+    }
+  },
+  {
+    "Key": "Management_Role_AddUser",
+    "Values": {
+      "en-US": "Add User",
+      "tr-TR": "Kullanıcı Ekle",
+      "ar-AE": "إضافة المستخدم"
+    }
+  },
+  {
+    "Key": "Management_Role_ClaimList",
+    "Values": {
+      "en-US": "Claim List",
+      "tr-TR": "Talep Listesi",
+      "ar-AE": "قائمة المطالبات"
+    }
+  },
+  {
+    "Key": "Management_Role_Create",
+    "Values": {
+      "en-US": "Create Role",
+      "tr-TR": "Rol Oluştur",
+      "ar-AE": "إنشاء دور"
+    }
+  },
+  {
+    "Key": "Management_Role_Delete",
+    "Values": {
+      "en-US": "Delete Role",
+      "tr-TR": "Rolü Sil",
+      "ar-AE": "حذف الدور"
+    }
+  },
+  {
+    "Key": "Management_Role_Edit",
+    "Values": {
+      "en-US": "Edit Role",
+      "tr-TR": "Rolü Düzenle",
+      "ar-AE": "تحرير الدور"
+    }
+  },
+  {
+    "Key": "Management_Role_List",
+    "Values": {
+      "en-US": "Role List",
+      "tr-TR": "Rol Listesi",
+      "ar-AE": "قائمة الأدوار"
+    }
+  },
+  {
+    "Key": "Management_Role_RemoveClaim",
+    "Values": {
+      "en-US": "Remove Claim",
+      "tr-TR": "Kaldırma Talebi",
+      "ar-AE": "الدور إزالة المطالبة"
+    }
+  },
+  {
+    "Key": "Management_Role_RemoveUser",
+    "Values": {
+      "en-US": "Remove User",
+      "tr-TR": "Kullanıcıyı Kaldır",
+      "ar-AE": "إزالة المستخدم"
+    }
+  },
+  {
+    "Key": "Management_Role_UserList",
+    "Values": {
+      "en-US": "User List",
+      "tr-TR": "Kullanıcı Listesi",
+      "ar-AE": "قائمة المستخدم"
+    }
+  },
+  {
+    "Key": "Management_User_AddClaim",
+    "Values": {
+      "en-US": "Add Claim",
+      "tr-TR": "Talep Ekle",
+      "ar-AE": "مطالبة إضافة المستخدم"
+    }
+  },
+  {
+    "Key": "Management_User_ClaimList",
+    "Values": {
+      "en-US": "Claim List",
+      "tr-TR": "Talep Listesi",
+      "ar-AE": "قائمة المطالبات"
+    }
+  },
+  {
+    "Key": "Management_User_Create",
+    "Values": {
+      "en-US": "Create User",
+      "tr-TR": "Kullanıcı Oluştur",
+      "ar-AE": "إنشاء المستخدم"
+    }
+  },
+  {
+    "Key": "Management_User_Delete",
+    "Values": {
+      "en-US": "Delete User",
+      "tr-TR": "Kullanıcıyı sil",
+      "ar-AE": "مسح المستخدم"
+    }
+  },
+  {
+    "Key": "Management_User_Edit",
+    "Values": {
+      "en-US": "Edit User",
+      "tr-TR": "Kullanıcıyı Düzenle",
+      "ar-AE": "تحرير العضو"
+    }
+  },
+  {
+    "Key": "Management_User_Role",
+    "Values": {
+      "en-US": "Add Role",
+      "tr-TR": "Rol Ekle",
+      "ar-AE": "أضف دورًا"
+    }
+  },
+  {
+    "Key": "Management_User_List",
+    "Values": {
+      "en-US": "User List",
+      "tr-TR": "Kullanıcı listesi",
+      "ar-AE": "قائمة المستخدم"
+    }
+  },
+  {
+    "Key": "Management_User_RemoveClaim",
+    "Values": {
+      "en-US": "Remove Claim",
+      "tr-TR": "Kaldırma Talebi",
+      "ar-AE": "طلب إزالة"
+    }
+  },
+  {
+    "Key": "Management_ApplicationSetting_List",
+    "Values": {
+      "en-US": "Application Setting List",
+      "tr-TR": "Uygulama Ayar Listesi",
+      "ar-AE": "قائمة إعدادات التطبيق"
+    }
+  },
+  {
+    "Key": "Management_ApplicationSetting_Create",
+    "Values": {
+      "en-US": "Create Application Setting",
+      "tr-TR": "Uygulama Ayarı Oluştur",
+      "ar-AE": "إنشاء إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "Management_ApplicationSetting_Edit",
+    "Values": {
+      "en-US": "Edit Application Setting",
+      "tr-TR": "Uygulama Ayarını Düzenle",
+      "ar-AE": "تحرير إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "Management_ApplicationSetting_Delete",
+    "Values": {
+      "en-US": "Delete Application Setting",
+      "tr-TR": "Uygulama Ayarını Sil",
+      "ar-AE": "حذف إعدادات التطبيق"
+    }
+  },
+  {
+    "Key": "Management_ApplicationSettingCategory_List",
+    "Values": {
+      "en-US": "Application Settings Category List",
+      "tr-TR": "Uygulama Ayarları Kategori Listesi",
+      "ar-AE": "قائمة فئة إعدادات التطبيق"
+    }
+  },
+  {
+    "Key": "Management_ApplicationSettingCategory_Create",
+    "Values": {
+      "en-US": "Create Application Setting Category",
+      "tr-TR": "Uygulama Ayarı Kategorisi Oluştur",
+      "ar-AE": "تكوين فئة إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "Management_ApplicationSettingCategory_Edit",
+    "Values": {
+      "en-US": "Edit Application Setting Category",
+      "tr-TR": "Uygulama Ayarı Kategorisini Düzenle",
+      "ar-AE": "تحرير فئة إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "Management_ApplicationSettingCategory_Delete",
+    "Values": {
+      "en-US": "Delete Application Setting Category",
+      "tr-TR": "Uygulama Ayarı Kategorisini Sil",
+      "ar-AE": "حذف فئة إعداد التطبيق"
+    }
+  },
+  {
+    "Key": "Management_EmailTemplate_List",
+    "Values": {
+      "en-US": "Email Template List",
+      "tr-TR": "E-posta Şablon Listesi",
+      "ar-AE": "قائمة قوالب البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "Management_EmailTemplate_Edit",
+    "Values": {
+      "en-US": "Edit Email Template",
+      "tr-TR": "E-posta Şablonunu Düzenle",
+      "ar-AE": "تحرير قالب البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "Report_LoginAuditLog_List",
+    "Values": {
+      "en-US": "Login Audit Log List",
+      "tr-TR": "Giriş Denetimi Günlük Listesi",
+      "ar-AE": "قائمة سجل تدقيق تسجيل الدخول"
+    }
+  },
+  {
+    "Key": "Management_Excel_Export",
+    "Values": {
+      "en-US": "Export Excel",
+      "tr-TR": "Excel'i Dışa Aktar",
+      "ar-AE": "تصدير إكسل"
+    }
+  },
+  {
+    "Key": "ObsoleteSample",
+    "Values": {
+      "en-US": "Obsolete Sample",
+      "tr-TR": "Eski Örnek",
+      "ar-AE": "عينة قديمة"
+    }
+  },
+  {
+    "Key": "Report_EmailNotification_List",
+    "Values": {
+      "en-US": "Email Notification List",
+      "tr-TR": "E-posta Bildirim Listesi",
+      "ar-AE": "قائمة إخطارات البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "Report_EmailNotification_Send",
+    "Values": {
+      "en-US": "Send Email Notification",
+      "tr-TR": "E-posta Bildirimi Gönder",
+      "ar-AE": "إرسال إشعار بالبريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "EmailNotificationNotFound",
+    "Values": {
+      "en-US": "Email notification not found!",
+      "tr-TR": "E-posta bildirimi bulunamadı!",
+      "ar-AE": "لم يتم العثور على إشعار البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "ConfirmCodeShouldBeFilled",
+    "Values": {
+      "en-US": "Confirmation code should be filled!",
+      "tr-TR": "Doğrulama kodu girilmelidir!",
+      "ar-AE": "يجب ملء رمز التأكيد"
+    }
+  },
+  {
+    "Key": "ClaimAlreadyExist",
+    "Values": {
+      "en-US": "Claim is already exist!",
+      "tr-TR": "İzin zaten mevcut!",
+      "ar-AE": "المطالبة موجودة بالفعل"
+    }
+  },
+  {
+    "Key": "EmailTemplateNotFound",
+    "Values": {
+      "en-US": "Email template is not found",
+      "tr-TR": "E-posta şablonu bulunamadı",
+      "ar-AE": "لم يتم العثور على قالب البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "EmailTemplateTranslationNotFound",
+    "Values": {
+      "en-US": "Email template translation is not found",
+      "tr-TR": "E-posta şablonu çevirisi bulunamadı",
+      "ar-AE": "لم يتم العثور على ترجمة قالب البريد الإلكتروني"
+    }
+  },
+  {
+    "Key": "LanguageUpdateModelNotFound",
+    "Values": {
+      "en-US": "Language update model not found!",
+      "tr-TR": "Dil güncelleme modeli bulunamadı!",
+      "ar-AE": "نموذج تحديث اللغة غير موجود!"
+    }
+  },
+  {
+    "Key": "LanguageAlreadyExists",
+    "Values": {
+      "en-US": "Language already exists!",
+      "tr-TR": "Dil mevcut!",
+      "ar-AE": "اللغة موجودة بالفعل"
+    }
+  },
+  {
+    "Key": "LanguageNotFound",
+    "Values": {
+      "en-US": "Language not found!",
+      "tr-TR": "Dil bulunamadı!",
+      "ar-AE": "اللغة غير موجودة"
+    }
+  },
+  {
+    "Key": "DefaultLanguageCannotBeDelete",
+    "Values": {
+      "en-US": "Default language can't be delete!",
+      "tr-TR": "Varsayılan dil silinemez!",
+      "ar-AE": "لا يمكن حذف اللغة الافتراضية"
+    }
+  },
+  {
+    "Key": "DefaultLanguageCannotBePassive",
+    "Values": {
+      "en-US": "Default language can't be passive!",
+      "tr-TR": "Varsayılan dil pasif edilemez!",
+      "ar-AE": "لا يمكن أن تكون اللغة الافتراضية سلبية"
+    }
+  },
+  {
+    "Key": "Management_Language_List",
+    "Values": {
+      "en-US": "Language List",
+      "tr-TR": "Dil Listesi",
+      "ar-AE": "قائمة اللغة"
+    }
+  },
+  {
+    "Key": "Management_Language_Edit",
+    "Values": {
+      "en-US": "Language Edit",
+      "tr-TR": "Dil Düzenleme",
+      "ar-AE": "تحرير اللغة"
+    }
+  },
+  {
+    "Key": "UnableToUpdateMenuOrder",
+    "Values": {
+      "en-US": "Unable to update menu order",
+      "tr-TR": "Menü sıralaması güncellenemedi",
+      "ar-AE": "تعذر تحديث ترتيب القائمة"
+    }
+  },
+  {
+    "Key": "Management_Menu_List",
+    "Values": {
+      "en-US": "Menu List",
+      "tr-TR": "Menü Listesi",
+      "ar-AE": "قائمة القائمة"
+    }
+  },
+  {
+    "Key": "Management_Menu_Edit",
+    "Values": {
+      "en-US": "Edit Menu",
+      "tr-TR": "Menüyü Düzenle",
+      "ar-AE": "عدل القائمة"
+    }
+  },
+  {
+    "Key": "Management_Pdf_Export",
+    "Values": {
+      "en-US": "Pdf Export",
+      "tr-TR": "Pdf'i Dışa Aktar",
+      "ar-AE": "تصدير قوات الدفاع الشعبي"
+    }
+  }
+]
