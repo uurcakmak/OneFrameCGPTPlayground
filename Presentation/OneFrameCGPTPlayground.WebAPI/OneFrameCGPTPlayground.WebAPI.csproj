@@ -115,6 +115,7 @@
 	<ItemGroup>
 		<Folder Include=".docker\" />
 		<Folder Include="k8s\" />
+		<Folder Include="Migrations\" />
 	</ItemGroup>
 
 	<ItemGroup>
