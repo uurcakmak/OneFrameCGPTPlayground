@@ -1,8 +1,7 @@
-﻿// <copyright file="20230716170930_InitDb.cs" company="KocSistem">
+﻿// <copyright file="20230716172117_InitDb.cs" company="KocSistem">
 // Copyright (c) KocSistem. All rights reserved.
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
-
 using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 
@@ -533,7 +532,7 @@ namespace OneFrameCGPTPlayground.Persistence.Migrations
             migrationBuilder.InsertData(
                 table: "User",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "InsertedDate", "InsertedUser", "IsActive", "IsDeleted", "LastPasswordChangedDate", "LockoutEnabled", "LockoutEnd", "Name", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "ProfilePhoto", "SecurityStamp", "Surname", "TimeZone", "TwoFactorEnabled", "UpdatedDate", "UpdatedUser", "UserName" },
-                values: new object[] { new Guid("e0cb33f3-591a-4a25-aaba-bd05f796b5fb"), 0, "ab72d39f-7f3a-4bbe-9228-fa2555d8063c", "ugur.cakmak@kocsistem.com.tr", true, new DateTime(2023, 7, 16, 20, 9, 29, 898, DateTimeKind.Local).AddTicks(8827), "System", true, false, new DateTime(2022, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), true, null, "Uğur", "UGUR.CAKMAK@KOCSISTEM.COM.TR", "UGUR.CAKMAK@KOCSISTEM.COM.TR", "AQAAAAIAAYagAAAAEMtXQmA6KojzGQk6wucICSVQy99MAlMmXszqE2zhkRQEnq/yx0nQtimcgEdEg8p8Eg==", "02165561100", false, null, "ce8b16e3-eb01-4263-9418-43103d1a3557", "Çakmak", "Europe/Istanbul", false, null, null, "ugur.cakmak@kocsistem.com.tr" });
+                values: new object[] { new Guid("e0cb33f3-591a-4a25-aaba-bd05f796b5fb"), 0, "ab72d39f-7f3a-4bbe-9228-fa2555d8063c", "ugur.cakmak@kocsistem.com.tr", true, new DateTime(2023, 7, 16, 20, 21, 17, 390, DateTimeKind.Local).AddTicks(6247), "System", true, false, new DateTime(2023, 7, 16, 20, 21, 17, 390, DateTimeKind.Local).AddTicks(6230), false, null, "Uğur", "UGUR.CAKMAK@KOCSISTEM.COM.TR", "UGUR.CAKMAK@KOCSISTEM.COM.TR", "AQAAAAIAAYagAAAAECIrFaYcG3Pa1DWQ3RQYvA1hCueLO5EZptAByVGTirihYDDmE5vTXaAX3tiYyO2WvQ==", "02165561100", false, null, "ce8b16e3-eb01-4263-9418-43103d1a3557", "Çakmak", "Europe/Istanbul", false, null, null, "ugur.cakmak@kocsistem.com.tr" });
 
             migrationBuilder.InsertData(
                 table: "ApplicationSetting",

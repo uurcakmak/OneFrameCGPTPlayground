@@ -45,11 +45,11 @@ namespace OneFrameCGPTPlayground.Persistence.Data
             {
                 AccessFailedCount = 0,
                 Id = Guid.Parse("E0CB33F3-591A-4A25-AABA-BD05F796B5FB"),
-                LockoutEnabled = true,
+                LockoutEnabled = false,
                 LockoutEnd = null,
                 NormalizedEmail = adminUserEmail.ToUpperInvariant(),
                 NormalizedUserName = adminUserEmail.ToUpperInvariant(),
-                LastPasswordChangedDate = new DateTime(2022, 12, 31),
+                LastPasswordChangedDate = DateTime.Now,
                 PhoneNumber = "02165561100",
                 PhoneNumberConfirmed = false,
                 SecurityStamp = "ce8b16e3-eb01-4263-9418-43103d1a3557",
