@@ -3,6 +3,17 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
+using IdentityModel;
+using KocSistem.OneFrame.Common.Extensions;
+using KocSistem.OneFrame.Data.Relational;
+using KocSistem.OneFrame.DesignObjects.Services;
+using KocSistem.OneFrame.I18N;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
 using OneFrameCGPTPlayground.Application.Abstractions;
 using OneFrameCGPTPlayground.Application.Abstractions.Account;
 using OneFrameCGPTPlayground.Application.Abstractions.Account.Contracts;
@@ -22,17 +33,6 @@ using OneFrameCGPTPlayground.Common.Helpers;
 using OneFrameCGPTPlayground.Domain;
 using OneFrameCGPTPlayground.Infrastructure.Helpers;
 using OneFrameCGPTPlayground.Infrastructure.Helpers.Captcha;
-using IdentityModel;
-using KocSistem.OneFrame.Common.Extensions;
-using KocSistem.OneFrame.Data.Relational;
-using KocSistem.OneFrame.DesignObjects.Services;
-using KocSistem.OneFrame.I18N;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Options;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Globalization;

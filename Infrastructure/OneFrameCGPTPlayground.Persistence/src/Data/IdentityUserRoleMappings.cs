@@ -3,11 +3,11 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using OneFrameCGPTPlayground.Domain;
 using KocSistem.OneFrame.Common.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using OneFrameCGPTPlayground.Domain;
 using System;
 using System.Collections.Generic;
 
@@ -45,17 +45,7 @@ namespace OneFrameCGPTPlayground.Persistence.Data
                 {
                     RoleId = Guid.Parse("00BB2E85-4474-414C-BED4-6D4FEF568EC4"), // Admin
                     UserId = Guid.Parse("E0CB33F3-591A-4A25-AABA-BD05F796B5FB"), // adminuser@kocsistem.com.tr
-                },
-                new IdentityUserRole<Guid>
-                {
-                    RoleId = Guid.Parse("09C0B51B-F9AC-48A0-8A7C-B5B6B987A4C6"), // Guest
-                    UserId = Guid.Parse("1C02BE39-802F-4E52-AB19-53FA3E611968"), // guestuser@kocsistem.com.tr
-                },
-                new IdentityUserRole<Guid>
-                {
-                    RoleId = Guid.Parse("7255E4E1-BCBF-4C1B-89D4-15F3343DC572"), // PowerUser
-                    UserId = Guid.Parse("5F3BBFC9-881E-4968-8803-A8F1ECECACDA"), // oneframeuser@kocsistem.com.tr
-                },
+                }
             };
 
             _ = builder.HasData(dataList);

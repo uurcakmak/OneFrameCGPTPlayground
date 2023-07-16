@@ -3,9 +3,9 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using OneFrameCGPTPlayground.Infrastructure.Extensions;
 using KocSistem.OneFrame.ErrorHandling;
 using Microsoft.AspNetCore.Mvc.Filters;
+using OneFrameCGPTPlayground.Infrastructure.Extensions;
 
 namespace OneFrameCGPTPlayground.WebAPI.Filters
 {

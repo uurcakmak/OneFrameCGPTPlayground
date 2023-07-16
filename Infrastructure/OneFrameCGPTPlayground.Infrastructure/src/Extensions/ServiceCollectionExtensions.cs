@@ -3,12 +3,6 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using OneFrameCGPTPlayground.Common.Authentication;
-using OneFrameCGPTPlayground.Common.Helpers;
-using OneFrameCGPTPlayground.Domain;
-using OneFrameCGPTPlayground.Infrastructure.Helpers;
-using OneFrameCGPTPlayground.Infrastructure.Helpers.Identity;
-using OneFrameCGPTPlayground.Persistence.Contexts.Main;
 using KocSistem.OneFrame.Caching;
 using KocSistem.OneFrame.Caching.Memory;
 using KocSistem.OneFrame.Caching.Redis;
@@ -22,6 +16,12 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using OneFrameCGPTPlayground.Common.Authentication;
+using OneFrameCGPTPlayground.Common.Helpers;
+using OneFrameCGPTPlayground.Domain;
+using OneFrameCGPTPlayground.Infrastructure.Helpers;
+using OneFrameCGPTPlayground.Infrastructure.Helpers.Identity;
+using OneFrameCGPTPlayground.Persistence.Contexts.Main;
 using System;
 using System.Globalization;
 using System.Linq;

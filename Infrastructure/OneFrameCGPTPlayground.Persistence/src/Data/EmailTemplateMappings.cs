@@ -5,10 +5,10 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-using OneFrameCGPTPlayground.Domain;
 using KocSistem.OneFrame.Common.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using OneFrameCGPTPlayground.Domain;
 using System;
 using System.Collections.Generic;
 

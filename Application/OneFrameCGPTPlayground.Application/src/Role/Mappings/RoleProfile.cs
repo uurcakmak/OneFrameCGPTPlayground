@@ -4,10 +4,10 @@
 // </copyright>
 
 using AutoMapper;
+using KocSistem.OneFrame.Data.Relational;
 using OneFrameCGPTPlayground.Application.Abstractions.Common.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.Role.Contracts;
 using OneFrameCGPTPlayground.Domain;
-using KocSistem.OneFrame.Data.Relational;
 
 namespace OneFrameCGPTPlayground.Application.Role.Mappings
 {

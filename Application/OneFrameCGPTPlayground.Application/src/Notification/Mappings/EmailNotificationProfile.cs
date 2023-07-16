@@ -4,9 +4,9 @@
 // </copyright>
 
 using AutoMapper;
+using KocSistem.OneFrame.Data.Relational;
 using OneFrameCGPTPlayground.Application.Abstractions;
 using OneFrameCGPTPlayground.Application.Abstractions.Common.Contracts;
-using KocSistem.OneFrame.Data.Relational;
 
 namespace OneFrameCGPTPlayground.Application.ApplicationSetting.Mappings
 {

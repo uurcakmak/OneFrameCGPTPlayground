@@ -4,6 +4,9 @@
 // </copyright>
 
 using AutoMapper;
+using KocSistem.OneFrame.DesignObjects.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using OneFrameCGPTPlayground.Application.Abstractions.Common.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.EmailTemplate;
 using OneFrameCGPTPlayground.Application.Abstractions.EmailTemplate.Contracts;
@@ -11,9 +14,6 @@ using OneFrameCGPTPlayground.Application.Abstractions.Notification;
 using OneFrameCGPTPlayground.Common.Authentication;
 using OneFrameCGPTPlayground.WebAPI.Model.EmailTemplate;
 using OneFrameCGPTPlayground.WebAPI.Model.Paging;
-using KocSistem.OneFrame.DesignObjects.Services;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Filters;
 using System.Net.Mime;
 

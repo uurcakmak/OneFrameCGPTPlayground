@@ -4,13 +4,13 @@
 // </copyright>
 
 using AutoMapper;
+using KocSistem.OneFrame.DesignObjects.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using OneFrameCGPTPlayground.Application.Abstractions.Menu;
 using OneFrameCGPTPlayground.Application.Abstractions.Menu.Contracts;
 using OneFrameCGPTPlayground.Common.Authentication;
 using OneFrameCGPTPlayground.WebAPI.Model.Menu;
-using KocSistem.OneFrame.DesignObjects.Services;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Filters;
 using System.Net.Mime;
 

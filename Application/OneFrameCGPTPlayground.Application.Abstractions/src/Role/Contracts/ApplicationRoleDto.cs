@@ -3,9 +3,9 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
+using Microsoft.AspNetCore.Identity;
 using OneFrameCGPTPlayground.Application.Abstractions.RoleTranslation.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.TranslationBaseDto;
-using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 

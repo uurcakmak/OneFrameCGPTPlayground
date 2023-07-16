@@ -2,8 +2,8 @@
 // Copyright (c) KocSistem. All rights reserved.
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
-using OneFrameCGPTPlayground.Application.Abstractions.EmailTemplateTranslation.Contracts;
 using KocSistem.OneFrame.Data.Relational;
+using OneFrameCGPTPlayground.Application.Abstractions.EmailTemplateTranslation.Contracts;
 using System;
 using System.Collections.Generic;
 

@@ -4,6 +4,13 @@
 // </copyright>
 
 using AutoMapper;
+using KocSistem.OneFrame.Common.Extensions;
+using KocSistem.OneFrame.DesignObjects.Services;
+using Microsoft.AspNetCore.Authentication.Facebook;
+using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Authentication.MicrosoftAccount;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using OneFrameCGPTPlayground.Application.Abstractions.Account;
 using OneFrameCGPTPlayground.Application.Abstractions.Account.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.ApplicationSetting;
@@ -16,13 +23,6 @@ using OneFrameCGPTPlayground.WebAPI.Model.ClaimHelper;
 using OneFrameCGPTPlayground.WebAPI.Model.Paging;
 using OneFrameCGPTPlayground.WebAPI.Model.Profile;
 using OneFrameCGPTPlayground.WebAPI.Model.User;
-using KocSistem.OneFrame.Common.Extensions;
-using KocSistem.OneFrame.DesignObjects.Services;
-using Microsoft.AspNetCore.Authentication.Facebook;
-using Microsoft.AspNetCore.Authentication.Google;
-using Microsoft.AspNetCore.Authentication.MicrosoftAccount;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Filters;
 using System.Globalization;
 using System.Net.Mime;

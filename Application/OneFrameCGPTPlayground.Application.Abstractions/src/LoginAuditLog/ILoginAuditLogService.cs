@@ -3,13 +3,13 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
+using KocSistem.OneFrame.Data.Relational;
+using KocSistem.OneFrame.DesignObjects;
+using KocSistem.OneFrame.DesignObjects.Services;
 using OneFrameCGPTPlayground.Application.Abstractions.Common.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.Excel.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.LoginAuditLog.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.PdfExport.Contracts;
-using KocSistem.OneFrame.Data.Relational;
-using KocSistem.OneFrame.DesignObjects;
-using KocSistem.OneFrame.DesignObjects.Services;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

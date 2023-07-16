@@ -4,13 +4,13 @@
 // </copyright>
 
 using AutoMapper;
-using OneFrameCGPTPlayground.Application.Abstractions.UserPasswordHistory;
-using OneFrameCGPTPlayground.Application.Abstractions.UserPasswordHistory.Contracts;
-using OneFrameCGPTPlayground.Domain;
 using KocSistem.OneFrame.Data;
 using KocSistem.OneFrame.Data.Relational;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
+using OneFrameCGPTPlayground.Application.Abstractions.UserPasswordHistory;
+using OneFrameCGPTPlayground.Application.Abstractions.UserPasswordHistory.Contracts;
+using OneFrameCGPTPlayground.Domain;
 using System;
 using System.Linq;
 

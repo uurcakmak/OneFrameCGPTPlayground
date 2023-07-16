@@ -3,9 +3,9 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using OneFrameCGPTPlayground.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using OneFrameCGPTPlayground.Domain;
 
 namespace OneFrameCGPTPlayground.Persistence.Data
 {

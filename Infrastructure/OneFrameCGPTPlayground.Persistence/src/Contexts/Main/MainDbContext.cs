@@ -8,12 +8,12 @@
 using Audit.Core;
 using Audit.EntityFramework;
 using Audit.EntityFramework.Providers;
-using OneFrameCGPTPlayground.Domain;
-using OneFrameCGPTPlayground.Persistence.Data;
 using KocSistem.OneFrame.Common.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.DataEncryption;
 using Microsoft.EntityFrameworkCore.DataEncryption.Providers;
+using OneFrameCGPTPlayground.Domain;
+using OneFrameCGPTPlayground.Persistence.Data;
 using System;
 using System.Linq;
 using System.Text;

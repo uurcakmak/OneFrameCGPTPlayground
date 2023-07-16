@@ -3,16 +3,16 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using OneFrameCGPTPlayground.Common.Constants;
-using OneFrameCGPTPlayground.Infrastructure.Helpers.Captcha;
-using OneFrameCGPTPlayground.Mvc.Extensions;
-using OneFrameCGPTPlayground.Mvc.Helpers;
-using OneFrameCGPTPlayground.Mvc.Models.Account;
 using IdentityModel;
 using KocSistem.OneFrame.DesignObjects.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
+using OneFrameCGPTPlayground.Common.Constants;
+using OneFrameCGPTPlayground.Infrastructure.Helpers.Captcha;
+using OneFrameCGPTPlayground.Mvc.Extensions;
+using OneFrameCGPTPlayground.Mvc.Helpers;
+using OneFrameCGPTPlayground.Mvc.Models.Account;
 using System.IdentityModel.Tokens.Jwt;
 
 namespace OneFrameCGPTPlayground.Mvc.Controllers

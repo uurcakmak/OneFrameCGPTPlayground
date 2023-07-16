@@ -3,14 +3,14 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using OneFrameCGPTPlayground.Application.Abstractions.ApplicationSetting;
-using OneFrameCGPTPlayground.Common.Constants;
-using OneFrameCGPTPlayground.WebAPI.Model.Configuration;
-using OneFrameCGPTPlayground.WebAPI.Model.FileUpload;
 using KocSistem.OneFrame.DesignObjects.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using OneFrameCGPTPlayground.Application.Abstractions.ApplicationSetting;
+using OneFrameCGPTPlayground.Common.Constants;
+using OneFrameCGPTPlayground.WebAPI.Model.Configuration;
+using OneFrameCGPTPlayground.WebAPI.Model.FileUpload;
 using Swashbuckle.AspNetCore.Filters;
 using System.Globalization;
 using System.Net.Mime;

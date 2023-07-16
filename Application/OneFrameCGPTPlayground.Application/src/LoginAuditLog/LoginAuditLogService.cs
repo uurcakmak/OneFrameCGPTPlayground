@@ -4,6 +4,13 @@
 // </copyright>
 
 using AutoMapper;
+using KocSistem.OneFrame.Common.Extensions;
+using KocSistem.OneFrame.Data;
+using KocSistem.OneFrame.Data.Relational;
+using KocSistem.OneFrame.DesignObjects.Services;
+using KocSistem.OneFrame.I18N;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
 using OneFrameCGPTPlayground.Application.Abstractions;
 using OneFrameCGPTPlayground.Application.Abstractions.Common.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.Excel.Contracts;
@@ -12,13 +19,6 @@ using OneFrameCGPTPlayground.Application.Abstractions.PdfExport.Contracts;
 using OneFrameCGPTPlayground.Application.Constants;
 using OneFrameCGPTPlayground.Common.Helpers.ExcelExport;
 using OneFrameCGPTPlayground.Common.Helpers.PdfExport;
-using KocSistem.OneFrame.Common.Extensions;
-using KocSistem.OneFrame.Data;
-using KocSistem.OneFrame.Data.Relational;
-using KocSistem.OneFrame.DesignObjects.Services;
-using KocSistem.OneFrame.I18N;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Globalization;

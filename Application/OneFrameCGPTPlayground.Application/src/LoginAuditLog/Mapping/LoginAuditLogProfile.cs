@@ -4,10 +4,10 @@
 // </copyright>
 
 using AutoMapper;
+using KocSistem.OneFrame.Data.Relational;
 using OneFrameCGPTPlayground.Application.Abstractions.Common.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.LoginAuditLog.Contracts;
 using OneFrameCGPTPlayground.Common.Helpers.AutoMapper;
-using KocSistem.OneFrame.Data.Relational;
 
 namespace OneFrameCGPTPlayground.Application.LoginAuditLog.Mapping
 {

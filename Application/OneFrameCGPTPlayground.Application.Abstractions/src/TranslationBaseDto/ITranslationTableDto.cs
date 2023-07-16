@@ -3,8 +3,8 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using OneFrameCGPTPlayground.Common.Enums;
 using KocSistem.OneFrame.Data.Relational;
+using OneFrameCGPTPlayground.Common.Enums;
 
 namespace OneFrameCGPTPlayground.Application.Abstractions.TranslationBaseDto
 {

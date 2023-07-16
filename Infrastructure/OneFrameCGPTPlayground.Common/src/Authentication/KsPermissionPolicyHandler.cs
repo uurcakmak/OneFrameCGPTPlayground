@@ -3,8 +3,8 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using OneFrameCGPTPlayground.Common.Helpers;
 using Microsoft.AspNetCore.Authorization;
+using OneFrameCGPTPlayground.Common.Helpers;
 using System.Linq;
 using System.Threading.Tasks;
 

@@ -3,8 +3,8 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using OneFrameCGPTPlayground.Mvc.Models.User;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using OneFrameCGPTPlayground.Mvc.Models.User;
 using System.ComponentModel.DataAnnotations;
 
 namespace OneFrameCGPTPlayground.Mvc.Models.Profile

@@ -3,10 +3,10 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using OneFrameCGPTPlayground.Common.Enums;
-using OneFrameCGPTPlayground.WebAPI.Model.Role;
 using KocSistem.OneFrame.DesignObjects.Services;
 using Microsoft.AspNetCore.Mvc;
+using OneFrameCGPTPlayground.Common.Enums;
+using OneFrameCGPTPlayground.WebAPI.Model.Role;
 using Swashbuckle.AspNetCore.Filters;
 using System.Diagnostics.CodeAnalysis;
 

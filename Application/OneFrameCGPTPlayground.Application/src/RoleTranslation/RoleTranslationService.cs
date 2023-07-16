@@ -4,11 +4,11 @@
 // </copyright>
 
 using AutoMapper;
+using KocSistem.OneFrame.Data;
+using KocSistem.OneFrame.Data.Relational;
 using OneFrameCGPTPlayground.Application.Abstractions.RoleTranslation;
 using OneFrameCGPTPlayground.Application.Abstractions.RoleTranslation.Contracts;
 using OneFrameCGPTPlayground.Domain;
-using KocSistem.OneFrame.Data;
-using KocSistem.OneFrame.Data.Relational;
 using System;
 
 namespace OneFrameCGPTPlayground.Application.RoleTranslation

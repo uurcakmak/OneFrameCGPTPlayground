@@ -3,6 +3,9 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
+using KocSistem.OneFrame.DesignObjects.Models;
+using KocSistem.OneFrame.DesignObjects.Services;
+using Newtonsoft.Json.Linq;
 using OneFrameCGPTPlayground.Infrastructure.Helpers.Client;
 using OneFrameCGPTPlayground.Mvc.Extensions;
 using OneFrameCGPTPlayground.Mvc.Helpers;
@@ -11,9 +14,6 @@ using OneFrameCGPTPlayground.Mvc.Models.DataTables;
 using OneFrameCGPTPlayground.Mvc.Models.Other;
 using OneFrameCGPTPlayground.Mvc.Models.Paging;
 using OneFrameCGPTPlayground.Mvc.Toast;
-using KocSistem.OneFrame.DesignObjects.Models;
-using KocSistem.OneFrame.DesignObjects.Services;
-using Newtonsoft.Json.Linq;
 using System.ComponentModel.DataAnnotations;
 
 namespace OneFrameCGPTPlayground.Mvc.Controllers

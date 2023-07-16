@@ -4,11 +4,6 @@
 // </copyright>
 
 using AutoMapper;
-using OneFrameCGPTPlayground.Application.Abstractions;
-using OneFrameCGPTPlayground.Application.Abstractions.ApplicationSetting;
-using OneFrameCGPTPlayground.Application.Abstractions.Common.Contracts;
-using OneFrameCGPTPlayground.Application.Abstractions.Notification;
-using OneFrameCGPTPlayground.Common.Constants;
 using KocSistem.OneFrame.Common.Extensions;
 using KocSistem.OneFrame.Data.Relational;
 using KocSistem.OneFrame.DesignObjects.Services;
@@ -18,6 +13,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using OneFrameCGPTPlayground.Application.Abstractions;
+using OneFrameCGPTPlayground.Application.Abstractions.ApplicationSetting;
+using OneFrameCGPTPlayground.Application.Abstractions.Common.Contracts;
+using OneFrameCGPTPlayground.Application.Abstractions.Notification;
+using OneFrameCGPTPlayground.Common.Constants;
 using System;
 using System.Collections.Generic;
 using System.Linq;

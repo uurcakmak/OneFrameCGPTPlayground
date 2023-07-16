@@ -4,10 +4,10 @@
 // </copyright>
 
 using AutoMapper;
-using OneFrameCGPTPlayground.Application.Abstractions.EmailTemplateTranslation;
-using OneFrameCGPTPlayground.Application.Abstractions.EmailTemplateTranslation.Contracts;
 using KocSistem.OneFrame.Data;
 using KocSistem.OneFrame.Data.Relational;
+using OneFrameCGPTPlayground.Application.Abstractions.EmailTemplateTranslation;
+using OneFrameCGPTPlayground.Application.Abstractions.EmailTemplateTranslation.Contracts;
 using System;
 using System.Diagnostics.CodeAnalysis;
 

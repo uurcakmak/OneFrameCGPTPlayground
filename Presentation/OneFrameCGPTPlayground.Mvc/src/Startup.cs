@@ -3,6 +3,16 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
+using KocSistem.OneFrame.Common.Cache.Configs;
+using KocSistem.OneFrame.Common.Proxy;
+using KocSistem.OneFrame.ErrorHandling.ExceptionHandling.ExceptionandlerOptions;
+using KocSistem.OneFrame.ErrorHandling.Web;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using OneFrameCGPTPlayground.Common.Constants;
 using OneFrameCGPTPlayground.Common.Helpers;
 using OneFrameCGPTPlayground.Common.Helpers.ApplicationSetting;
@@ -14,16 +24,6 @@ using OneFrameCGPTPlayground.Mvc.Helpers;
 using OneFrameCGPTPlayground.Mvc.Jwt.AuthenticationSettings;
 using OneFrameCGPTPlayground.Mvc.Jwt.JwtTokenIssuerSettings;
 using OneFrameCGPTPlayground.Mvc.Jwt.JwtTokenValidationSettings;
-using KocSistem.OneFrame.Common.Cache.Configs;
-using KocSistem.OneFrame.Common.Proxy;
-using KocSistem.OneFrame.ErrorHandling.ExceptionHandling.ExceptionandlerOptions;
-using KocSistem.OneFrame.ErrorHandling.Web;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Diagnostics.HealthChecks;
-using Microsoft.AspNetCore.Mvc.Razor;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.AspNetCore.Mvc.ViewFeatures;
-using Microsoft.Extensions.Diagnostics.HealthChecks;
 using System.Globalization;
 using System.Net.Http.Headers;
 

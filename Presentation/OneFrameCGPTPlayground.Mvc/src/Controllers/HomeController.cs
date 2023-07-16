@@ -3,15 +3,15 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
+using KocSistem.OneFrame.DesignObjects.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Localization;
+using Newtonsoft.Json;
 using OneFrameCGPTPlayground.Mvc.Helpers;
 using OneFrameCGPTPlayground.Mvc.Models;
 using OneFrameCGPTPlayground.Mvc.Models.Home;
 using OneFrameCGPTPlayground.Mvc.Models.Other;
 using OneFrameCGPTPlayground.Mvc.Models.Profile;
-using KocSistem.OneFrame.DesignObjects.Services;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Localization;
-using Newtonsoft.Json;
 using System.Diagnostics;
 
 namespace OneFrameCGPTPlayground.Mvc.Controllers

@@ -3,8 +3,8 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using OneFrameCGPTPlayground.Domain.TranslationBase;
 using Microsoft.AspNetCore.Identity;
+using OneFrameCGPTPlayground.Domain.TranslationBase;
 using System;
 using System.Collections.Generic;
 

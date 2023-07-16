@@ -3,9 +3,9 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
+using KocSistem.OneFrame.DesignObjects.Services;
 using OneFrameCGPTPlayground.WebAPI.Model.Paging;
 using OneFrameCGPTPlayground.WebAPI.Model.Role;
-using KocSistem.OneFrame.DesignObjects.Services;
 using Swashbuckle.AspNetCore.Filters;
 using System.Diagnostics.CodeAnalysis;
 

@@ -3,10 +3,10 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using OneFrameCGPTPlayground.Persistence;
-using OneFrameCGPTPlayground.Persistence.Contexts.Main;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
+using OneFrameCGPTPlayground.Persistence;
+using OneFrameCGPTPlayground.Persistence.Contexts.Main;
 
 namespace OneFrameCGPTPlayground.WebAPI.Data
 {

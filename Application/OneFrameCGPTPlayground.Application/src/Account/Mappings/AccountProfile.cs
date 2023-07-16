@@ -4,11 +4,11 @@
 // </copyright>
 
 using AutoMapper;
+using KocSistem.OneFrame.Data.Relational;
 using OneFrameCGPTPlayground.Application.Abstractions.Account.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.Common.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.User.Contracts;
 using OneFrameCGPTPlayground.Domain;
-using KocSistem.OneFrame.Data.Relational;
 using System.Security.Claims;
 
 namespace OneFrameCGPTPlayground.Application.Account.Mappings

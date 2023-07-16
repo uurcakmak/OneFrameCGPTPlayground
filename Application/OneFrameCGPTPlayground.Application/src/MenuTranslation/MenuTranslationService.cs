@@ -4,10 +4,10 @@
 // </copyright>
 
 using AutoMapper;
-using OneFrameCGPTPlayground.Application.Abstractions.MenuTranslation;
-using OneFrameCGPTPlayground.Application.Abstractions.MenuTranslation.Contracts;
 using KocSistem.OneFrame.Data;
 using KocSistem.OneFrame.Data.Relational;
+using OneFrameCGPTPlayground.Application.Abstractions.MenuTranslation;
+using OneFrameCGPTPlayground.Application.Abstractions.MenuTranslation.Contracts;
 
 namespace OneFrameCGPTPlayground.Application.MenuTranslation
 {

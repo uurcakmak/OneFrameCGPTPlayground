@@ -3,9 +3,9 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
+using KocSistem.OneFrame.DesignObjects.Services;
 using OneFrameCGPTPlayground.Infrastructure.Helpers.Client;
 using OneFrameCGPTPlayground.Mvc.Models.Menu;
-using KocSistem.OneFrame.DesignObjects.Services;
 
 namespace OneFrameCGPTPlayground.Mvc.ViewComponents.Menu
 {

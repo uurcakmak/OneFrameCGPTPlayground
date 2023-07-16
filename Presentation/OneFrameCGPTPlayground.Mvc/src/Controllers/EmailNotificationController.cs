@@ -3,13 +3,13 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
+using KocSistem.OneFrame.DesignObjects.Services;
+using Microsoft.AspNetCore.Authorization;
 using OneFrameCGPTPlayground.Common.Authentication;
 using OneFrameCGPTPlayground.Mvc.Controllers;
 using OneFrameCGPTPlayground.Mvc.Helpers;
 using OneFrameCGPTPlayground.Mvc.Models.DataTables;
 using OneFrameCGPTPlayground.Mvc.Models.Paging;
-using KocSistem.OneFrame.DesignObjects.Services;
-using Microsoft.AspNetCore.Authorization;
 
 namespace OneFrameCGPTPlayground.Mvc
 {

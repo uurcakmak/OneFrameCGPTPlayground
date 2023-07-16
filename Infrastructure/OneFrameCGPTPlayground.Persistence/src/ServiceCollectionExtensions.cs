@@ -3,11 +3,11 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using OneFrameCGPTPlayground.Persistence.Contexts.Main;
 using KocSistem.OneFrame.Data.Relational;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using OneFrameCGPTPlayground.Persistence.Contexts.Main;
 
 namespace OneFrameCGPTPlayground.Persistence
 {

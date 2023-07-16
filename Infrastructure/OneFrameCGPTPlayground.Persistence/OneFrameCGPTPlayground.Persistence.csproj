@@ -25,4 +25,8 @@
     <ProjectReference Include="..\..\Domain\OneFrameCGPTPlayground.Domain\OneFrameCGPTPlayground.Domain.csproj" />
     <ProjectReference Include="..\OneFrameCGPTPlayground.Common\OneFrameCGPTPlayground.Common.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\Contexts\Main\Migrations\" />
+  </ItemGroup>
 </Project>

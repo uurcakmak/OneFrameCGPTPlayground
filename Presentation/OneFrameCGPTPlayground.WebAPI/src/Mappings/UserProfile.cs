@@ -4,12 +4,12 @@
 // </copyright>
 
 using AutoMapper;
+using KocSistem.OneFrame.Data.Relational;
 using OneFrameCGPTPlayground.Application.Abstractions.User.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.UserConfirmationHistory.Contract;
 using OneFrameCGPTPlayground.Domain;
 using OneFrameCGPTPlayground.WebAPI.Model.Paging;
 using OneFrameCGPTPlayground.WebAPI.Model.User;
-using KocSistem.OneFrame.Data.Relational;
 
 namespace OneFrameCGPTPlayground.WebAPI.Mappings
 {

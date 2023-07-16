@@ -4,8 +4,8 @@
 // </copyright>
 
 using AutoMapper;
-using OneFrameCGPTPlayground.Common.Extensions;
 using Microsoft.Extensions.Options;
+using OneFrameCGPTPlayground.Common.Extensions;
 using System;
 
 namespace OneFrameCGPTPlayground.Common.Helpers.AutoMapper

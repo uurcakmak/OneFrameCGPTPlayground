@@ -4,6 +4,9 @@
 // </copyright>
 
 using AutoMapper;
+using KocSistem.OneFrame.DesignObjects.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using OneFrameCGPTPlayground.Application.Abstractions.Common.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.Language;
 using OneFrameCGPTPlayground.Application.Abstractions.Language.Contracts;
@@ -12,9 +15,6 @@ using OneFrameCGPTPlayground.WebAPI.Examples.Request.Language;
 using OneFrameCGPTPlayground.WebAPI.Examples.Response.Language;
 using OneFrameCGPTPlayground.WebAPI.Model.Language;
 using OneFrameCGPTPlayground.WebAPI.Model.Paging;
-using KocSistem.OneFrame.DesignObjects.Services;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Filters;
 using System.Net.Mime;
 

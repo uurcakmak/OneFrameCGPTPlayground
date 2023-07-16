@@ -3,10 +3,10 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using OneFrameCGPTPlayground.Application.Abstractions.UserConfirmationHistory.Contract;
 using KocSistem.OneFrame.Data.Relational;
 using KocSistem.OneFrame.DesignObjects;
 using KocSistem.OneFrame.DesignObjects.Services;
+using OneFrameCGPTPlayground.Application.Abstractions.UserConfirmationHistory.Contract;
 using System;
 using System.Threading.Tasks;
 

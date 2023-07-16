@@ -3,10 +3,10 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using OneFrameCGPTPlayground.Application.Abstractions.UserPasswordHistory.Contracts;
-using OneFrameCGPTPlayground.Domain;
 using KocSistem.OneFrame.Data.Relational;
 using KocSistem.OneFrame.DesignObjects;
+using OneFrameCGPTPlayground.Application.Abstractions.UserPasswordHistory.Contracts;
+using OneFrameCGPTPlayground.Domain;
 using System;
 
 namespace OneFrameCGPTPlayground.Application.Abstractions.UserPasswordHistory

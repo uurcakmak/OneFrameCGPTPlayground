@@ -3,11 +3,11 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using OneFrameCGPTPlayground.Common.Constants;
-using OneFrameCGPTPlayground.Domain;
 using KocSistem.OneFrame.Common.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using OneFrameCGPTPlayground.Common.Constants;
+using OneFrameCGPTPlayground.Domain;
 using System;
 using System.Collections.Generic;
 

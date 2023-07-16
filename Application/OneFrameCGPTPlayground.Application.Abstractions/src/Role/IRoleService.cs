@@ -3,12 +3,12 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
+using KocSistem.OneFrame.DesignObjects;
+using KocSistem.OneFrame.DesignObjects.Services;
 using OneFrameCGPTPlayground.Application.Abstractions.Account.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.Common.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.Role.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.User.Contracts;
-using KocSistem.OneFrame.DesignObjects;
-using KocSistem.OneFrame.DesignObjects.Services;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

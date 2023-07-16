@@ -3,6 +3,12 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
+using KocSistem.OneFrame.Data.Relational;
+using KocSistem.OneFrame.DesignObjects.Services;
+using KocSistem.OneFrame.Notification.Sms.Abstractions;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
 using OneFrameCGPTPlayground.Application.Abstractions.Account;
 using OneFrameCGPTPlayground.Application.Abstractions.Account.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.ApplicationSetting;
@@ -11,12 +17,6 @@ using OneFrameCGPTPlayground.Application.Abstractions.Notification;
 using OneFrameCGPTPlayground.Common.Constants;
 using OneFrameCGPTPlayground.Common.Enums;
 using OneFrameCGPTPlayground.Domain;
-using KocSistem.OneFrame.Data.Relational;
-using KocSistem.OneFrame.DesignObjects.Services;
-using KocSistem.OneFrame.Notification.Sms.Abstractions;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Globalization;

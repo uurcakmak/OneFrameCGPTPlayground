@@ -3,9 +3,9 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using OneFrameCGPTPlayground.Application.Abstractions.Account.Contracts;
 using KocSistem.OneFrame.DesignObjects;
 using KocSistem.OneFrame.DesignObjects.Services;
+using OneFrameCGPTPlayground.Application.Abstractions.Account.Contracts;
 using System.Threading.Tasks;
 
 namespace OneFrameCGPTPlayground.Application.Abstractions.Account

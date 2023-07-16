@@ -3,17 +3,17 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
+using KocSistem.OneFrame.DesignObjects.Services;
+using KocSistem.OneFrame.Notification.Sms.Abstractions;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
 using OneFrameCGPTPlayground.Application.Abstractions.User;
 using OneFrameCGPTPlayground.Application.Abstractions.User.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.UserConfirmationHistory;
 using OneFrameCGPTPlayground.Application.Abstractions.UserConfirmationHistory.Contract;
 using OneFrameCGPTPlayground.Common.Enums;
 using OneFrameCGPTPlayground.Domain;
-using KocSistem.OneFrame.DesignObjects.Services;
-using KocSistem.OneFrame.Notification.Sms.Abstractions;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Configuration;
 using System;
 using System.Threading.Tasks;
 

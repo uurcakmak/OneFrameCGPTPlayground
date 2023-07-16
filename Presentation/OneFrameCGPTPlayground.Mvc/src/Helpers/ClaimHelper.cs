@@ -3,11 +3,11 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using OneFrameCGPTPlayground.Mvc.Jwt.JwtTokenValidationSettings;
-using OneFrameCGPTPlayground.Mvc.Models.Account;
 using KocSistem.OneFrame.Authentication.Utilities;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using OneFrameCGPTPlayground.Mvc.Jwt.JwtTokenValidationSettings;
+using OneFrameCGPTPlayground.Mvc.Models.Account;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 

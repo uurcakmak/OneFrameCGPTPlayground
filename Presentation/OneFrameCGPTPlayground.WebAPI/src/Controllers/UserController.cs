@@ -4,15 +4,15 @@
 // </copyright>
 
 using AutoMapper;
+using KocSistem.OneFrame.Common.Extensions;
+using KocSistem.OneFrame.DesignObjects.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using OneFrameCGPTPlayground.Application.Abstractions.User;
 using OneFrameCGPTPlayground.Application.Abstractions.UserConfirmationHistory.Contract;
 using OneFrameCGPTPlayground.Common.Helpers;
 using OneFrameCGPTPlayground.WebAPI.Model.ClaimHelper;
 using OneFrameCGPTPlayground.WebAPI.Model.User;
-using KocSistem.OneFrame.Common.Extensions;
-using KocSistem.OneFrame.DesignObjects.Services;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Filters;
 using System.Net.Mime;
 

@@ -3,9 +3,9 @@
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
 
+using KocSistem.OneFrame.Data.Relational;
 using OneFrameCGPTPlayground.Application.Abstractions.EmailTemplateTranslation.Contracts;
 using OneFrameCGPTPlayground.Application.Abstractions.TranslationBaseDto;
-using KocSistem.OneFrame.Data.Relational;
 using System;
 using System.Collections.Generic;
 using System.Linq;
