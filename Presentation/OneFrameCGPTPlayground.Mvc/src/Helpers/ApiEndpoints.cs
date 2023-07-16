@@ -87,5 +87,8 @@ namespace OneFrameCGPTPlayground.Mvc.Helpers
         public const string LanguagePagedList = LanguageBaseRoute + "list";
         public const string Search = LanguageBaseRoute + "search";
         public const string LanguageGetById = LanguageBaseRoute + "{0}";
+
+        public const string ChatCpt = "chatGpt/";
+        public const string ChatGptPostUpload = ChatCpt + "upload";
     }
 }

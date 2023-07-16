@@ -2,7 +2,6 @@
 // Copyright (c) KocSistem. All rights reserved.
 // Licensed under the Proprietary license. See LICENSE file in the project root for full license information.
 // </copyright>
-
 using KocSistem.OneFrame.DesignObjects.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Localization;
@@ -40,18 +39,10 @@ namespace OneFrameCGPTPlayground.Mvc.Controllers
 
         [HttpGet]
         [Authorize]
-        public async Task<IActionResult> IndexAsync()
+        public IActionResult IndexAsync()
         {
-            var viewModel = new IndexModel();
+            var viewModel = new UploadModel();
 
-            var profileResponse = await GetApiRequestAsync<ServiceResponse<ProfileModel>>(ApiEndpoints.UserGetUserInfo).ConfigureAwait(false);
-
-            if (!profileResponse.IsSuccessful)
-            {
-                return ToastError(profileResponse.Error);
-            }
-
-            viewModel.Profile = profileResponse.Result;
             return View(viewModel);
         }
 
