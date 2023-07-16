@@ -3453,5 +3453,21 @@
       "tr-TR": "Saat Dilimi",
       "ar-AE": "وحدة الوقت"
     }
+  },
+  {
+    "Key": "UploadFilesTitle",
+    "Values": {
+      "en-US": "Upload files for comparison",
+      "tr-TR": "Karşılaştırmak için dosyaları yükleyin",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "Upload",
+    "Values": {
+      "en-US": "Upload",
+      "tr-TR": "Yükle",
+      "ar-AE": ""
+    }
   }
 ]
