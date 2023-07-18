@@ -9,6 +9,9 @@ using Microsoft.AspNetCore.Mvc;
 using OneFrameCGPTPlayground.Application.Abstractions.Menu;
 using OneFrameCGPTPlayground.WebAPI.Model.ChatGpt;
 using System.Net.Mime;
+using OneFrameCGPTPlayground.Application.Abstractions.ChatGPT;
+using OneFrameCGPTPlayground.Application.ChatGPT;
+using System.IO;
 
 namespace OneFrameCGPTPlayground.WebAPI.Controllers
 {
@@ -17,12 +20,15 @@ namespace OneFrameCGPTPlayground.WebAPI.Controllers
     public class ChatGptController : BaseController
     {
         private readonly IMapper _mapper;
-        private readonly IMenuService _menuService;
+        private readonly IConfiguration _configuration;
+        private readonly IChatGPTService _chatGptService;
 
-        public ChatGptController(IMenuService menuService, IMapper mapper)
+        public ChatGptController(IMapper mapper, IConfiguration configuration)
         {
-            _menuService = menuService;
             _mapper = mapper;
+            _configuration = configuration;
+            var apiKey =_configuration["ChatGPT:ApiKey"];
+            _chatGptService = new ChatGPTService(apiKey);
         }
 
         /// <summary>
@@ -31,7 +37,24 @@ namespace OneFrameCGPTPlayground.WebAPI.Controllers
         [HttpPost("compare")]
         public async Task<IActionResult> CompareAsync([FromForm] UploadModel model)
         {
-            return Ok(new ServiceResponse());
+            var sourceFileContent = await ReadFileContent(model.SourceFile).ConfigureAwait(false);
+            var targetFileContent = await ReadFileContent(model.TargetFile).ConfigureAwait(false);
+
+            var response = await _chatGptService.Compare(sourceFileContent, targetFileContent).ConfigureAwait(false);
+
+            return Ok(response);
+        }
+
+        private async Task<string> ReadFileContent(IFormFile file)
+        {
+            var ms = new MemoryStream();
+            await file.CopyToAsync(ms).ConfigureAwait(false);
+            ms.Seek(0, SeekOrigin.Begin);
+
+            StreamReader reader = new StreamReader(ms);
+            string text = await reader.ReadToEndAsync().ConfigureAwait(false);
+
+            return text;
         }
     }
 }

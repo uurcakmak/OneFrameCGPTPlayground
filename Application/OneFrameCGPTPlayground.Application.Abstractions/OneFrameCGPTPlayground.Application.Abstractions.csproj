@@ -21,4 +21,8 @@
     <ProjectReference Include="..\..\Domain\OneFrameCGPTPlayground.Domain\OneFrameCGPTPlayground.Domain.csproj" />
     <ProjectReference Include="..\..\Infrastructure\OneFrameCGPTPlayground.Common\OneFrameCGPTPlayground.Common.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\ChatGPT\" />
+  </ItemGroup>
 </Project>
