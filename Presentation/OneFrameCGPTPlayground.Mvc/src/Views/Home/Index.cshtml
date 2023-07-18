@@ -54,11 +54,21 @@
                     <button class="btn btn-success" id="btnUpload" type="submit" value="Upload">@(_localizer["Upload"])</button>
                 </div>
             </div>
-
-            <div style="margin-top: 15px">
-                <output name="result"></output>
+            <div class="card shadow-sm mt-5">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        ChatGPT Karşılaştırma Sonucu
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <div id="txtResult"></div>
+                    <output name="result"></output>
+                </div>
             </div>
         </form>
+    </div>
+    <div class="col-12 mt-5">
+        
     </div>
     @*<div class="col-12">
     <form method="post" asp-action="Upload" enctype="multipart/form-data">
@@ -79,20 +89,38 @@
         const formData = new FormData(oFormElement);
 
         try {
-            debugger;
-            const response = await fetch(oFormElement.action, {
-                method: 'POST',
-                body: formData
+            compare(formData).then(function(response){ 
+                if (response.isSuccessful) {
+                    $("#txtResult").html(response.result);
+                    //resultElement.value = response.result;
+                }
             });
 
-            if (response.ok) {
-                window.location.href = '/';
-            }
+            //const response = await fetch(oFormElement.action, {
+            //    method: 'POST',
+            //    body: formData
+            //});
 
-            resultElement.value = 'Result: ' + response.status + ' ' +
-                response.statusText;
+            //debugger;
+            //if (response.ok) {
+            //    window.location.href = '/';
+            //}
+
+            //resultElement.value = 'Result: ' + response.status + ' ' +
+            //    response.statusText;
         } catch (error) {
             console.error('Error:', error);
         }
     }
+
+    async function compare(data) {
+        const response = await fetch('http://localhost:44308/chatgpt/compare', {
+            method: 'POST',
+            body: data
+        });
+
+        const serviceResponse = await response.json();
+        return serviceResponse;
+    }
+
 </script>

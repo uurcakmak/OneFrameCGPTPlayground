@@ -4,14 +4,14 @@
 // </copyright>
 
 using AutoMapper;
-using KocSistem.OneFrame.DesignObjects.Services;
+using DiffPlex;
+using DiffPlex.DiffBuilder;
+using DiffPlex.DiffBuilder.Model;
 using Microsoft.AspNetCore.Mvc;
-using OneFrameCGPTPlayground.Application.Abstractions.Menu;
-using OneFrameCGPTPlayground.WebAPI.Model.ChatGpt;
-using System.Net.Mime;
 using OneFrameCGPTPlayground.Application.Abstractions.ChatGPT;
 using OneFrameCGPTPlayground.Application.ChatGPT;
-using System.IO;
+using OneFrameCGPTPlayground.WebAPI.Model.ChatGpt;
+using System.Net.Mime;
 
 namespace OneFrameCGPTPlayground.WebAPI.Controllers
 {
@@ -27,7 +27,7 @@ namespace OneFrameCGPTPlayground.WebAPI.Controllers
         {
             _mapper = mapper;
             _configuration = configuration;
-            var apiKey =_configuration["ChatGPT:ApiKey"];
+            var apiKey = _configuration["ChatGPT:ApiKey"];
             _chatGptService = new ChatGPTService(apiKey);
         }
 
@@ -42,6 +42,18 @@ namespace OneFrameCGPTPlayground.WebAPI.Controllers
 
             var response = await _chatGptService.Compare(sourceFileContent, targetFileContent).ConfigureAwait(false);
 
+            if (response.IsSuccessful)
+            {
+                // Perform text diffing
+                var diffBuilder = new InlineDiffBuilder(new Differ());
+                var diffResult = diffBuilder.BuildDiffModel(sourceFileContent, targetFileContent);
+                
+                // Highlight changes in the text
+                var highlightedText = string.Join("", diffResult.Lines.Select(GetHighlightedLine));
+
+                response.Result = response.Result + System.Environment.NewLine + highlightedText;
+            }
+
             return Ok(response);
         }
 
@@ -55,6 +67,24 @@ namespace OneFrameCGPTPlayground.WebAPI.Controllers
             string text = await reader.ReadToEndAsync().ConfigureAwait(false);
 
             return text;
+        }
+
+        static string GetHighlightedLine(DiffPiece line)
+        {
+            string highlightedLine;
+            switch (line.Type)
+            {
+                case ChangeType.Inserted:
+                    highlightedLine = $"<div class=\"bg-success\">{line.Text}</div>";
+                    break;
+                case ChangeType.Deleted:
+                    highlightedLine = $"<div class=\"bg-danger\">{line.Text}</div>";
+                    break;
+                default:
+                    highlightedLine = line.Text;
+                    break;
+            }
+            return highlightedLine;
         }
     }
 }

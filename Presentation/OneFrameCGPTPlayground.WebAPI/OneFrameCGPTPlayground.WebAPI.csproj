@@ -26,6 +26,7 @@
 		<PackageReference Include="Audit.NET.SqlServer" Version="20.1.3" />
 		<PackageReference Include="Audit.WebApi.Core" Version="20.1.3" />
 		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+		<PackageReference Include="DiffPlex" Version="1.7.1" />
 		<PackageReference Include="KocSistem.OneFrame.Common" Version="7.0.0" />
 		<PackageReference Include="KocSistem.OneFrame.Configuration" Version="7.0.0" />
 		<PackageReference Include="KocSistem.OneFrame.I18N" Version="7.0.0" />
