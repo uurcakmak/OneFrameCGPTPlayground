@@ -3469,5 +3469,53 @@
       "tr-TR": "Yükle",
       "ar-AE": ""
     }
+  },
+  {
+    "Key": "SrcFileInfo",
+    "Values": {
+      "en-US": "Please select source file for comparison.",
+      "tr-TR": "Lütfen kaynak dosyayı seçiniz.",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "TargetFileInfo",
+    "Values": {
+      "en-US": "Please select target file for comparison.",
+      "tr-TR": "Lütfen hedef dosyayı seçiniz.",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "ComparisonResult",
+    "Values": {
+      "en-US": "ChatGPT Comparison Result",
+      "tr-TR": "ChatGPT Karşılaştırma Sonucu",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "ToastrSuccess",
+    "Values": {
+      "en-US": "ChatGPT has completed processing.",
+      "tr-TR": "ChatGPT işlemini tamamladı.",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "ToastrError",
+    "Values": {
+      "en-US": "An error occured while processing your request.",
+      "tr-TR": "İşleminiz yapılırken hata oluştu.",
+      "ar-AE": ""
+    }
+  },
+  {
+    "Key": "Processing",
+    "Values": {
+      "en-US": "Processing",
+      "tr-TR": "İşleminiz yapılıyor",
+      "ar-AE": ""
+    }
   }
 ]

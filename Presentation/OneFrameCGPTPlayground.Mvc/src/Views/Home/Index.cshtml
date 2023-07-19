@@ -1,6 +1,5 @@
 ﻿@using OneFrameCGPTPlayground.Mvc.Controllers
 @using KocSistem.OneFrame.I18N
-@using DocumentFormat.OpenXml.Office2016.Presentation.Command
 @model OneFrameCGPTPlayground.Mvc.Models.Home.UploadModel
 @inject IKsStringLocalizer<HomeController> _localizer
 @{
@@ -31,7 +30,7 @@
                         <div class="col-6">
                             <dl>
                                 <dt>
-                                    <label asp-for="SourceFile">Please select source file for comparison.</label>
+                                    <label asp-for="SourceFile">@(_localizer["SrcFileInfo"])</label>
                                 </dt>
                                 <dd>
                                     @Html.EditorFor(m => m.SourceFile, new { type = "file" })
@@ -41,7 +40,7 @@
                         <div class="col-6">
                             <dl>
                                 <dt>
-                                    <label asp-for="TargetFile">Please select target file for comparison.</label>
+                                    <label asp-for="TargetFile">@(_localizer["TargetFileInfo"])</label>
                                 </dt>
                                 <dd>
                                     @Html.EditorFor(m => m.TargetFile, new { type = "file" })
@@ -54,62 +53,113 @@
                     <button class="btn btn-success" id="btnUpload" type="submit" value="Upload">@(_localizer["Upload"])</button>
                 </div>
             </div>
-            <div class="card shadow-sm mt-5">
+            <div class="card shadow-sm mt-5 d-none">
                 <div class="card-header">
                     <h3 class="card-title">
-                        ChatGPT Karşılaştırma Sonucu
+                        @(_localizer["ComparisonResult"])
                     </h3>
                 </div>
                 <div class="card-body">
                     <div id="txtResult"></div>
-                    <output name="result"></output>
                 </div>
             </div>
         </form>
     </div>
-    <div class="col-12 mt-5">
-        
-    </div>
-    @*<div class="col-12">
-    <form method="post" asp-action="Upload" enctype="multipart/form-data">
-
-    </form>
-    </div>*@
 </div>
-<script>
-    //Dropzone.options.uploadForm = {
-    //    autoProcessQueue: false
-    //            paramName: "files" //default-değeri "file"dır. back-end kullandığımız parametre adı ile aynı olmalıdır.
-    //};
-</script>
+<script type="text/javascript">
+    toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": true,
+        "positionClass": "toastr-top-right",
+        "preventDuplicates": true,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    };
+    var blockUI;
+    function isBlankStr(str) {
+        if (str === null) {
+            return true;
+        }
 
-<script>
+        return (!str || /^\s*$/.test(str));
+    }
+    function ShowLoading(message) {
+        try {
+            if (blockUI.isBlocked()) {
+                return;
+            }
+        } catch (e) {
+            //console.log(e);
+        }
+
+        blockUI = null;
+        var target = document.querySelector("body"),
+            msg = '<div class="blockui-message"><span class="spinner-border m-0 text-primary"></span></div>';
+        if (!window.isBlankStr(message)) {
+            msg = '<div class="blockui-message"><span class="spinner-border text-primary"></span><span class="px-2">' + message + '</span></div>';
+        }
+
+        blockUI = new KTBlockUI(target, {
+            message: msg,
+            showOverlay: true,
+            centerX: true,
+            centerY: true,
+            css: {
+                'z-index': 99999,
+                'border': '0',
+                'padding': '0',
+                'backgroundColor': 'none'
+            },
+            overlayCSS: {
+                'z-index': 99998,
+                'backgroundColor': '#555',
+                'opacity': 0.5,
+                'cursor': 'wait'
+            }
+        });
+
+        if (!blockUI.isBlocked()) {
+            blockUI.block();
+        }
+    }
+
+    function HideLoading() {
+        setTimeout(function () {
+            if (blockUI.isBlocked()) {
+                blockUI.release();
+                blockUI.destroy();
+            }
+        }, 250);
+    }
+
     async function AJAXSubmit(oFormElement) {
+        ShowLoading("@(_localizer["Processing"])");
         var resultElement = oFormElement.elements.namedItem("result");
         const formData = new FormData(oFormElement);
 
         try {
             compare(formData).then(function(response){ 
                 if (response.isSuccessful) {
+                    toastr.success("", "@(_localizer["ToastrSuccess"])");
                     $("#txtResult").html(response.result);
-                    //resultElement.value = response.result;
+                    $("#txtResult").closest(".card.d-none").removeClass("d-none");
+                }else {
+                    toastr.error(response.errorInfo.message, "@(_localizer["ToastrError"])");
                 }
+                HideLoading();
             });
-
-            //const response = await fetch(oFormElement.action, {
-            //    method: 'POST',
-            //    body: formData
-            //});
-
-            //debugger;
-            //if (response.ok) {
-            //    window.location.href = '/';
-            //}
-
-            //resultElement.value = 'Result: ' + response.status + ' ' +
-            //    response.statusText;
         } catch (error) {
-            console.error('Error:', error);
+            toastr.error(error, "@(_localizer["ToastrError"])");
+            HideLoading();
         }
     }
 
@@ -122,5 +172,4 @@
         const serviceResponse = await response.json();
         return serviceResponse;
     }
-
 </script>

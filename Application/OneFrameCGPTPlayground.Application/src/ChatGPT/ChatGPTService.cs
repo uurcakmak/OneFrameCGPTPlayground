@@ -49,18 +49,18 @@ namespace OneFrameCGPTPlayground.Application.ChatGPT
 
             try
             {
-	            var chatCompletion = await api.Chat.CreateChatCompletionAsync(model: "gpt-3.5-turbo-16k",
-		            temperature: 0.5,
+                var chatCompletion = await api.Chat.CreateChatCompletionAsync(model: "gpt-3.5-turbo-16k",
+                    temperature: 0.5,
                     messages: chat.Messages.Select(m => new ChatMessage(m.Role, m.Content)).ToList()).ConfigureAwait(false);
                 
                 response = chatCompletion.Choices[0].Message.Content;
-                response = response.Replace("Thank you for providing the content of file 2. Now, let's compare the two files:", String.Empty);
+                response = response.Replace("Thank you for providing the content of file 2. Now, let's compare the two files:", "");
                 serviceResponse.Result = response;
                 serviceResponse.IsSuccessful = true;
-			}
+            }
             catch (Exception e)
             {
-	            serviceResponse.Error = new ErrorInfo(e.Message);
+                serviceResponse.Error = new ErrorInfo(e.Message);
                 serviceResponse.IsSuccessful = false;
             }
 

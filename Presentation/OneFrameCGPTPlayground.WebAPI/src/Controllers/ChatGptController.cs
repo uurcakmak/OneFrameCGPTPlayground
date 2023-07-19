@@ -44,14 +44,12 @@ namespace OneFrameCGPTPlayground.WebAPI.Controllers
 
             if (response.IsSuccessful)
             {
-                // Perform text diffing
-                var diffBuilder = new InlineDiffBuilder(new Differ());
-                var diffResult = diffBuilder.BuildDiffModel(sourceFileContent, targetFileContent);
-                
-                // Highlight changes in the text
-                var highlightedText = string.Join("", diffResult.Lines.Select(GetHighlightedLine));
+                //var diffBuilder = new InlineDiffBuilder(new Differ());
+                //var diffResult = diffBuilder.BuildDiffModel(sourceFileContent, targetFileContent);
+                //var highlightedText = string.Join("", diffResult.Lines.Select(GetHighlightedLine));
 
-                response.Result = response.Result + System.Environment.NewLine + highlightedText;
+                //response.Result = response.Result + System.Environment.NewLine + highlightedText;
+                response.Result = response.Result.Replace("\n", "<br />");
             }
 
             return Ok(response);
